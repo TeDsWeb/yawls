@@ -1,0 +1,32 @@
+Source: yawls
+Section: java
+Priority: extra
+Maintainer: Dominik Brämer <thedsweb@googlemail.com>
+Build-Depends: debhelper (>= 9)
+Build-Depends-Indep: 	javahelper, 
+											openjdk-7-jdk, 
+											gettext-base, 
+											libjava-gnome-java, 
+											libopencv2.4-java, 
+											ant, 
+											po4a
+Standards-Version: 3.9.5
+Homepage: http://thedsweb.blogspot.com
+Vcs-Bzr: lp:yawls
+Vcs-Browser: http://bazaar.launchpad.net/~thedsweb/yawls/trunk/files
+
+Package: yawls
+Architecture: all
+Depends: 	${java:Depends}, 
+			${misc:Depends}, 
+			openjdk-7-jre-headless, 
+			gettext-base, 
+			libgtk-3-0 (>= 3.10),
+			libjava-gnome-java, 
+			libopencv2.4-java, 
+			policykit-1-gnome
+Recommends: ${java:Recommends}
+Description: Automatic adjust brightness
+ yawls adjust the brightness level of your display by 
+ using the internal/externel webcam of your notebook
+ as an ambient light sensor.

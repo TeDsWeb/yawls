@@ -1,0 +1,16 @@
+[Desktop Entry]
+Version=X.X.X
+Type=Application
+Name=Yawls
+GenericName=Yawls
+Comment=Yawls automatic display brightness
+Comment[de]=Yawls automatische Displayhelligkeit
+Comment[en_GB]=Yawls automatic display brightness
+Comment[fr]=Luminosité d'affichage automatique Yawls
+Comment[it]=Luminosità automatica del dislpay Yawls
+Comment[ro]=Yawls luminozitatea automată a ecranului
+Comment[ru]=Автоматический контролёр освещённости Yawls
+Exec=/usr/share/yawls/yawls_gui.sh
+Icon=/usr/share/yawls/yawls_icon_64x64.png
+Terminal=false
+Categories=System

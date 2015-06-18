@@ -1,0 +1,328 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Dominik Brämer <thedsweb@googlemail.com>, 2015.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: yawls\n"
+"Report-Msgid-Bugs-To: <thedsweb@googlemail.com>\n"
+"POT-Creation-Date: 2015-06-16 16:22+0200\n"
+"PO-Revision-Date: 2015-02-14 16:19+0000\n"
+"Last-Translator: Carsten Gerlach <carsten-gerlach@gmx.de>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2015-05-27 15:20+0000\n"
+"X-Generator: Launchpad (build 17528)\n"
+
+#. type: TH
+#: man/yawls.1:1
+#, no-wrap
+msgid "YAWLS"
+msgstr "YAWLS"
+
+#. type: TH
+#: man/yawls.1:1
+#, no-wrap
+msgid "June 14, 2015"
+msgstr ""
+
+#. type: TH
+#: man/yawls.1:1
+#, no-wrap
+msgid "Dominik Brämer"
+msgstr "Dominik Brämer"
+
+#. type: TH
+#: man/yawls.1:1
+#, no-wrap
+msgid "Yawls automatic display brightness"
+msgstr "Yawls automatische Displayhelligkeit"
+
+#. type: SH
+#: man/yawls.1:2
+#, no-wrap
+msgid "NAME"
+msgstr "NAME"
+
+#. type: Plain text
+#: man/yawls.1:4
+msgid "yawls - Automatic adjust brightness"
+msgstr "yawls - Automatische Helligkeits-Steuerung"
+
+#. type: SH
+#: man/yawls.1:4
+#, no-wrap
+msgid "SYNOPSIS"
+msgstr "BEZEICHNUNG"
+
+#. type: Plain text
+#: man/yawls.1:6
+msgid "B<yawls> [I<OPTIONS>]"
+msgstr "B<yawls> [I<OPTIONEN>]"
+
+#. type: SH
+#: man/yawls.1:6
+#, no-wrap
+msgid "DESCRIPTION"
+msgstr "BESCHREIBUNG"
+
+#. type: Plain text
+#: man/yawls.1:9
+msgid ""
+"Yawls (Yet Another Webcam Light Sensor) adjust the brightness level of your "
+"display by using the internal/externel webcam of your notebook as an ambient "
+"light sensor."
+msgstr ""
+"Yawls (Yet Another Webcam Light Sensor) reguliert die Bildschirmhelligkeit "
+"indem es die interne/externe Webcam ihres Notebooks als Umgebungslicht-"
+"Sensor nutzt."
+
+#. type: Plain text
+#: man/yawls.1:11
+msgid "Yawls obtains configuration data from the following sources:"
+msgstr "Yawls bezieht Konfigurationsdaten aus folgenden Quellen:"
+
+#. type: Plain text
+#: man/yawls.1:13 man/yawls.1:57
+msgid "/etc/yawls.properties"
+msgstr "/etc/yawls.properties"
+
+#. type: Plain text
+#: man/yawls.1:15
+#, fuzzy
+#| msgid "/etc/cron.d/yawls-[cli|gtk]"
+msgid "/etc/cron.d/yawls"
+msgstr "/etc/cron.d/yawls-[cli|gtk]"
+
+#. type: Plain text
+#: man/yawls.1:17 man/yawls.1:59
+msgid "/var/lib/yawls/*"
+msgstr "/var/lib/yawls/*"
+
+#. type: SS
+#: man/yawls.1:18
+#, no-wrap
+msgid "Option Summary:"
+msgstr "Optionen Zusammenfassung:"
+
+#. type: TP
+#: man/yawls.1:19
+#, no-wrap
+msgid "B<--cron>\t\tor B<-c>\tuse webcam as brightness reference (one time)"
+msgstr "B<--cron>\t\toder B<-c>\tnutze Webcam als Referenz für die Umgebungshelligkeit (einmalig)"
+
+#. type: TP
+#: man/yawls.1:21
+#, no-wrap
+msgid "B<--daemon>\t\tor B<-d>\tuse webcam as brightness reference (continuously)"
+msgstr "B<--daemon>\t\toder B<-d>\tnutze Webcam als Referenz für die Umgebungshelligkeit (kontinuierlich)"
+
+#. type: TP
+#: man/yawls.1:23
+#, no-wrap
+msgid "B<--gui>\t\tor B<-g>\tstarts gui"
+msgstr "B<--gui>\t\toder B<-g>\tStartet GUI"
+
+#. type: TP
+#: man/yawls.1:25
+#, no-wrap
+msgid "B<--help>\t\tor B<-h>\tshows help"
+msgstr "B<--help>\t\toder B<-h>\tZeigt Hilfetext"
+
+#. type: TP
+#: man/yawls.1:27
+#, no-wrap
+msgid "B<--restore>\t\tor B<-r>\trestore config files"
+msgstr "B<--restore>\t\toder B<-r>\tSetzt Konfigurationsdateien zurück"
+
+#. type: SS
+#: man/yawls.1:29
+#, no-wrap
+msgid "Option Details:"
+msgstr "Optionen detailliert:"
+
+#. type: Plain text
+#: man/yawls.1:32
+msgid "B<-c> (B<--cron>)"
+msgstr "B<-c> (B<--cron>)"
+
+#. type: Plain text
+#: man/yawls.1:38
+#, fuzzy
+#| msgid ""
+#| "Use the internal/exteranl webcam as brightness reference one time.The "
+#| "function is per default used by cron to start yawls every 15 minutes "
+#| "(default). It usually takes a while for the program to work properly "
+#| "because it configures itself from run to run. You can reduce this time if "
+#| "you force the run once in a dark and once in a bright room or you use the "
+#| "GUI to run the calibration task (GTK version only)."
+msgid ""
+"Use the internal/exteranl webcam as brightness reference one time.The "
+"function is per default used by cron to start yawls every 15 minutes "
+"(default). It usually takes a while for the program to work properly because "
+"it configures itself from run to run. You can reduce this time if you force "
+"the run once in a dark and once in a bright room or you use the GUI to run "
+"the calibration task."
+msgstr ""
+"Nutzt einmalig die primäre Webcam als Referenz für die Umgebungshelligkeit. "
+"Diese Funktion wird standardmäßig vom yawls Cron-Dienst genutzt welcher "
+"ebenfalls standardmäßig alle 15 Minuten gestartet wird. Das Programm braucht "
+"eine Weile bis es ordnungsgemäß funktioniert da es sich von Start zu Start "
+"selbst auf die Kamera einstellt. Sie können diese Zeit verkürzen indem Sie "
+"diesen Befehl einmal in einem hellen und einmal in einem dunklen Raum "
+"manuell starten oder die Sie nutzen die GUI um die Kalibrierung vorzunehmen "
+"(nur GTK Version)."
+
+#. type: Plain text
+#: man/yawls.1:40
+msgid "B<-d> (B<--daemon>)"
+msgstr "B<-d> (B<--daemon>)"
+
+#. type: Plain text
+#: man/yawls.1:47
+#, fuzzy
+#| msgid ""
+#| "Use the internal/exteranl webcam as brightness reference but "
+#| "continuously. Only for testing purpose if started directly from command "
+#| "line because it is actually used by the init.d script (/etc/init.d/yawls-"
+#| "[cli|gtk]). It usually takes a while for the program to work properly "
+#| "because it configures itself from run to run. You can reduce this time if "
+#| "you force the run with the cron option once in a dark and once in a "
+#| "bright room or you use the GUI to run the calibration task (GTK version "
+#| "only)."
+msgid ""
+"Use the internal/exteranl webcam as brightness reference but continuously. "
+"Only for testing purpose if started directly from command line because it is "
+"actually used by the init.d script (/etc/init.d/yawls). It usually takes a "
+"while for the program to work properly because it configures itself from run "
+"to run. You can reduce this time if you force the run with the cron option "
+"once in a dark and once in a bright room or you use the GUI to run the "
+"calibration task."
+msgstr ""
+"Nutzt kontinuierlich die primäre Webcam als Referenz für die "
+"Umgebungshelligkeit. Nur für Testzwecke direkt von der Kommandozeile starten "
+"da dieser Befehl eigentlich vom init.d Skript (/etc/init.d/yawls-[cli|gtk]) "
+"genutzt wird. Das Programm braucht eine Weile bis es ordnungsgemäß "
+"funktioniert da es sich von Start zu Start selbst auf die Kamera einstellt. "
+"Sie können diese Zeit verkürzen indem den cron Befehl einmal in einem hellen "
+"und einmal in einem dunklen Raum manuell ausführen oder die Sie nutzen die "
+"GUI um die Kalibrierung vorzunehmen (nur GTK Version)."
+
+#. type: Plain text
+#: man/yawls.1:49
+msgid "B<-g> (B<--gui>)"
+msgstr "B<-g> (B<--gui>)"
+
+#. type: Plain text
+#: man/yawls.1:51
+#, fuzzy
+#| msgid "Shows an GUI of the program (GTK version only)."
+msgid "Shows an GUI of the program."
+msgstr "Öffnet die GUI des Programms (nur GTK Version)"
+
+#. type: Plain text
+#: man/yawls.1:53
+msgid "B<-r> (B<--restore>)"
+msgstr "B<-r> (B<--restore>)"
+
+#. type: Plain text
+#: man/yawls.1:55
+msgid "Resets all config files:"
+msgstr "Setzt alle Konfigurationsdateien zurück:"
+
+#. type: Plain text
+#: man/yawls.1:61
+msgid "B<-h> (B<--help>)"
+msgstr "B<-h> (B<--help>)"
+
+#. type: Plain text
+#: man/yawls.1:63
+msgid "Shows an quick help about the program."
+msgstr "Hilfetext anzeigen und beenden."
+
+#. type: SH
+#: man/yawls.1:64
+#, no-wrap
+msgid "EXAMPLES"
+msgstr "BEISPIELE"
+
+#. type: Plain text
+#: man/yawls.1:67
+msgid "yawls B<-c>"
+msgstr "yawls B<-c>"
+
+#. type: SH
+#: man/yawls.1:68
+#, no-wrap
+msgid "AUTHOR"
+msgstr "AUTOR"
+
+#. type: Plain text
+#: man/yawls.1:71
+msgid "Written by Dominik Brämer E<lt>thedsweb@googlemail.comE<gt>"
+msgstr "Dominik Brämer E<lt>thedsweb@googlemail.comE<gt>"
+
+#. type: SH
+#: man/yawls.1:71
+#, no-wrap
+msgid "REPORTING BUGS"
+msgstr "FEHLER MELDEN"
+
+#. type: Plain text
+#: man/yawls.1:74
+msgid ""
+"Report bugs at E<lt>https://launchpad.net/yawls/+bugsE<gt> or "
+"E<lt>thedsweb@googlemail.comE<gt>"
+msgstr ""
+"Fehler melden auf E<lt>https://launchpad.net/yawls/+bugsE<gt> oder "
+"E<lt>thedsweb@googlemail.comE<gt>"
+
+#. type: SH
+#: man/yawls.1:74
+#, no-wrap
+msgid "COPYRIGHT"
+msgstr "COPYRIGHT"
+
+#. type: Plain text
+#: man/yawls.1:80
+msgid ""
+"This program is free software: you can redistribute it and/or modify it "
+"under the terms of the GNU General Public License as published by the Free "
+"Software Foundation, either version 3 of the License, or (at your option) "
+"any later version."
+msgstr ""
+"Dieses Programm ist freie Software. Sie können es unter den Bedingungen der "
+"GNU General Public License, wie von der Free Software Foundation "
+"veröffentlicht, weitergeben und/oder modifizieren, entweder gemäß Version 3 "
+"der Lizenz oder (nach Ihrer Option) jeder späteren Version."
+
+#. type: Plain text
+#: man/yawls.1:85
+msgid ""
+"This program is distributed in the hope that it will be useful, but WITHOUT "
+"ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or "
+"FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for "
+"more details."
+msgstr ""
+"Die Veröffentlichung dieses Programms erfolgt in der Hoffnung, dass es Ihnen "
+"von Nutzen sein wird, aber OHNE IRGENDEINE GARANTIE, sogar ohne die "
+"implizite Garantie der MARKTREIFE oder der VERWENDBARKEIT FÜR EINEN "
+"BESTIMMTEN ZWECK. Details finden Sie in der GNU General Public License."
+
+#. type: Plain text
+#: man/yawls.1:87
+msgid ""
+"You should have received a copy of the GNU General Public License along with "
+"this program.  If not, see E<lt>http://www.gnu.org/licenses/E<gt>."
+msgstr ""
+"Sie sollten ein Exemplar der GNU General Public License zusammen mit diesem "
+"Programm erhalten haben. Falls nicht, siehe E<lt>http://www.gnu.org/licenses/"
+"E<gt>."
+
+#~ msgid "December 26, 2014"
+#~ msgstr "Dezember 26, 2014"

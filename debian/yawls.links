@@ -1,0 +1,2 @@
+usr/share/yawls/yawls_cli.sh usr/bin/yawls
+usr/share/java/opencv.jar /usr/share/yawls/opencv.jar

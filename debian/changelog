@@ -1,0 +1,200 @@
+yawls (1.2.0) stable; urgency=low
+
+  * New upstream release
+  
+ -- Dominik Brämer <thedsweb@googlemail.com>  Sat, 13 Jun 2015 16:08:17 +0100
+
+yawls (1.1.2) stable; urgency=low
+
+  * New upstream release
+  * Update src/*
+  	- Add license header to all Java files
+  	- Improve Java Convention
+  * Add policykit file
+  	- Move from gksudo to pkexec
+  	- Update yawls_gui.sh
+  * Update debian/control
+  	- Add version range for libgtk-3-0 (3.10 < 3.14)
+  * Upadte main/Yawls.java
+  	- Add daemon/BrightnessDaemon.java, daemon/Tools.java
+  * Update engine/Brightness.java
+  	- Improved performance
+  * Update engine/Face.java
+  	- Improved performance
+  * Update error/IllegalArgumentINConfig.java
+  	- Change name to IllegalArgumentINConfigException
+  * Upadte error/NoBacklightDeviceFound.java
+  	- Change name to NoBacklightDeviceFoundException
+  * Update yawls_cli.sh
+  	- Improved memory footprint of yawls Java instance
+  	- Fix PID file error if not run as root (LP: #1424250)
+  	- Fix PID file doesn't save program ID (LP: #1425129)
+  
+ -- Dominik Brämer <thedsweb@googlemail.com>  Sun, 22 Mar 2015 15:31:16 +0100
+
+yawls (1.1.1) stable; urgency=low
+
+  * New upstream release
+  * Update build.xml
+  	- Use reference for libopencv
+  * Update debian/control
+  	- Add libopencv2.4-java as dependency
+  * Update yawls_cli.sh
+  	- Add workaround for broken opencv symlinks on some systems
+  * Update debian/yawls-cli.links
+  * Update debian/yawls-gtk.links
+  
+ -- Dominik Brämer <thedsweb@googlemail.com>  Sat, 21 Feb 2015 16:25:00 +0100
+ 
+yawls (1.1.0) stable; urgency=low
+
+  * New upstream release
+  * Add gui/Show.java, util/Check.java
+  	- Make config editable on-the-fly
+  	- Add calibration wizzard
+  * Add yawls_cli.sh, yawls_gui.sh
+  	- Make daemon more robust
+  	- Add workaround for GTK error
+  * Add engine/Stable.java
+  	- Add stable light conditions detection function to improve battery impact
+  * Add error/IllegalArgumentINConfig.java, error/NoBacklightDeviceFound.java
+  * Add Yawls.desktop, yawls_icon_64x64.png
+  * Add yawls_about.glade, yawls_calibrate.glade
+  * Add yawls_error.glade, yawls_gui.glade
+  * Update debian/control
+  	- Split into two versions (CLI, GUI)
+  * Update debian/rules
+  * Update build.xml, build.sh
+  	- Make builds more stable
+  * Update manual
+  	- Manual is now translateable
+  	- Add that daemon mode is now default
+  * Update util/Translate.java, util/Database.java
+  * Update main/Yawls.java
+  	- Improved daemon mode
+  	- Add -g, --gui options
+  * Update engine/Brightness.java
+  	- Improve automatic camera calibration
+  * Update util/GeneratePath.java
+  	- Improve BestType function to make backlight type detection more stable
+  
+ -- Dominik Brämer <thedsweb@googlemail.com>  Fri, 20 Feb 2015 15:04:48 +0100
+
+yawls (1.0.1) stable; urgency=low
+
+  * New upstream release
+  * Add OpenCV PPA for precise compatibility
+  * Change src/*
+  	- Improved Java Convention
+  * Update src/engine/Brightness.java
+  	- Fix does not internally store the last ambient brightness (#1411946)
+  	- Fix screen dim while camera is used by another program (#1409247)
+  	- Fix Problem with auto-calibration (#1416639)
+  	- Change reference value type to double to improve reference calculation
+  * Update src/engine/Face.java
+  	- Optimze face detection
+  * Update src/util/Database.java, src/util/Config.java
+  	- Change path of config file
+  * Update src/util/GeneratePath.java
+  	- Add bestType detection for GeneratePath
+  * Update src/util/Translation.java
+  	- Add gettext library for easier translations and translation integration
+  	- Update build.sh
+  	- Update build.xml
+  * Add src/engine/Threshold.java
+  	- Add Threshold to config for brightening and darkening
+  * Update debian/compat
+  	- Bump Version to 9
+  * Update debian/rules
+  	- Add override for update-rc to install init script without activation
+  * Update debian/control
+  	- Bump debhelper Version to >= 9
+  	- Add Homepage URL
+  	- Add Version Control System URLs
+  * Update debian/yawls.install
+  	- Remove unneeded path
+  * Add debian/yawls.postrm.debhelper and debian/yawls.prerm.debhelper
+  	- For a cleaner uninstall if daemon is added to defaults by the user
+  * Update debian/changelog
+  	- Changelog is now more detailed
+  * Update man/yawls.*
+  	- Path correction of config files
+  
+ -- Dominik Brämer <thedsweb@googlemail.com>  Fri, 23 Jan 2015 17:00:28 +0100
+
+yawls (1.0.0) stable; urgency=low
+
+  * New upstream release
+  	- Clean up dependencies
+  	- Add possibility to translate the program
+  	- Add translated man pages
+  	- Add translation for german (program and man page)
+  	- Add config file for daemon (/etc/default/yawls.properties)
+  		- Add option to detect Faces
+  		- Add option to change scan interval
+  	- More battery friendly
+  
+ -- Dominik Brämer <thedsweb@googlemail.com>  Fri, 29 Dec 2014 12:45:31 +0100
+
+yawls (0.0.8.2) stable; urgency=low
+
+  * New upstream release
+  	- Corrected example in manual file
+  
+ -- Dominik Brämer <thedsweb@googlemail.com>  Sun, 21 Dec 2014 19:14:21 +0100
+
+yawls (0.0.8.1) stable; urgency=low
+
+  * New upstream release
+  	- quick fix
+  
+ -- Dominik Brämer <thedsweb@googlemail.com>  Sun, 21 Dec 2014 16:42:00 +0100
+
+yawls (0.0.8) stable; urgency=low
+
+  * New upstream release
+  	- Enhanced brightness level classification
+  	- Performance optimizations
+  	- Add daemon mode
+  	- Add init.d script
+  	- Updated Manual
+  
+ -- Dominik Brämer <thedsweb@googlemail.com>  Sat, 20 Dec 2014 16:52:18 +0100
+ 
+yawls (0.0.7.2) stable; urgency=low
+
+  * New upstream release
+  	- fixed brightness level classification
+  
+ -- Dominik Brämer <thedsweb@googlemail.com>  Mon, 15 Dec 2014 12:13:27 +0100
+
+yawls (0.0.7.1) stable; urgency=low
+
+  * New upstream release
+  	- Add compatibility for Ubuntu 14.10
+  	- Corrected the calculation of the minimum brightness level
+  
+ -- Dominik Brämer <thedsweb@googlemail.com>  Sun, 14 Dec 2014 17:03:23 +0100
+
+yawls (0.0.5) stable; urgency=low
+
+  * New upstream release
+  	- Add man page
+  
+ -- Dominik Brämer <thedsweb@googlemail.com>  Sat, 13 Dec 2014 19:23:39 +0100
+ 
+yawls (0.0.4) stable; urgency=low
+
+  * New upstream release
+  	- Add second brightness check if the 
+  	  current value and the previous one
+  	  are very different
+  	- code clean ups
+  
+ -- Dominik Brämer <thedsweb@googlemail.com>  Sat, 13 Dec 2014 12:47:09 +0100
+
+yawls (0.0.1) stable; urgency=low
+
+  * Initial release
+  
+ -- Dominik Brämer <thedsweb@googlemail.com>  Fri, 12 Dec 2014 21:41:14 +0100

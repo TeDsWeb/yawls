@@ -1,0 +1,97 @@
+.\"*******************************************************************
+.\"
+.\" This file was generated with po4a. Translate the source file.
+.\"
+.\"*******************************************************************
+.TH YAWLS 1 "June 14, 2015" "Dominik Brämer" "Luminosité d'affichage automatique Yawls"
+.SH NOM
+yawls \- Réglage de luminosité automatique
+.SH RÉSUMÉ
+\fByawls\fP [\fIOPTIONS\fP]
+.SH DESCRIPTION
+Yawls (Yet Another Webcam Light Sensor) ajuste le niveau de luminosité de
+l'écran en utilisant la webcam intégrée ou externe de votre ordinateur
+portable en tant que capteur de luminosité ambiante.
+
+Yawls obtient des données de configuration à partir des sources suivantes\ :
+.IP
+/etc/yawls.properties
+.IP
+/etc/cron.d/yawls
+.IP
+/var/lib/yawls/*
+
+.SS "Résumé des options\ :"
+.TP 
+\fB\-\-cron\fP		ou \fB\-c\fP	utilise la webcam comme référence de luminosité (une fois)
+.TP 
+\fB\-\-daemon\fP		or \fB\-d\fP	utilise la webcam comme référence de luminosité (en continu)
+.TP 
+\fB\-\-gui\fP		ou \fB\-g\fP	démarre l'interface graphique
+.TP 
+\fB\-\-help\fP		ou \fB\-h\fP	affiche l'aide
+.TP 
+\fB\-\-restore\fP		ou \fB\-r\fP	restaure les fichiers de configuration
+.SS "Détails des options\ :"
+.HP
+\fB\-c\fP (\fB\-\-cron\fP)
+.IP
+Use the internal/exteranl webcam as brightness reference one time.The
+function is per default used by cron to start yawls every 15 minutes
+(default). It usually takes a while for the program to work properly because
+it configures itself from run to run. You can reduce this time if you force
+the run once in a dark and once in a bright room or you use the GUI to run
+the calibration task.
+.HP
+\fB\-d\fP (\fB\-\-daemon\fP)
+.IP
+Use the internal/exteranl webcam as brightness reference but
+continuously. Only for testing purpose if started directly from command line
+because it is actually used by the init.d script (/etc/init.d/yawls). It
+usually takes a while for the program to work properly because it configures
+itself from run to run. You can reduce this time if you force the run with
+the cron option once in a dark and once in a bright room or you use the GUI
+to run the calibration task.
+.HP
+\fB\-g\fP (\fB\-\-gui\fP)
+.IP
+Shows an GUI of the program.
+.HP
+\fB\-r\fP (\fB\-\-restore\fP)
+.IP
+Réinitialise tous les fichiers de configuration\ :
+
+/etc/yawls.properties
+
+/var/lib/yawls/*
+.HP
+\fB\-h\fP (\fB\-\-help\fP)
+.IP
+Affiche une aide rapide concernant le programme
+.HP
+.SH EXEMPLES
+.IP
+yawls \fB\-c\fP
+.PP
+.SH AUTEUR
+.PP
+Écrit par Dominik Brämer <thedsweb@googlemail.com>
+.SH "SIGNALER DES BOGUES"
+.PP
+Signaler des bogues à <https://launchpad.net/yawls/+bugs> or
+<thedsweb@googlemail.com>
+.SH "DROITS D'AUTEURS"
+.PP
+Ce programme est un programme libre\ : vous pouvez le redistribuer et/ou le
+modifier selon les termes de la Licence Publique Générale GNU telle que
+publiée par la Free Software Foundation, soit la version 3 de la Licence, ou
+(à votre choix) toute version ultérieure.
+.PP
+Ce programme est distribué dans l'espoir qu'il sera utile, mais SANS AUCUNE
+GARANTIE\ ; sans même une garantie implicite de COMMERCIABILITÉ ou DE
+CONFORMITÉ À UNE UTILISATION PARTICULIÈRE. Voir la Licence Publique Générale
+GNU pour plus de détails.
+.PP
+Vous devriez avoir reçu une copie de la Licence Publique Générale GNU avec
+ce programme. Si tel n'est pas le cas, voir
+<http://www.gnu.org/licenses/>.

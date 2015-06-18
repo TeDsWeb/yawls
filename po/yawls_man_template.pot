@@ -1,0 +1,268 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2015-06-16 17:26+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: TH
+#: ./man/yawls.1:1
+#, no-wrap
+msgid "YAWLS"
+msgstr ""
+
+#. type: TH
+#: ./man/yawls.1:1
+#, no-wrap
+msgid "June 14, 2015"
+msgstr ""
+
+#. type: TH
+#: ./man/yawls.1:1
+#, no-wrap
+msgid "Dominik Brämer"
+msgstr ""
+
+#. type: TH
+#: ./man/yawls.1:1
+#, no-wrap
+msgid "Yawls automatic display brightness"
+msgstr ""
+
+#. type: SH
+#: ./man/yawls.1:2
+#, no-wrap
+msgid "NAME"
+msgstr ""
+
+#. type: Plain text
+#: ./man/yawls.1:4
+msgid "yawls - Automatic adjust brightness"
+msgstr ""
+
+#. type: SH
+#: ./man/yawls.1:4
+#, no-wrap
+msgid "SYNOPSIS"
+msgstr ""
+
+#. type: Plain text
+#: ./man/yawls.1:6
+msgid "B<yawls> [I<OPTIONS>]"
+msgstr ""
+
+#. type: SH
+#: ./man/yawls.1:6
+#, no-wrap
+msgid "DESCRIPTION"
+msgstr ""
+
+#. type: Plain text
+#: ./man/yawls.1:9
+msgid ""
+"Yawls (Yet Another Webcam Light Sensor) adjust the brightness level of your "
+"display by using the internal/externel webcam of your notebook as an ambient "
+"light sensor."
+msgstr ""
+
+#. type: Plain text
+#: ./man/yawls.1:11
+msgid "Yawls obtains configuration data from the following sources:"
+msgstr ""
+
+#. type: Plain text
+#: ./man/yawls.1:13 ./man/yawls.1:57
+msgid "/etc/yawls.properties"
+msgstr ""
+
+#. type: Plain text
+#: ./man/yawls.1:15
+msgid "/etc/cron.d/yawls"
+msgstr ""
+
+#. type: Plain text
+#: ./man/yawls.1:17 ./man/yawls.1:59
+msgid "/var/lib/yawls/*"
+msgstr ""
+
+#. type: SS
+#: ./man/yawls.1:18
+#, no-wrap
+msgid "Option Summary:"
+msgstr ""
+
+#. type: TP
+#: ./man/yawls.1:19
+#, no-wrap
+msgid "B<--cron>\t\tor B<-c>\tuse webcam as brightness reference (one time)"
+msgstr ""
+
+#. type: TP
+#: ./man/yawls.1:21
+#, no-wrap
+msgid "B<--daemon>\t\tor B<-d>\tuse webcam as brightness reference (continuously)"
+msgstr ""
+
+#. type: TP
+#: ./man/yawls.1:23
+#, no-wrap
+msgid "B<--gui>\t\tor B<-g>\tstarts gui"
+msgstr ""
+
+#. type: TP
+#: ./man/yawls.1:25
+#, no-wrap
+msgid "B<--help>\t\tor B<-h>\tshows help"
+msgstr ""
+
+#. type: TP
+#: ./man/yawls.1:27
+#, no-wrap
+msgid "B<--restore>\t\tor B<-r>\trestore config files"
+msgstr ""
+
+#. type: SS
+#: ./man/yawls.1:29
+#, no-wrap
+msgid "Option Details:"
+msgstr ""
+
+#. type: Plain text
+#: ./man/yawls.1:32
+msgid "B<-c> (B<--cron>)"
+msgstr ""
+
+#. type: Plain text
+#: ./man/yawls.1:38
+msgid ""
+"Use the internal/exteranl webcam as brightness reference one time.The "
+"function is per default used by cron to start yawls every 15 minutes "
+"(default). It usually takes a while for the program to work properly because "
+"it configures itself from run to run. You can reduce this time if you force "
+"the run once in a dark and once in a bright room or you use the GUI to run "
+"the calibration task."
+msgstr ""
+
+#. type: Plain text
+#: ./man/yawls.1:40
+msgid "B<-d> (B<--daemon>)"
+msgstr ""
+
+#. type: Plain text
+#: ./man/yawls.1:47
+msgid ""
+"Use the internal/exteranl webcam as brightness reference but "
+"continuously. Only for testing purpose if started directly from command line "
+"because it is actually used by the init.d script (/etc/init.d/yawls). It "
+"usually takes a while for the program to work properly because it configures "
+"itself from run to run. You can reduce this time if you force the run with "
+"the cron option once in a dark and once in a bright room or you use the GUI "
+"to run the calibration task."
+msgstr ""
+
+#. type: Plain text
+#: ./man/yawls.1:49
+msgid "B<-g> (B<--gui>)"
+msgstr ""
+
+#. type: Plain text
+#: ./man/yawls.1:51
+msgid "Shows an GUI of the program."
+msgstr ""
+
+#. type: Plain text
+#: ./man/yawls.1:53
+msgid "B<-r> (B<--restore>)"
+msgstr ""
+
+#. type: Plain text
+#: ./man/yawls.1:55
+msgid "Resets all config files:"
+msgstr ""
+
+#. type: Plain text
+#: ./man/yawls.1:61
+msgid "B<-h> (B<--help>)"
+msgstr ""
+
+#. type: Plain text
+#: ./man/yawls.1:63
+msgid "Shows an quick help about the program."
+msgstr ""
+
+#. type: SH
+#: ./man/yawls.1:64
+#, no-wrap
+msgid "EXAMPLES"
+msgstr ""
+
+#. type: Plain text
+#: ./man/yawls.1:67
+msgid "yawls B<-c>"
+msgstr ""
+
+#. type: SH
+#: ./man/yawls.1:68
+#, no-wrap
+msgid "AUTHOR"
+msgstr ""
+
+#. type: Plain text
+#: ./man/yawls.1:71
+msgid "Written by Dominik Brämer E<lt>thedsweb@googlemail.comE<gt>"
+msgstr ""
+
+#. type: SH
+#: ./man/yawls.1:71
+#, no-wrap
+msgid "REPORTING BUGS"
+msgstr ""
+
+#. type: Plain text
+#: ./man/yawls.1:74
+msgid ""
+"Report bugs at E<lt>https://launchpad.net/yawls/+bugsE<gt> or "
+"E<lt>thedsweb@googlemail.comE<gt>"
+msgstr ""
+
+#. type: SH
+#: ./man/yawls.1:74
+#, no-wrap
+msgid "COPYRIGHT"
+msgstr ""
+
+#. type: Plain text
+#: ./man/yawls.1:80
+msgid ""
+"This program is free software: you can redistribute it and/or modify it "
+"under the terms of the GNU General Public License as published by the Free "
+"Software Foundation, either version 3 of the License, or (at your option) "
+"any later version."
+msgstr ""
+
+#. type: Plain text
+#: ./man/yawls.1:85
+msgid ""
+"This program is distributed in the hope that it will be useful, but WITHOUT "
+"ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or "
+"FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for "
+"more details."
+msgstr ""
+
+#. type: Plain text
+#: ./man/yawls.1:87
+msgid ""
+"You should have received a copy of the GNU General Public License along with "
+"this program.  If not, see E<lt>http://www.gnu.org/licenses/E<gt>."
+msgstr ""

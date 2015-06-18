@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+	<project name="Yawls" default="compile" basedir=".">
+		
+		<description>
+			Yawls Debian Package build file
+		</description>
+		
+	  	<!-- set global properties for this build -->
+  		<property name="src" location="src"/>
+	  	<property name="build" location="build"/>
+	  	<property name="opencv" location="/usr/share/OpenCV/java"/>
+	  	<property name="gettextAndGtk" location="/usr/share/java"/>
+	  	<property name="jar" location="yawls.jar"/>
+	  	<property name="pobuild" location="build.sh"/>
+		
+		<path id="buildClassPath">
+      <fileset dir="${opencv}">
+        <include name="**/*" />
+			</fileset>
+			<fileset dir="${gettextAndGtk}">
+        <include name="**/libintl.jar" />
+			</fileset>
+			<fileset dir="${gettextAndGtk}">
+        <include name="**/gtk.jar" />
+			</fileset>
+		</path>
+
+  	<target name="init">
+    	<!-- Create the time stamp -->
+	    <tstamp/>
+    	<!-- Create the build directory structure used by compile -->
+    	<mkdir dir="${build}"/>
+    	<exec executable="${pobuild}" />
+  	</target>
+		
+		<target name="compile" depends="init" description="compile the source " >
+			<!-- Compile the java code from ${src} into ${build} -->
+			<javac includeantruntime="false" srcdir="${src}" destdir="${build}">
+				<classpath refid="buildClassPath"/>
+			</javac>
+			<jar jarfile="${jar}" basedir="${build}">
+				<manifest>
+					<attribute name="Permission" value="all-permissions"/>
+					<attribute name="Application-Name" value="yawls"/>
+		      <attribute name="Main-Class" value="com.blogspot.thedsweb.main.Yawls"/>
+		      <attribute name="Class-Path" value="/usr/share/java/libintl.jar /usr/share/java/gtk.jar /usr/share/yawls/opencv.jar"/>
+		    </manifest>
+	      <fileset dir="${src}">
+	      	<include name="**/*.properties"/>
+	      </fileset>
+			</jar>
+		</target>
+		
+	  	<target name="clean" description="clean up" >
+	    	<!-- Delete the ${build} and ${dist} directory trees -->
+		    <delete dir="${build}"/>
+		    <delete file="${jar}"/>
+		    <delete dir="usr"/>
+	  	</target>
+		
+	</project>
