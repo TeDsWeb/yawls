@@ -2,7 +2,7 @@
 # (Yet Another Webcam Light Sensor):
 Adjust the brightness level of your display by using the internal/externel webcam of your notebook as an ambient light sensor.
 
-You can find this project also at launchpad.net:
+Issue tracking and more at:
 
 https://launchpad.net/yawls
 
