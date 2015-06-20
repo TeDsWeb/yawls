@@ -12,6 +12,7 @@ import java.net.MalformedURLException;
 import java.net.URL;
 import java.net.URLClassLoader;
 import java.util.Locale;
+import java.util.MissingResourceException;
 import java.util.ResourceBundle;
 import java.util.logging.Level;
 
@@ -31,13 +32,33 @@ public class Config {
 
     public boolean faceDetect() {
 	// Load faceDetect configuration
-	return resourceBundle.getString("faceDetect").equalsIgnoreCase("true");
+	boolean faceDetect;
+
+	try {
+	    faceDetect = resourceBundle.getString("faceDetect")
+		    .equalsIgnoreCase("true");
+	} catch (final MissingResourceException e) {
+	    faceDetect = Database.FACE_DETECT;
+	    Debug.LOG.log(Level.WARNING,
+		    "The face detection is not set. Corrected to: "
+			    + faceDetect);
+	}
+
+	return faceDetect;
     }
 
     public int lowerLimit() {
 	// Load lowerLimit configuration
-	int lowerLimit = Integer.parseInt(resourceBundle
-		.getString("lowerLimit"));
+	int lowerLimit;
+
+	try {
+	    lowerLimit = Integer.parseInt(resourceBundle
+		    .getString("lowerLimit"));
+	} catch (final MissingResourceException e) {
+	    lowerLimit = Database.LOWER_LIMIT;
+	    Debug.LOG.log(Level.WARNING,
+		    "The lower limit is not set. Corrected to: " + lowerLimit);
+	}
 
 	// Check if value greater zero
 	if (lowerLimit <= 0) {
@@ -53,8 +74,16 @@ public class Config {
 
     public int upperLimit() {
 	// Load upperLimit configuration
-	int upperLimit = Integer.parseInt(resourceBundle
-		.getString("upperLimit"));
+	int upperLimit;
+
+	try {
+	    upperLimit = Integer.parseInt(resourceBundle
+		    .getString("upperLimit"));
+	} catch (final MissingResourceException e) {
+	    upperLimit = Database.UPPER_LIMIT;
+	    Debug.LOG.log(Level.WARNING,
+		    "The upper limit is not set. Corrected to: " + upperLimit);
+	}
 
 	// Check if value greater zero
 	if (upperLimit <= 0) {
@@ -70,8 +99,17 @@ public class Config {
 
     public int minIncrease() {
 	// Load minIncrease configuration
-	int minIncrease = Integer.parseInt(resourceBundle
-		.getString("minIncrease"));
+	int minIncrease;
+
+	try {
+	    minIncrease = Integer.parseInt(resourceBundle
+		    .getString("minIncrease"));
+	} catch (final MissingResourceException e) {
+	    minIncrease = Database.MIN_INCREASE;
+	    Debug.LOG.log(Level.WARNING,
+		    "The minimum increase is not set. Corrected to: "
+			    + minIncrease);
+	}
 
 	// Check if value greater zero
 	if (minIncrease <= 0) {
@@ -87,8 +125,16 @@ public class Config {
 
     public int maxIncrease() {
 	// Load maxIncrease configuration
-	int maxIncrease = Integer.parseInt(resourceBundle
-		.getString("maxIncrease"));
+	int maxIncrease;
+	try {
+	    maxIncrease = Integer.parseInt(resourceBundle
+		    .getString("maxIncrease"));
+	} catch (final MissingResourceException e) {
+	    maxIncrease = Database.MAX_INCREASE;
+	    Debug.LOG.log(Level.WARNING,
+		    "The maximum increase is not set. Corrected to: "
+			    + maxIncrease);
+	}
 
 	// Check if value greater zero
 	if (maxIncrease <= 0) {
@@ -104,8 +150,17 @@ public class Config {
 
     public int darkeningThreshold() {
 	// Load darkeningThreshold configuration
-	int darkeningThreshold = Integer.parseInt(resourceBundle
-		.getString("darkeningThreshold"));
+	int darkeningThreshold;
+
+	try {
+	    darkeningThreshold = Integer.parseInt(resourceBundle
+		    .getString("darkeningThreshold"));
+	} catch (final MissingResourceException e) {
+	    darkeningThreshold = Database.DARKENING_THRESHOLD;
+	    Debug.LOG.log(Level.WARNING,
+		    "The darkening threshold is not set. Corrected to: "
+			    + darkeningThreshold);
+	}
 
 	// Check if value is between 0 and 100
 	if (darkeningThreshold < 0 || darkeningThreshold > 100) {
@@ -122,8 +177,17 @@ public class Config {
 
     public int brighteningThreshold() {
 	// Load brighteningThreshold configuration
-	int brighteningThreshold = Integer.parseInt(resourceBundle
-		.getString("brighteningThreshold"));
+	int brighteningThreshold;
+
+	try {
+	    brighteningThreshold = Integer.parseInt(resourceBundle
+		    .getString("brighteningThreshold"));
+	} catch (final MissingResourceException e) {
+	    brighteningThreshold = Database.BRIGHTENING_THRESHOLD;
+	    Debug.LOG.log(Level.WARNING,
+		    "The breghtening threshold is not set. Corrected to: "
+			    + brighteningThreshold);
+	}
 
 	// Check if value is between 0 and 100
 	if (brighteningThreshold < 0 || brighteningThreshold > 100) {
@@ -139,13 +203,23 @@ public class Config {
     }
 
     public int logLevel() {
-	int level = Integer.parseInt(resourceBundle.getString("logLevel"));
+	int level;
+
+	try {
+	    level = Integer.parseInt(resourceBundle.getString("logLevel"));
+	} catch (final MissingResourceException e) {
+	    level = Database.LOG_LEVEL;
+	    Debug.LOG.log(Level.WARNING,
+		    "The log level is not set. Corrected to: " + level);
+	}
+
 	if (level < 0 || level > 3) {
 	    level = Database.LOG_LEVEL;
 	    Debug.LOG.log(Level.WARNING,
 		    "The log level must be a value greater zero and smaller 4. Corrected to: "
 			    + level);
 	}
+
 	return level;
     }
 }

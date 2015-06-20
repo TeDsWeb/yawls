@@ -377,7 +377,12 @@ public class Brightness extends Files {
 
     public void darkenBrightness() {
 	last = 0;
-	writeInt(0, PATH);
+	try {
+	    semaphoreSet.acquire();
+	} catch (final InterruptedException e) {
+	}
+	TRANSITION.setValue(0);
+	semaphoreFade.release();
     }
 
     class FadeDaemon implements Runnable {

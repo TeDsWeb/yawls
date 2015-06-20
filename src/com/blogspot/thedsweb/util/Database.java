@@ -66,6 +66,7 @@ public class Database {
 	    + "#Log level 0 (error) < 1 (warning) < 2 (info) < 3 (debug)\n"
 	    + "logLevel = 1";
 
+    public final static boolean FACE_DETECT = false;
     public final static int LOWER_LIMIT = 500;
     public final static int UPPER_LIMIT = 30000;
     public final static int MIN_INCREASE = 100;
