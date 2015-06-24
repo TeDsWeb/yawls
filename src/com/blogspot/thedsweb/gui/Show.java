@@ -18,6 +18,7 @@ import java.util.MissingResourceException;
 import java.util.Properties;
 import java.util.logging.Level;
 
+import org.gnome.gdk.Cursor;
 import org.gnome.gdk.Event;
 import org.gnome.gdk.Pixbuf;
 import org.gnome.gtk.AboutDialog;
@@ -434,6 +435,7 @@ public class Show {
 		} catch (final FileNotFoundException e3) {
 		    Debug.LOG.log(Level.WARNING, "Could not find yawls icon.");
 		}
+
 		calibrate.setSizeRequest(300, 0);
 		calibrate.setResizable(false);
 		calibrate.setBorderWidth(5);
@@ -495,6 +497,10 @@ public class Show {
 		value.setAlignHorizontal(Align.CENTER);
 		hbox2.add(value);
 
+		final Button finish = new Button();
+		finish.setLabel(Translate._("Finish"));
+		calibrate.addButton(finish, ResponseType.NONE);
+
 		final Button back = new Button();
 		back.setLabel(Translate._("Back"));
 		calibrate.addButton(back, ResponseType.NONE);
@@ -507,9 +513,22 @@ public class Show {
 		apply.setLabel(Translate._("Calibrate"));
 		calibrate.addButton(apply, ResponseType.NONE);
 
+		final File file = new File(Database.PATH_LOCK_DAEMON);
+		LockFile.create(Database.PATH_LOCK_DAEMON, true);
+
+		finish.connect(new Button.Clicked() {
+		    @Override
+		    public void onClicked(Button arg0) {
+			calibrate.hide();
+			mainGUI.setSensitive(true);
+			file.delete();
+		    }
+		});
+
 		back.connect(new Button.Clicked() {
 		    @Override
 		    public void onClicked(Button arg0) {
+			finish.hide();
 			back.hide();
 			next.show();
 			step2.hide();
@@ -523,6 +542,7 @@ public class Show {
 		    @Override
 		    public void onClicked(Button arg0) {
 			next.hide();
+			finish.show();
 			back.show();
 			step1.hide();
 			instruct1.hide();
@@ -534,6 +554,8 @@ public class Show {
 		apply.connect(new Button.Clicked() {
 		    @Override
 		    public void onClicked(Button arg0) {
+			calibrate.getWindow().setCursor(Cursor.BUSY);
+			Gtk.mainIterationDo(false);
 			try {
 			    final Config config = new Config();
 			    final Brightness brightness = new Brightness(config);
@@ -556,11 +578,9 @@ public class Show {
 			    Debug.LOG.log(Level.SEVERE,
 				    "Could not read config file.", e1);
 			}
+			calibrate.getWindow().setCursor(Cursor.NORMAL);
 		    }
 		});
-
-		final File file = new File(Database.PATH_LOCK_DAEMON);
-		LockFile.create(Database.PATH_LOCK_DAEMON, true);
 
 		hbox1.show();
 		frame.show();
@@ -575,6 +595,7 @@ public class Show {
 		status.show();
 		lastValue.show();
 		value.show();
+		finish.hide();
 		back.hide();
 		next.show();
 		apply.show();
