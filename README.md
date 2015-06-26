@@ -53,6 +53,14 @@ The logLevel defines how detailed the log is: 0 (error) < 1 (warning) < 2 (info)
 
 Default: 1
 
+### Dependencies
+* openjdk-7-jre-headless
+* gettext-base
+* libgtk-3-0
+* libjava-gnome-java
+* libopencv2.4-java
+* policykit-1-gnome
+
 ### Issue tracking and more:
 
 https://launchpad.net/yawls
