@@ -1,6 +1,7 @@
 yawls.jar /usr/share/yawls
 yawls_icon_64x64.png /usr/share/yawls
 yawls_*.sh /usr/share/yawls
+yawls /etc/logrotate.d
 lbpcascade_frontalface.xml /usr/share/yawls
 yawls.properties /etc
 *.desktop /usr/share/applications

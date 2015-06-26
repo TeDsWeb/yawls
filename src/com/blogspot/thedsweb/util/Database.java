@@ -19,7 +19,7 @@ public class Database {
     // Path for log file and variables
     public final static String LOG_PATTERN = "/var/log/yawls%u.%g.log";
     public final static int LOG_SIZE = 50000;
-    public final static int LOG_ROTATE = 5;
+    public final static int LOG_ROTATE = 1;
 
     // Path for library file
     public final static String PATH_TO_XML = "/usr/share/yawls/lbpcascade_frontalface.xml";
