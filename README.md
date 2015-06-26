@@ -53,7 +53,7 @@ The logLevel defines how detailed the log is: 0 (error) < 1 (warning) < 2 (info)
 
 Default: 1
 
-### Issue tracking and more at:
+### Issue tracking and more:
 
 https://launchpad.net/yawls
 
