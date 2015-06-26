@@ -80,3 +80,12 @@ http://thedsweb.blogspot.de/p/yawls.html
 
 ### BETA Download
 [yawls_1.2.0.deb](https://bugs.launchpad.net/yawls/+bug/1433997/+attachment/4415274/+files/yawls_1.2.0_all.deb)
+
+### Build dependencies
+* javahelper
+* openjdk-7-jdk
+* gettext-base
+* libjava-gnome-java
+* libopencv2.4-java
+* ant
+* po4a
