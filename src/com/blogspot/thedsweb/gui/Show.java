@@ -67,6 +67,8 @@ public class Show {
     private static SpinButton dtSpin;
     private static SpinButton btSpin;
     private static SpinButton loSpin;
+    private static Label minValue;
+    private static Label maxValue;
     private static Label lastValue;
 
     public static void gui(String[] args) {
@@ -343,17 +345,12 @@ public class Show {
 	final Label maxLabel = new Label(Translate._("Max. value:"));
 	final Label minLabel = new Label(Translate._("Min. value:"));
 	final Label lastLabel = new Label(Translate._("Last value:"));
-	final Label maxValue = new Label();
-	final Label minValue = new Label();
+	maxValue = new Label();
+	minValue = new Label();
 	lastValue = new Label();
 
-	final int[] arr = new int[4];
-	Files.readStatus(arr);
-	maxValue.setLabel(Integer.toString(arr[1]));
-	minValue.setLabel(Integer.toString(arr[0]));
-
-	final Thread lastValueDaemon = new Thread(
-		new LastValueDaemon(lastValue), "lastValueDaemon");
+	final Thread lastValueDaemon = new Thread(new ValueDaemon(minValue,
+		maxValue, lastValue), "valueDaemon");
 	lastValueDaemon.setDaemon(true);
 	lastValueDaemon.start();
 
@@ -374,52 +371,52 @@ public class Show {
     }
 
     private static void constructMenu(MenuBar menuBar) {
-	final MenuItem helpItem = new MenuItem(Translate._("_Help"));
-	final MenuItem prefItem = new MenuItem(Translate._("_Preferences"));
-
-	final Menu helpMenu = new Menu();
-	final Menu prefMenu = new Menu();
-
-	final MenuItem aboutItem = new MenuItem(Translate._("_About"));
-	aboutGUI(aboutItem);
-	final MenuItem faqItem = new MenuItem(Translate._("FAQ"));
-	faqItem.connect(new Activate() {
-	    @Override
-	    public void onActivate(MenuItem arg0) {
-		// Open launchpad.net project questions web page
-		if (java.awt.Desktop.isDesktopSupported()) {
-		    final java.awt.Desktop desktop = java.awt.Desktop
-			    .getDesktop();
-
-		    if (desktop.isSupported(java.awt.Desktop.Action.BROWSE)) {
-			java.net.URI uri;
-			try {
-			    // Set URL for launchpad.net FAQ
-			    uri = new java.net.URI(Database.QUESTIONS);
-			    desktop.browse(uri);
-			} catch (final URISyntaxException e) {
-			    Debug.LOG.log(Level.SEVERE, "Wrong URL syntax: "
-				    + Database.QUESTIONS, e);
-			} catch (final IOException e) {
-			    Debug.LOG.log(Level.WARNING,
-				    "Could not start default browser.", e);
-			}
-		    }
-		}
-	    }
-	});
-	final MenuItem calibItem = new MenuItem(Translate._("_Calibrate"));
-	calibrateGUI(calibItem);
-
-	helpMenu.add(aboutItem);
-	helpMenu.add(faqItem);
-	prefMenu.add(calibItem);
-
-	helpItem.setSubmenu(helpMenu);
-	prefItem.setSubmenu(prefMenu);
-
-	menuBar.add(helpItem);
-	menuBar.add(prefItem);
+        final MenuItem helpItem = new MenuItem(Translate._("_Help"));
+        final MenuItem prefItem = new MenuItem(Translate._("_Preferences"));
+    
+        final Menu helpMenu = new Menu();
+        final Menu prefMenu = new Menu();
+    
+        final MenuItem aboutItem = new MenuItem(Translate._("_About"));
+        aboutGUI(aboutItem);
+        final MenuItem faqItem = new MenuItem(Translate._("FAQ"));
+        faqItem.connect(new Activate() {
+            @Override
+            public void onActivate(MenuItem arg0) {
+        	// Open launchpad.net project questions web page
+        	if (java.awt.Desktop.isDesktopSupported()) {
+        	    final java.awt.Desktop desktop = java.awt.Desktop
+        		    .getDesktop();
+    
+        	    if (desktop.isSupported(java.awt.Desktop.Action.BROWSE)) {
+        		java.net.URI uri;
+        		try {
+        		    // Set URL for launchpad.net FAQ
+        		    uri = new java.net.URI(Database.QUESTIONS);
+        		    desktop.browse(uri);
+        		} catch (final URISyntaxException e) {
+        		    Debug.LOG.log(Level.SEVERE, "Wrong URL syntax: "
+        			    + Database.QUESTIONS, e);
+        		} catch (final IOException e) {
+        		    Debug.LOG.log(Level.WARNING,
+        			    "Could not start default browser.", e);
+        		}
+        	    }
+        	}
+            }
+        });
+        final MenuItem calibItem = new MenuItem(Translate._("_Calibrate"));
+        calibrateGUI(calibItem);
+    
+        helpMenu.add(aboutItem);
+        helpMenu.add(faqItem);
+        prefMenu.add(calibItem);
+    
+        helpItem.setSubmenu(helpMenu);
+        prefItem.setSubmenu(prefMenu);
+    
+        menuBar.add(helpItem);
+        menuBar.add(prefItem);
     }
 
     private static void calibrateGUI(MenuItem calib) {

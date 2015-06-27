@@ -44,7 +44,7 @@ public class Yawls {
 	    case "--cron":
 		if (Check.root()) {
 		    try {
-			if (LockFile.create(Database.PATH_LOCK, true)) {
+			if (LockFile.create(Database.PATH_CRON_LOCK, true)) {
 			    if (Check.calibration()) {
 				automatic();
 			    }

@@ -23,7 +23,8 @@ Depends: 	${java:Depends},
 			gettext-base, 
 			libgtk-3-0,
 			libjava-gnome-java, 
-			libopencv2.4-java, 
+			libopencv2.4-java,
+			logrotate, 
 			policykit-1-gnome
 Recommends: ${java:Recommends}
 Description: Automatic adjust brightness

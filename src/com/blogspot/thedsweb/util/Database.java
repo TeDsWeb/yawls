@@ -32,6 +32,7 @@ public class Database {
     // Path for lock files
     public final static String PATH_PID = "/run/yawls.pid";
     public final static String PATH_LOCK = "/run/yawls.lock";
+    public final static String PATH_CRON_LOCK = "/run/yawls_cron.lock";
     public final static String PATH_GUI_LOCK = "/run/yawls_gui.lock";
     public final static String PATH_LOCK_DAEMON = "/run/yawls_calibration.lock";
     public final static String PATH_LOCK_CONFIG = "/run/yawls_configuration.lock";

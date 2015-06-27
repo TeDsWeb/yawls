@@ -48,6 +48,24 @@ public class Files {
 	}
     }
 
+    public static void readMMLStatus(int[] arr) {
+	// Read in min, max and last value file and store the values in an array
+	if (arr == null || arr.length < 3) {
+	    throw new IllegalArgumentException();
+	} else {
+	    final Semaphore sem = new Semaphore(1, false);
+	    final ExecutorService read = Executors.newCachedThreadPool();
+	    read.submit(new ReadParallel(Database.PATH_MIN, arr, 0, sem));
+	    read.submit(new ReadParallel(Database.PATH_MAX, arr, 1, sem));
+	    read.submit(new ReadParallel(Database.PATH_LAST, arr, 2, sem));
+	    read.shutdown();
+	    try {
+		read.awaitTermination(10, TimeUnit.SECONDS);
+	    } catch (final InterruptedException e) {
+	    }
+	}
+    }
+
     // read int from file
     public static int readInt(String arg) {
 	return Integer.parseInt(read(arg));
