@@ -1,5 +1,6 @@
 #!/usr/bin/make -f
 JAVA_HOME=/usr/lib/jvm/default-java
+JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF8
 
 %:
 	dh $@ --with javahelper
