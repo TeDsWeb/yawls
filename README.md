@@ -79,7 +79,7 @@ http://thedsweb.blogspot.de/p/yawls.html
 [yawls-cli_1.1.2.deb](https://launchpad.net/yawls/1.1.x/1.1.2/+download/yawls-cli_1.1.2_all.deb)
 
 ### BETA Download
-[yawls_1.2.0.deb](https://bugs.launchpad.net/yawls/+bug/1433997/+attachment/4415274/+files/yawls_1.2.0_all.deb)
+[yawls_1.2.0.deb](https://launchpad.net/yawls/1.1.x/1.1.2/+download/yawls_1.2.0_all.deb)
 
 ### Build dependencies
 * javahelper
