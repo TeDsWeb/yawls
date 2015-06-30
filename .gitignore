@@ -1,0 +1,10 @@
+.gitignore
+build/
+yawls.jar
+debian/files
+debian/yawls/
+debian/yawls.debhelper.log
+debian/yawls.postinst.debhelper
+debian/yawls.postrm.debhelper
+debian/yawls.prerm.debhelper
+debian/yawls.substvars

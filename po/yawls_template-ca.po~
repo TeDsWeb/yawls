@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: yawls\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-06-16 16:22+0200\n"
+"POT-Creation-Date: 2015-06-16 17:26+0200\n"
 "PO-Revision-Date: 2015-02-14 15:29+0000\n"
 "Last-Translator: VPablo <villumar@gmail.com>\n"
 "Language-Team: Catalan <ca@li.org>\n"
@@ -18,24 +18,24 @@ msgstr ""
 "X-Launchpad-Export-Date: 2015-05-27 15:20+0000\n"
 "X-Generator: Launchpad (build 17528)\n"
 
-#: src/com/blogspot/thedsweb/main/Yawls.java:89
-#: src/com/blogspot/thedsweb/main/Yawls.java:94
+#: src/com/blogspot/thedsweb/main/Yawls.java:91
+#: src/com/blogspot/thedsweb/main/Yawls.java:96
 msgid "Usage: yawls [OPTIONS]"
 msgstr "Ús: yawls [OPCIONS]"
 
-#: src/com/blogspot/thedsweb/main/Yawls.java:100
+#: src/com/blogspot/thedsweb/main/Yawls.java:102
 msgid "Another instance of yawls is already running!"
 msgstr "Ja esteu executant altra instància de yawls!"
 
-#: src/com/blogspot/thedsweb/main/Yawls.java:104
+#: src/com/blogspot/thedsweb/main/Yawls.java:106
 msgid "This command must be run as root"
 msgstr "Este comandament ha d'executar-se com a root"
 
-#: src/com/blogspot/thedsweb/main/Yawls.java:109
+#: src/com/blogspot/thedsweb/main/Yawls.java:111
 msgid "Usage: yawls"
 msgstr "Ús: yawls"
 
-#: src/com/blogspot/thedsweb/main/Yawls.java:112
+#: src/com/blogspot/thedsweb/main/Yawls.java:114
 msgid ""
 "yawls adjust the brightness level of your display by using\n"
 "the internal/externel webcam of your notebook as an ambient\n"
@@ -45,7 +45,7 @@ msgstr ""
 "mitjançant la webcam interna/externa del seu portàtil com\n"
 "a sensor de llum ambient."
 
-#: src/com/blogspot/thedsweb/main/Yawls.java:115
+#: src/com/blogspot/thedsweb/main/Yawls.java:117
 msgid ""
 "If you wish to change the interval of ambient light checks\n"
 "you need to modify the file:"
@@ -53,40 +53,40 @@ msgstr ""
 "Si vol modificar l'interval de comprobació de llum\n"
 "modifique el fitxer:"
 
-#: src/com/blogspot/thedsweb/main/Yawls.java:119
+#: src/com/blogspot/thedsweb/main/Yawls.java:121
 msgid "Options:"
 msgstr "Opcions:"
 
-#: src/com/blogspot/thedsweb/main/Yawls.java:123
+#: src/com/blogspot/thedsweb/main/Yawls.java:125
 msgid "--cron\t or -c use webcam as brightness reference"
 msgstr "--cron\t o -c usa la webcam com a referència de brillantor"
 
-#: src/com/blogspot/thedsweb/main/Yawls.java:125
+#: src/com/blogspot/thedsweb/main/Yawls.java:127
 msgid "--help\t or -h show this help"
 msgstr "--help\t o -h mostra esta ajuda"
 
-#: src/com/blogspot/thedsweb/main/Yawls.java:127
+#: src/com/blogspot/thedsweb/main/Yawls.java:129
 msgid "--restore\t or -r restore config files"
 msgstr "--restore\t o -r recupera els fitxers de configuració"
 
-#: src/com/blogspot/thedsweb/main/Yawls.java:130
+#: src/com/blogspot/thedsweb/main/Yawls.java:132
 msgid "Yawls version"
 msgstr ""
 
-#: src/com/blogspot/thedsweb/main/Yawls.java:137
+#: src/com/blogspot/thedsweb/main/Yawls.java:139
 msgid "Error:"
 msgstr ""
 
-#: src/com/blogspot/thedsweb/main/Yawls.java:141
+#: src/com/blogspot/thedsweb/main/Yawls.java:143
 msgid "No backlight device found."
 msgstr ""
 
-#: src/com/blogspot/thedsweb/main/Yawls.java:144
+#: src/com/blogspot/thedsweb/main/Yawls.java:146
 #: src/com/blogspot/thedsweb/gui/Show.java:148
 msgid "No camera found."
 msgstr ""
 
-#: src/com/blogspot/thedsweb/main/Yawls.java:169
+#: src/com/blogspot/thedsweb/main/Yawls.java:171
 msgid "Yawls service started press {ctrl+c} to abort..."
 msgstr "El servici yawls s'ha iniciat, pressione {ctrl + c} per avortar..."
 
