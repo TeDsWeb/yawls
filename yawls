@@ -2,18 +2,11 @@
     su root root
     rotate 0
     daily
+    missingok
     sharedscripts
-    prerotate
-        if [ -e /var/run/yawls.pid ]; then
-			invoke-rc.d --quiet yawls stop > /dev/null
-			touch /var/run/yawlsd.stopped
-	    fi
-	endscript
-	postrotate
-		if [ -e /var/run/yawlsd.stopped ]; then
-			rm /var/run/yawlsd.stopped
-			rm /var/log/yawls*
-			invoke-rc.d --quiet yawls start > /dev/null
-		fi
+	prerotate
+        invoke-rc.d --quiet yawls stop > /dev/null
+	    rm /var/log/yawls*
+		invoke-rc.d --quiet yawls start > /dev/null
 	endscript
 }
