@@ -61,16 +61,14 @@ Default: 1
 * libopencv2.4-java
 * policykit-1-gnome
 
-### Issue tracking:
-
+### Issue tracking
 [Report a bug on launchpad.net](https://bugs.launchpad.net/yawls) or here on GitHub
 
-### Get in touch:
-
+### Get in touch
 * [Twitter](https://twitter.com/TheDsWeb)
 * [German project blog](http://thedsweb.blogspot.de/p/yawls.html)
 
-### Download of the current stable release and PPA:
+### Download of the current stable release and PPA
 [yawls-gtk_1.1.2.deb](https://launchpad.net/yawls/1.1.x/1.1.2/+download/yawls-gtk_1.1.2_all.deb)
 
 [yawls-cli_1.1.2.deb](https://launchpad.net/yawls/1.1.x/1.1.2/+download/yawls-cli_1.1.2_all.deb)
