@@ -3,7 +3,7 @@ Adjust the brightness level of your display by using the internal/external camer
 
 If you install Yawls it runs as a system daemon in background in an interval of 30 seconds per default.
 Therefore other programs are also able  to use the camera. The interval is divided into four configurable
-variables which will be explained later.
+variables which will be explained later. You are also still able to correct the screen brightness with your function keys because Yawls won't update the brightness if your brightness condtions are stable. 
 
 If you have Yawls fresh installed [please enable the universe packages in Ubuntu to avoid an dependency errors] is it handy 
 to calibrate it because otherwise it may not function properly but Yawls is also able to calibrate itself over time.
@@ -61,22 +61,19 @@ Default: 1
 * libopencv2.4-java
 * policykit-1-gnome
 
-### Issue tracking and more:
+### Issue tracking
+[Report a bug on launchpad.net](https://bugs.launchpad.net/yawls) or here on GitHub
 
-https://launchpad.net/yawls
+### Get in touch
+* [Twitter](https://twitter.com/TheDsWeb)
+* [German project blog](http://thedsweb.blogspot.de/p/yawls.html)
 
-You can find a PPA here:
-
-https://launchpad.net/~thedsweb/+archive/ubuntu/yawls-daily
-
-German Project Blog:
-
-http://thedsweb.blogspot.de/p/yawls.html
-
-### Downloads of the current stable release:
+### Download of the current stable release and PPA
 [yawls-gtk_1.1.2.deb](https://launchpad.net/yawls/1.1.x/1.1.2/+download/yawls-gtk_1.1.2_all.deb)
 
 [yawls-cli_1.1.2.deb](https://launchpad.net/yawls/1.1.x/1.1.2/+download/yawls-cli_1.1.2_all.deb)
+
+https://launchpad.net/~thedsweb/+archive/ubuntu/yawls-daily
 
 ### BETA Download
 [yawls_1.2.0.deb](https://launchpad.net/yawls/1.1.x/1.1.2/+download/yawls_1.2.0_beta_02_all.deb)
