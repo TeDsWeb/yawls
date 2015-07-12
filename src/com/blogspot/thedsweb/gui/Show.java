@@ -176,6 +176,7 @@ public class Show {
 		final int ma = (int) maInSpin.getValue();
 		final int dt = (int) dtSpin.getValue();
 		final int bt = (int) btSpin.getValue();
+		final int lo = (int) loSpin.getValue();
 
 		if (ul <= ll) {
 		    status.setMessage(Translate
@@ -197,6 +198,7 @@ public class Show {
 		config.setProperty("maxIncrease", Integer.toString(ma));
 		config.setProperty("darkeningThreshold", Integer.toString(dt));
 		config.setProperty("brighteningThreshold", Integer.toString(bt));
+		config.setProperty("logLevel", Integer.toString(lo));
 
 		final File cFile = new File(Database.PATH_TO_CONFIG_FILE);
 		try {
@@ -371,52 +373,52 @@ public class Show {
     }
 
     private static void constructMenu(MenuBar menuBar) {
-        final MenuItem helpItem = new MenuItem(Translate._("_Help"));
-        final MenuItem prefItem = new MenuItem(Translate._("_Preferences"));
-    
-        final Menu helpMenu = new Menu();
-        final Menu prefMenu = new Menu();
-    
-        final MenuItem aboutItem = new MenuItem(Translate._("_About"));
-        aboutGUI(aboutItem);
-        final MenuItem faqItem = new MenuItem(Translate._("FAQ"));
-        faqItem.connect(new Activate() {
-            @Override
-            public void onActivate(MenuItem arg0) {
-        	// Open launchpad.net project questions web page
-        	if (java.awt.Desktop.isDesktopSupported()) {
-        	    final java.awt.Desktop desktop = java.awt.Desktop
-        		    .getDesktop();
-    
-        	    if (desktop.isSupported(java.awt.Desktop.Action.BROWSE)) {
-        		java.net.URI uri;
-        		try {
-        		    // Set URL for launchpad.net FAQ
-        		    uri = new java.net.URI(Database.QUESTIONS);
-        		    desktop.browse(uri);
-        		} catch (final URISyntaxException e) {
-        		    Debug.LOG.log(Level.SEVERE, "Wrong URL syntax: "
-        			    + Database.QUESTIONS, e);
-        		} catch (final IOException e) {
-        		    Debug.LOG.log(Level.WARNING,
-        			    "Could not start default browser.", e);
-        		}
-        	    }
-        	}
-            }
-        });
-        final MenuItem calibItem = new MenuItem(Translate._("_Calibrate"));
-        calibrateGUI(calibItem);
-    
-        helpMenu.add(aboutItem);
-        helpMenu.add(faqItem);
-        prefMenu.add(calibItem);
-    
-        helpItem.setSubmenu(helpMenu);
-        prefItem.setSubmenu(prefMenu);
-    
-        menuBar.add(helpItem);
-        menuBar.add(prefItem);
+	final MenuItem helpItem = new MenuItem(Translate._("_Help"));
+	final MenuItem prefItem = new MenuItem(Translate._("_Preferences"));
+
+	final Menu helpMenu = new Menu();
+	final Menu prefMenu = new Menu();
+
+	final MenuItem aboutItem = new MenuItem(Translate._("_About"));
+	aboutGUI(aboutItem);
+	final MenuItem faqItem = new MenuItem(Translate._("FAQ"));
+	faqItem.connect(new Activate() {
+	    @Override
+	    public void onActivate(MenuItem arg0) {
+		// Open launchpad.net project questions web page
+		if (java.awt.Desktop.isDesktopSupported()) {
+		    final java.awt.Desktop desktop = java.awt.Desktop
+			    .getDesktop();
+
+		    if (desktop.isSupported(java.awt.Desktop.Action.BROWSE)) {
+			java.net.URI uri;
+			try {
+			    // Set URL for launchpad.net FAQ
+			    uri = new java.net.URI(Database.QUESTIONS);
+			    desktop.browse(uri);
+			} catch (final URISyntaxException e) {
+			    Debug.LOG.log(Level.SEVERE, "Wrong URL syntax: "
+				    + Database.QUESTIONS, e);
+			} catch (final IOException e) {
+			    Debug.LOG.log(Level.WARNING,
+				    "Could not start default browser.", e);
+			}
+		    }
+		}
+	    }
+	});
+	final MenuItem calibItem = new MenuItem(Translate._("_Calibrate"));
+	calibrateGUI(calibItem);
+
+	helpMenu.add(aboutItem);
+	helpMenu.add(faqItem);
+	prefMenu.add(calibItem);
+
+	helpItem.setSubmenu(helpMenu);
+	prefItem.setSubmenu(prefMenu);
+
+	menuBar.add(helpItem);
+	menuBar.add(prefItem);
     }
 
     private static void calibrateGUI(MenuItem calib) {
