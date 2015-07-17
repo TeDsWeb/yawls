@@ -69,14 +69,9 @@ Default: 1
 * [German project blog](http://thedsweb.blogspot.de/p/yawls.html)
 
 ### Download of the current stable release and PPA
-[yawls-gtk_1.1.2.deb](https://launchpad.net/yawls/1.1.x/1.1.2/+download/yawls-gtk_1.1.2_all.deb)
-
-[yawls-cli_1.1.2.deb](https://launchpad.net/yawls/1.1.x/1.1.2/+download/yawls-cli_1.1.2_all.deb)
+[yawls_1.2.1.deb](https://launchpad.net/yawls/1.2.x/1.2.1/+download/yawls_1.2.1_all.deb)
 
 https://launchpad.net/~thedsweb/+archive/ubuntu/yawls-daily
-
-### BETA Download
-[yawls_1.2.0.deb](https://launchpad.net/yawls/1.1.x/1.1.2/+download/yawls_1.2.0_beta_02_all.deb)
 
 ### Build dependencies
 * javahelper
