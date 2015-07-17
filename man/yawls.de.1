@@ -3,15 +3,15 @@
 .\" This file was generated with po4a. Translate the source file.
 .\"
 .\"*******************************************************************
-.TH YAWLS 1 "June 14, 2015" "Dominik Brämer" "Yawls automatische Displayhelligkeit"
+.TH YAWLS 1 "July 17, 2015" "Dominik Brämer" "Yawls automatische Displayhelligkeit"
 .SH NAME
-yawls \- Automatische Helligkeits\-Steuerung
+yawls \- Automatic brightness adjustment
 .SH BEZEICHNUNG
 \fByawls\fP [\fIOPTIONEN\fP]
 .SH BESCHREIBUNG
-Yawls (Yet Another Webcam Light Sensor) reguliert die Bildschirmhelligkeit
-indem es die interne/externe Webcam ihres Notebooks als
-Umgebungslicht\-Sensor nutzt.
+Yawls (Yet Another Webcam Light Sensor) adjusts the brightness level of your
+display by using the internal/externel webcam of your notebook as an ambient
+light sensor.
 
 Yawls bezieht Konfigurationsdaten aus folgenden Quellen:
 .IP
@@ -36,22 +36,22 @@ Yawls bezieht Konfigurationsdaten aus folgenden Quellen:
 .HP
 \fB\-c\fP (\fB\-\-cron\fP)
 .IP
-Use the internal/exteranl webcam as brightness reference one time.The
+Uses the internal/exteranl webcam as brightness reference one time.The
 function is per default used by cron to start yawls every 15 minutes
-(default). It usually takes a while for the program to work properly because
-it configures itself from run to run. You can reduce this time if you force
-the run once in a dark and once in a bright room or you use the GUI to run
-the calibration task.
+(default). It usually takes a while for the program to work properly,
+because it configures itself from run to run. You can reduce this time if
+you force the run once in a dark and once in a bright room or you use the
+GUI to run the calibration task.
 .HP
 \fB\-d\fP (\fB\-\-daemon\fP)
 .IP
-Use the internal/exteranl webcam as brightness reference but
+Uses the internal/exteranl webcam as brightness reference but
 continuously. Only for testing purpose if started directly from command line
 because it is actually used by the init.d script (/etc/init.d/yawls). It
-usually takes a while for the program to work properly because it configures
-itself from run to run. You can reduce this time if you force the run with
-the cron option once in a dark and once in a bright room or you use the GUI
-to run the calibration task.
+usually takes a while for the program to work properly, because it
+configures itself from run to run. You can reduce this time if you force the
+run with the cron option once in a dark and once in a bright room or you use
+the GUI to run the calibration task.
 .HP
 \fB\-g\fP (\fB\-\-gui\fP)
 .IP

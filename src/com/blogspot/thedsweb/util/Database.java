@@ -26,7 +26,7 @@ public class Database {
 
     // Path for GUI files
     public final static String PATH_ICON = "/usr/share/yawls/yawls_icon_64x64.png";
-    public final static String VERSION = "1.2.0";
+    public final static String VERSION = "1.2.1";
     public final static String CREDITS = "Carsten Gerlach\nfossfreedom\nJean-Marc\nClaudio Arseni\nGherman Ionuț\n☠Jay ZDLin☠";
 
     // Path for lock files

@@ -1,10 +1,10 @@
-.TH YAWLS "1" "June 14, 2015" "Dominik Brämer" "Yawls automatic display brightness"
+.TH YAWLS "1" "July 17, 2015" "Dominik Brämer" "Yawls automatic display brightness"
 .SH NAME
-yawls \- Automatic adjust brightness
+yawls \- Automatic brightness adjustment
 .SH SYNOPSIS
 \fByawls\fR [\fIOPTIONS\fR]
 .SH DESCRIPTION
-Yawls (Yet Another Webcam Light Sensor) adjust the brightness level of your display by
+Yawls (Yet Another Webcam Light Sensor) adjusts the brightness level of your display by
 using the internal/externel webcam of your notebook as an ambient light sensor.
 
 Yawls obtains configuration data from the following sources:
@@ -30,17 +30,17 @@ Yawls obtains configuration data from the following sources:
 .HP
 \fB\-c\fR (\fB\-\-cron\fR)
 .IP
-Use the internal/exteranl webcam as brightness reference one time.The function is per
+Uses the internal/exteranl webcam as brightness reference one time.The function is per
 default used by cron to start yawls every 15 minutes (default). It usually takes a while
-for the program to work properly because it configures itself from run to run. You can
+for the program to work properly, because it configures itself from run to run. You can
 reduce this time if you force the run once in a dark and once in a bright room or you use
 the GUI to run the calibration task.
 .HP
 \fB\-d\fR (\fB\-\-daemon\fR)
 .IP
-Use the internal/exteranl webcam as brightness reference but continuously. Only for testing
+Uses the internal/exteranl webcam as brightness reference but continuously. Only for testing
 purpose if started directly from command line because it is actually used by the init.d script
-(/etc/init.d/yawls). It usually takes a while for the program to work properly because it
+(/etc/init.d/yawls). It usually takes a while for the program to work properly, because it
 configures itself from run to run. You can reduce this time if you force the run with the
 cron option once in a dark and once in a bright room or you use the GUI to run the calibration
 task.

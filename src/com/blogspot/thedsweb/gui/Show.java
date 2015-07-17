@@ -180,12 +180,12 @@ public class Show {
 
 		if (ul <= ll) {
 		    status.setMessage(Translate
-			    ._("The value of the upper limit must be greater than the one of the lower limit."));
+			    ._("The value of the upper limit must be greater than the lower limit."));
 		    return;
 		}
 		if (mi > ma) {
 		    status.setMessage(Translate
-			    ._("The value of the max. increase must be greater than the one of the min. increase."));
+			    ._("The value of the max. increase must be greater than the min. increase."));
 		    return;
 		}
 		status.setMessage(checkStatus());

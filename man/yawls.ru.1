@@ -3,15 +3,15 @@
 .\" This file was generated with po4a. Translate the source file.
 .\"
 .\"*******************************************************************
-.TH YAWLS 1 "June 14, 2015" "Доминик Брамер (Dominik Brämer)" "Автоматический контролёр освещённости Yawls"
+.TH YAWLS 1 "July 17, 2015" "Доминик Брамер (Dominik Brämer)" "Автоматический контролёр освещённости Yawls"
 .SH НАЗВАНИЕ
-yawls \- Автокорректировщик освещённости
+yawls \- Automatic brightness adjustment
 .SH "КРАТКИЙ ОБЗОР"
 \fByawls\fP [\fIПАРАМЕТРЫ\fP]
 .SH ОПИСАНИЕ
-Yawls (ещё один датчик освещённости на основе веб\-камеры) производит
-автокоррекцию подсветки экрана, используя встроенную/внешнюю веб\-камеру
-ноутбука в качестве датчика освещённости.
+Yawls (Yet Another Webcam Light Sensor) adjusts the brightness level of your
+display by using the internal/externel webcam of your notebook as an ambient
+light sensor.
 
 Yawls использует данные конфигурации из следующих источников:
 .IP
@@ -36,22 +36,22 @@ Yawls использует данные конфигурации из следу
 .HP
 \fB\-c\fP (\fB\-\-cron\fP)
 .IP
-Use the internal/exteranl webcam as brightness reference one time.The
+Uses the internal/exteranl webcam as brightness reference one time.The
 function is per default used by cron to start yawls every 15 minutes
-(default). It usually takes a while for the program to work properly because
-it configures itself from run to run. You can reduce this time if you force
-the run once in a dark and once in a bright room or you use the GUI to run
-the calibration task.
+(default). It usually takes a while for the program to work properly,
+because it configures itself from run to run. You can reduce this time if
+you force the run once in a dark and once in a bright room or you use the
+GUI to run the calibration task.
 .HP
 \fB\-d\fP (\fB\-\-daemon\fP)
 .IP
-Use the internal/exteranl webcam as brightness reference but
+Uses the internal/exteranl webcam as brightness reference but
 continuously. Only for testing purpose if started directly from command line
 because it is actually used by the init.d script (/etc/init.d/yawls). It
-usually takes a while for the program to work properly because it configures
-itself from run to run. You can reduce this time if you force the run with
-the cron option once in a dark and once in a bright room or you use the GUI
-to run the calibration task.
+usually takes a while for the program to work properly, because it
+configures itself from run to run. You can reduce this time if you force the
+run with the cron option once in a dark and once in a bright room or you use
+the GUI to run the calibration task.
 .HP
 \fB\-g\fP (\fB\-\-gui\fP)
 .IP

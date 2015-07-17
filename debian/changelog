@@ -1,8 +1,29 @@
-yawls (1.2.0) stable; urgency=low
+yawls (1.2.1) stable; urgency=low
 
   * New upstream release
+  * Update bulid.sh
+    - Merge GUI and CLI versions
+  * Update build.xml
+    - To prevent some build errors
+  * Update gui/Show.java
+    - Revamped GUI (LP: #1433997)
+    - Fix wrong logrotate config (LP: #1470463)
+    - Fix log level is not saved via GUI
+  * Update util/SingleInstance.java
+    - Rename to LockFile.java
+    - Can now handle more than one lock file
+  * Update debian/yawls.init
+    - iosched and procsched removed
+  * Add util/ReadParallel.java and util/WriteParallel.java
+    - Read and write with worker processes
+  * Add engine/Fade.java
+    - Smoother change between brightness level
+  * Add gui/ValueDaemon.java
+    - Update camera stats every second
+  * Add main/Debug.java
+    - Create logfile for debugging
   
- -- Dominik Brämer <thedsweb@googlemail.com>  Sat, 13 Jun 2015 16:08:17 +0100
+ -- Dominik Brämer <thedsweb@googlemail.com>  Fri, 17 Jul 2015 13:05:54 +0100
 
 yawls (1.1.2) stable; urgency=low
 

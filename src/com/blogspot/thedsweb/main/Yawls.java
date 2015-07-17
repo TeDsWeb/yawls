@@ -110,7 +110,7 @@ public class Yawls {
 		.println(Translate._("Usage: yawls")
 			+ "\n"
 			+ Translate
-				._("yawls adjust the brightness level of your display by using\nthe internal/externel webcam of your notebook as an ambient\nlight sensor.")
+				._("yawls adjusts the brightness level of your display by using\nthe internal/externel webcam of your notebook as an ambient\nlight sensor.")
 			+ "\n\n"
 			+ Translate
 				._("If you wish to change the interval of ambient light checks\nyou need to modify the file:")
@@ -167,7 +167,7 @@ public class Yawls {
     private static void daemon() {
 	// Set daemon mode
 	System.out.println(Translate
-		._("Yawls service started press {ctrl+c} to abort..."));
+		._("Yawls service started. Press {CTRL+C} to abort..."));
 
 	// Short delay to give the system time to boot
 	try {

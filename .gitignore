@@ -1,6 +1,7 @@
 .gitignore
 build/
 yawls.jar
+translator.txt
 debian/files
 debian/yawls/
 debian/yawls.debhelper.log
