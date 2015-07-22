@@ -1,6 +1,8 @@
 ## Yawls (Yet Another Webcam Light Sensor):
 Adjust the brightness level of your display by using the internal/external camera of your Notebook as an ambient light sensor and is designed to combine comfort and energy saving. Your privacy is a high good and therefore all images are processed internally of Yawls. So that no images will be saved on your drive.
 
+![screenshot](http://i.imgur.com/rxrJgLs.png)
+
 If you install Yawls it runs as a system daemon in background in an interval of 30 seconds per default.
 Therefore other programs are also able  to use the camera. The interval is divided into four configurable
 variables which will be explained later. You are also still able to correct the screen brightness with your function keys because Yawls won't update the brightness if your brightness condtions are stable. 
