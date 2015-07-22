@@ -64,7 +64,7 @@ Default: 1
 * policykit-1-gnome
 
 ### Issue tracking
-[Report a bug on launchpad.net](https://bugs.launchpad.net/yawls) or here on GitHub
+[Report a bug on launchpad.net](https://bugs.launchpad.net/yawls)
 
 ### Get in touch
 * [Twitter](https://twitter.com/TheDsWeb)
