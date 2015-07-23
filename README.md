@@ -18,7 +18,7 @@ A good example for such a situation is if you sit with your back to a great wind
 
 As mentioned above Yawls has some configurable parameters which you can edit with the GUI or direct in the configuration file (/etc/yawls.properties). If you use the GUI there are tooltips when you hover with your mouse cursor over the parameter name.
 
-![tooltip gif](http://i.imgur.com/otKWem3.gif)
+![tooltip gif](http://i.imgur.com/GsaCOVt.gif)
 
 ### Parameter description
 
