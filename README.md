@@ -68,6 +68,9 @@ Default: 1
 ### Issue tracking
 [Report a bug on launchpad.net](https://bugs.launchpad.net/yawls)
 
+### Help to translate
+[Translations on Launchpad.net](https://translations.launchpad.net/yawls)
+
 ### Get in touch
 * [Twitter](https://twitter.com/TheDsWeb)
 * [German project blog](http://thedsweb.blogspot.de/p/yawls.html)
