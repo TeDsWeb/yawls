@@ -46,3 +46,12 @@ if [[ ! -f /var/run/$NAME.pid ]]; then
 else
 	wait $PID
 fi
+
+EXIT_CODE=$?
+
+# Handle SIGTERM/SIGINT correctly in daemon mode
+if [[ $1 == "-d" || $1 == "--daemon" ]]; then
+    if [[ $EXIT_CODE == 143 || $EXIT_CODE == 130 ]]; then
+        exit 0
+    fi
+fi
