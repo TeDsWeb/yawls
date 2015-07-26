@@ -1,5 +1,5 @@
 ## Yawls (Yet Another Webcam Light Sensor):
-Adjust the brightness level of your display by using the internal/external camera of your Notebook as an ambient light sensor and is designed to combine comfort and energy saving. Your privacy is a high good and therefore all images are processed internally of Yawls. So that **no image** is saved on your drive or is send to someone in the internet.
+Adjust the brightness level of your display by using the internal/external camera of your Notebook as an ambient light sensor and is designed to combine comfort and energy saving. Your privacy is a high good and therefore all images are processed internally of Yawls. So that **no image** is saved on your drive or is send to someone in the internet [`1`][1] [`2`][2].
 
 ![screenshot](http://i.imgur.com/rxrJgLs.png)
 
@@ -88,3 +88,6 @@ https://launchpad.net/~thedsweb/+archive/ubuntu/yawls-daily
 * libopencv2.4-java
 * ant
 * po4a
+
+[1]: https://github.com/TheDsWeb/yawls/blob/master/src/com/blogspot/thedsweb/engine/Brightness.java#L166-L198
+[2]: https://github.com/TheDsWeb/yawls/blob/master/src/com/blogspot/thedsweb/engine/Face.java#L33-L64
