@@ -1,5 +1,5 @@
 ## Yawls (Yet Another Webcam Light Sensor):
-Adjust the brightness level of your display by using the internal/external camera of your Notebook as an ambient light sensor and is designed to combine comfort and energy saving. Your privacy is a high good and therefore all images are processed internally of Yawls. So that no images will be saved on your drive.
+Adjust the brightness level of your display by using the internal/external camera of your Notebook as an ambient light sensor and is designed to combine comfort and energy saving. Your privacy is a high good and therefore all images are processed internally of Yawls. So that **no image** is saved on your drive or is send to someone in the internet.
 
 ![screenshot](http://i.imgur.com/rxrJgLs.png)
 
