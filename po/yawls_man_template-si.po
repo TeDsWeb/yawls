@@ -7,16 +7,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: yawls\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
-"POT-Creation-Date: 2015-07-17 14:21+0200\n"
-"PO-Revision-Date: 2015-02-17 16:18+0000\n"
+"POT-Creation-Date: 2015-07-29 09:30+0200\n"
+"PO-Revision-Date: 2015-06-14 11:20+0000\n"
 "Last-Translator: M Rizmi <Unknown>\n"
 "Language-Team: Sinhalese <si@li.org>\n"
 "Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2015-05-27 15:20+0000\n"
-"X-Generator: Launchpad (build 17528)\n"
+"X-Launchpad-Export-Date: 2015-07-29 07:28+0000\n"
+"X-Generator: Launchpad (build 17646)\n"
 
 #. type: TH
 #: man/yawls.1:1
@@ -90,10 +90,8 @@ msgstr "/etc/yawls.properties"
 
 #. type: Plain text
 #: man/yawls.1:15
-#, fuzzy
-#| msgid "/etc/cron.d/yawls-[cli|gtk]"
 msgid "/etc/cron.d/yawls"
-msgstr "/etc/cron.d/yawls-[cli|gtk]"
+msgstr ""
 
 #. type: Plain text
 #: man/yawls.1:17 man/yawls.1:59
@@ -278,3 +276,6 @@ msgstr ""
 
 #~ msgid "December 26, 2014"
 #~ msgstr "දෙසැම්බර් 26, 2014"
+
+#~ msgid "/etc/cron.d/yawls-[cli|gtk]"
+#~ msgstr "/etc/cron.d/yawls-[cli|gtk]"

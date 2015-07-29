@@ -1,4 +1,4 @@
-# English (United Kingdom) translation for yawls
+# Turkish translation for yawls
 # Copyright (c) 2015 Rosetta Contributors and Canonical Ltd 2015
 # This file is distributed under the same license as the yawls package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2015.
@@ -8,10 +8,10 @@ msgstr ""
 "Project-Id-Version: yawls\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2015-07-29 09:30+0200\n"
-"PO-Revision-Date: 2015-07-03 16:01+0000\n"
-"Last-Translator: Andi Chandler <Unknown>\n"
-"Language-Team: English (United Kingdom) <en_GB@li.org>\n"
-"Language: \n"
+"PO-Revision-Date: 2015-07-27 22:51+0000\n"
+"Last-Translator: Özgür Sarıer <ozgursarier1011601115@gmail.com>\n"
+"Language-Team: Turkish <tr@li.org>\n"
+"Language: tr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -28,7 +28,7 @@ msgstr "YAWLS"
 #: man/yawls.1:1
 #, no-wrap
 msgid "July 17, 2015"
-msgstr ""
+msgstr "17 Temmuz 2015"
 
 #. type: TH
 #: man/yawls.1:1
@@ -40,35 +40,35 @@ msgstr "Dominik Brämer"
 #: man/yawls.1:1
 #, no-wrap
 msgid "Yawls automatic display brightness"
-msgstr "Yawls automatic display brightness"
+msgstr "Yawls otomatik ekran parlaklığı"
 
 #. type: SH
 #: man/yawls.1:2
 #, no-wrap
 msgid "NAME"
-msgstr "NAME"
+msgstr "AD"
 
 #. type: Plain text
 #: man/yawls.1:4
 msgid "yawls - Automatic brightness adjustment"
-msgstr ""
+msgstr "yawls - Otomatik parlaklık ayarlama"
 
 #. type: SH
 #: man/yawls.1:4
 #, no-wrap
 msgid "SYNOPSIS"
-msgstr "SYNOPSIS"
+msgstr "ÖZET"
 
 #. type: Plain text
 #: man/yawls.1:6
 msgid "B<yawls> [I<OPTIONS>]"
-msgstr "B<yawls> [I<OPTIONS>]"
+msgstr "B<yawls> [I<SEÇENEKLER>]"
 
 #. type: SH
 #: man/yawls.1:6
 #, no-wrap
 msgid "DESCRIPTION"
-msgstr "DESCRIPTION"
+msgstr "AÇIKLAMA"
 
 #. type: Plain text
 #: man/yawls.1:9
@@ -77,11 +77,13 @@ msgid ""
 "display by using the internal/externel webcam of your notebook as an ambient "
 "light sensor."
 msgstr ""
+"Yawls, web kameranızı kullanarak ekranınızın parlaklığını ortam ışığına göre "
+"ayarlar."
 
 #. type: Plain text
 #: man/yawls.1:11
 msgid "Yawls obtains configuration data from the following sources:"
-msgstr "Yawls obtains configuration data from the following sources:"
+msgstr "Yawls aşağıdaki kaynaklardan yapılandırma verilerini toplar:"
 
 #. type: Plain text
 #: man/yawls.1:13 man/yawls.1:57
@@ -102,43 +104,43 @@ msgstr "/var/lib/yawls/*"
 #: man/yawls.1:18
 #, no-wrap
 msgid "Option Summary:"
-msgstr "Option Summary:"
+msgstr "Seçenek Özeti:"
 
 #. type: TP
 #: man/yawls.1:19
 #, no-wrap
 msgid "B<--cron>\t\tor B<-c>\tuse webcam as brightness reference (one time)"
-msgstr "B<--cron>\t\tor B<-c>\tuse webcam as brightness reference (one time)"
+msgstr "B<--cron>\t\tveya B<-c>\tparlaklık uyarlaması için kamerayı kullan (tek seferliğine)"
 
 #. type: TP
 #: man/yawls.1:21
 #, no-wrap
 msgid "B<--daemon>\t\tor B<-d>\tuse webcam as brightness reference (continuously)"
-msgstr "B<--daemon>\t\tor B<-d>\tuse webcam as brightness reference (continuously)"
+msgstr "B<--daemon>\t\tveya B<-d>\tparlaklık uyarlaması için kamerayı kullan (sürekli)"
 
 #. type: TP
 #: man/yawls.1:23
 #, no-wrap
 msgid "B<--gui>\t\tor B<-g>\tstarts gui"
-msgstr "B<--gui>\t\tor B<-g>\tstarts gui"
+msgstr "B<--gui>\t\tveya B<-g>\tgörsel arabirimi başlatır"
 
 #. type: TP
 #: man/yawls.1:25
 #, no-wrap
 msgid "B<--help>\t\tor B<-h>\tshows help"
-msgstr "B<--help>\t\tor B<-h>\tshows help"
+msgstr "B<--help>\t\tveya B<-h>\tyardımı görüntüler"
 
 #. type: TP
 #: man/yawls.1:27
 #, no-wrap
 msgid "B<--restore>\t\tor B<-r>\trestore config files"
-msgstr "B<--restore>\t\tor B<-r>\trestore config files"
+msgstr "B<--restore>\t\tveya B<-r>\tyapılandırma dosyalarını onar"
 
 #. type: SS
 #: man/yawls.1:29
 #, no-wrap
 msgid "Option Details:"
-msgstr "Option Details:"
+msgstr "Seçenek Detayları:"
 
 #. type: Plain text
 #: man/yawls.1:32
@@ -155,6 +157,12 @@ msgid ""
 "you force the run once in a dark and once in a bright room or you use the "
 "GUI to run the calibration task."
 msgstr ""
+"Kamerayı parlaklık uyarlaması için tek seferliğine kullanır. Bu işlev cron "
+"tarafından yawls'ı her 15 dakikada bir çalıştırmak için öntanımlı olarak "
+"kullanılır. Her seferde kendini tekrar ayarladığı için, programın etkili "
+"çalışması bu şekilde biraz zaman alabilir. Aydınlık ve karanlık odalar "
+"arasında sürekli geçiş yapıyorsanız bu süreyi azaltabilirsiniz veya "
+"kalibrasyon için görsel arayüzü kullanabilirsiniz."
 
 #. type: Plain text
 #: man/yawls.1:40
@@ -172,6 +180,13 @@ msgid ""
 "option once in a dark and once in a bright room or you use the GUI to run "
 "the calibration task."
 msgstr ""
+"Kamerayı parlaklık uyarlaması için sürekli olarak kullanır. Aslında init.d "
+"betiği (/etc/init.d/yawls) tarafından kullanılması hasebiyle, doğrudan komut "
+"satırından çalıştırıldığında sadece test amacıyla kullanılması önerilir. Her "
+"seferde kendini tekrar ayarladığı için, programın etkili çalışması bu "
+"şekilde biraz zaman alabilir. Aydınlık ve karanlık odalar arasında sürekli "
+"geçiş yapıyorsanız, (cron seçeneği ile birlikte kullanarak) bu süreyi "
+"azaltabilirsiniz veya kalibrasyon için görsel arayüzü kullanabilirsiniz."
 
 #. type: Plain text
 #: man/yawls.1:49
@@ -181,7 +196,7 @@ msgstr "B<-g> (B<--gui>)"
 #. type: Plain text
 #: man/yawls.1:51
 msgid "Shows an GUI of the program."
-msgstr "Shows an GUI of the program."
+msgstr "Programın görsel arayüzünü gösterir."
 
 #. type: Plain text
 #: man/yawls.1:53
@@ -191,7 +206,7 @@ msgstr "B<-r> (B<--restore>)"
 #. type: Plain text
 #: man/yawls.1:55
 msgid "Resets all config files:"
-msgstr "Resets all config files:"
+msgstr "Tüm yapılandırma dosyalarını sıfırlar:"
 
 #. type: Plain text
 #: man/yawls.1:61
@@ -201,13 +216,13 @@ msgstr "B<-h> (B<--help>)"
 #. type: Plain text
 #: man/yawls.1:63
 msgid "Shows an quick help about the program."
-msgstr "Shows quick help about the program."
+msgstr "Program ile ilgli hızlı bir yardım gösterir."
 
 #. type: SH
 #: man/yawls.1:64
 #, no-wrap
 msgid "EXAMPLES"
-msgstr "EXAMPLES"
+msgstr "ÖRNEKLER"
 
 #. type: Plain text
 #: man/yawls.1:67
@@ -218,18 +233,18 @@ msgstr "yawls B<-c>"
 #: man/yawls.1:68
 #, no-wrap
 msgid "AUTHOR"
-msgstr "AUTHOR"
+msgstr "YAZAR"
 
 #. type: Plain text
 #: man/yawls.1:71
 msgid "Written by Dominik Brämer E<lt>thedsweb@googlemail.comE<gt>"
-msgstr "Written by Dominik Brämer E<lt>thedsweb@googlemail.comE<gt>"
+msgstr "Yazar: Dominik Brämer E<lt>thedsweb@googlemail.comE<gt>"
 
 #. type: SH
 #: man/yawls.1:71
 #, no-wrap
 msgid "REPORTING BUGS"
-msgstr "REPORTING BUGS"
+msgstr "HATA BİLDİRİMİ"
 
 #. type: Plain text
 #: man/yawls.1:74
@@ -237,14 +252,14 @@ msgid ""
 "Report bugs at E<lt>https://launchpad.net/yawls/+bugsE<gt> or "
 "E<lt>thedsweb@googlemail.comE<gt>"
 msgstr ""
-"Report bugs at E<lt>https://launchpad.net/yawls/+bugsE<gt> or "
+"Hata bildirimi için: E<lt>https://launchpad.net/yawls/+bugsE<gt> or "
 "E<lt>thedsweb@googlemail.comE<gt>"
 
 #. type: SH
 #: man/yawls.1:74
 #, no-wrap
 msgid "COPYRIGHT"
-msgstr "COPYRIGHT"
+msgstr "TELİF HAKKI"
 
 #. type: Plain text
 #: man/yawls.1:80
@@ -254,10 +269,10 @@ msgid ""
 "Software Foundation, either version 3 of the License, or (at your option) "
 "any later version."
 msgstr ""
-"This program is free software: you can redistribute it and/or modify it "
-"under the terms of the GNU General Public License as published by the Free "
-"Software Foundation, either version 3 of the License, or (at your option) "
-"any later version."
+"Bu program bir özgür yazılımdır: bu yazılımı Özgür Yazılım Vakfı(Free "
+"Software Foundation)'nın yayınladığı GNU Genel Kamu Lisansı 3.sürümü yada "
+"ileri zamanda çıkacak daha yeni bir sürümü koşulları altında tekrar "
+"dağıtabilir veya değiştirebilirsiniz."
 
 #. type: Plain text
 #: man/yawls.1:85
@@ -267,10 +282,10 @@ msgid ""
 "FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for "
 "more details."
 msgstr ""
-"This program is distributed in the hope that it will be useful, but WITHOUT "
-"ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or "
-"FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public Licence for "
-"more details."
+"Bu program faydalı olacağı umut edilerek dağıtılmaktadır, fakat HİÇBİR "
+"GARANTİSİ YOKTUR; hatta ÜRÜN DEĞERİ ya da BİR AMACA UYGUNLUK gibi garantiler "
+"de vermez.  Lütfen daha fazla ayrıntı için GNU Genel Kamu Lisansı'nı "
+"inceleyin."
 
 #. type: Plain text
 #: man/yawls.1:87
@@ -278,60 +293,5 @@ msgid ""
 "You should have received a copy of the GNU General Public License along with "
 "this program.  If not, see E<lt>http://www.gnu.org/licenses/E<gt>."
 msgstr ""
-"You should have received a copy of the GNU General Public License along with "
-"this program.  If not, see E<lt>http://www.gnu.org/licenses/E<gt>."
-
-#~ msgid "December 26, 2014"
-#~ msgstr "December 26, 2014"
-
-#~ msgid ""
-#~ "Yawls (Yet Another Webcam Light Sensor) adjust the brightness level of "
-#~ "your display by using the internal/externel webcam of your notebook as an "
-#~ "ambient light sensor."
-#~ msgstr ""
-#~ "Yawls (Yet Another Webcam Light Sensor) adjust the brightness level of "
-#~ "your display by using the internal/external webcam of your notebook as an "
-#~ "ambient light sensor."
-
-#~ msgid "yawls - Automatic adjust brightness"
-#~ msgstr "yawls - Automatic adjust brightness"
-
-#~ msgid "/etc/cron.d/yawls-[cli|gtk]"
-#~ msgstr "/etc/cron.d/yawls-[cli|gtk]"
-
-#~ msgid ""
-#~ "Use the internal/exteranl webcam as brightness reference one time.The "
-#~ "function is per default used by cron to start yawls every 15 minutes "
-#~ "(default). It usually takes a while for the program to work properly "
-#~ "because it configures itself from run to run. You can reduce this time if "
-#~ "you force the run once in a dark and once in a bright room or you use the "
-#~ "GUI to run the calibration task (GTK version only)."
-#~ msgstr ""
-#~ "Use the internal/external webcam as brightness reference one time. By "
-#~ "default, cron is used to start yawls every 15 minutes (default value). It "
-#~ "usually takes a while for the program to work properly because it "
-#~ "configures itself from run to run. You can reduce this time if you force "
-#~ "the run once in a dark room and once in a bright room or you use the GUI "
-#~ "to run the calibration task (GTK version only)."
-
-#~ msgid ""
-#~ "Use the internal/exteranl webcam as brightness reference but "
-#~ "continuously. Only for testing purpose if started directly from command "
-#~ "line because it is actually used by the init.d script (/etc/init.d/yawls-"
-#~ "[cli|gtk]). It usually takes a while for the program to work properly "
-#~ "because it configures itself from run to run. You can reduce this time if "
-#~ "you force the run with the cron option once in a dark and once in a "
-#~ "bright room or you use the GUI to run the calibration task (GTK version "
-#~ "only)."
-#~ msgstr ""
-#~ "Use the internal/external webcam as brightness reference but "
-#~ "continuously. Only for testing purposes if started directly from command "
-#~ "line because it is actually used by the init.d script (/etc/init.d/yawls-"
-#~ "[cli|gtk]). It usually takes a while for the program to work properly "
-#~ "because it configures itself from run to run. You can reduce this time if "
-#~ "you force the run with the cron option once in a dark and once in a "
-#~ "bright room or you use the GUI to run the calibration task (GTK version "
-#~ "only)."
-
-#~ msgid "Shows an GUI of the program (GTK version only)."
-#~ msgstr "Shows an GUI of the program (GTK version only)."
+"Bu program ile birlikte GNU Genel Kamu Lisansı'nın bir kopyasını almış "
+"olmalısınız.  Almadıysanız; bknz: E<lt>http://www.gnu.org/licenses/E<gt>."

@@ -8,16 +8,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: yawls\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-07-17 12:47+0200\n"
-"PO-Revision-Date: 2015-02-14 16:14+0000\n"
+"POT-Creation-Date: 2015-07-29 09:30+0200\n"
+"PO-Revision-Date: 2015-06-14 11:20+0000\n"
 "Last-Translator: Dominik Brämer <thedsweb@googlemail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2015-02-18 20:16+0000\n"
-"X-Generator: Gtranslator 2.91.6\n"
+"X-Launchpad-Export-Date: 2015-07-29 07:28+0000\n"
+"X-Generator: Launchpad (build 17646)\n"
 
 #: src/com/blogspot/thedsweb/main/Yawls.java:90
 #: src/com/blogspot/thedsweb/main/Yawls.java:95
@@ -37,15 +37,11 @@ msgid "Usage: yawls"
 msgstr "Usage: yawls"
 
 #: src/com/blogspot/thedsweb/main/Yawls.java:113
-#, fuzzy
 msgid ""
 "yawls adjusts the brightness level of your display by using\n"
 "the internal/externel webcam of your notebook as an ambient\n"
 "light sensor."
 msgstr ""
-"yawls adjust the brightness level of your display by using\n"
-"the internal/externel webcam of your notebook as an ambient\n"
-"light sensor."
 
 #: src/com/blogspot/thedsweb/main/Yawls.java:116
 msgid ""
@@ -89,9 +85,8 @@ msgid "No camera found."
 msgstr ""
 
 #: src/com/blogspot/thedsweb/main/Yawls.java:170
-#, fuzzy
 msgid "Yawls service started. Press {CTRL+C} to abort..."
-msgstr "Yawls service started press {ctrl+c} to abort..."
+msgstr ""
 
 #: src/com/blogspot/thedsweb/gui/Show.java:101
 msgid "Webcam stats:"
@@ -276,5 +271,14 @@ msgstr ""
 msgid "Backlight detected:"
 msgstr ""
 
-#~ msgid "You should install the GTK version of yawls to use this feature."
-#~ msgstr "You should install the GTK version of yawls to use this feature."
+#~ msgid ""
+#~ "yawls adjust the brightness level of your display by using\n"
+#~ "the internal/externel webcam of your notebook as an ambient\n"
+#~ "light sensor."
+#~ msgstr ""
+#~ "yawls adjust the brightness level of your display by using\n"
+#~ "the internal/externel webcam of your notebook as an ambient\n"
+#~ "light sensor."
+
+#~ msgid "Yawls service started press {ctrl+c} to abort..."
+#~ msgstr "Yawls service started press {ctrl+c} to abort..."

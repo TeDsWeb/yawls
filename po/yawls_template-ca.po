@@ -7,16 +7,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: yawls\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-07-17 12:47+0200\n"
-"PO-Revision-Date: 2015-02-14 15:29+0000\n"
+"POT-Creation-Date: 2015-07-29 09:30+0200\n"
+"PO-Revision-Date: 2015-06-30 10:22+0000\n"
 "Last-Translator: VPablo <villumar@gmail.com>\n"
 "Language-Team: Catalan <ca@li.org>\n"
 "Language: ca\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2015-05-27 15:20+0000\n"
-"X-Generator: Launchpad (build 17528)\n"
+"X-Launchpad-Export-Date: 2015-07-29 07:28+0000\n"
+"X-Generator: Launchpad (build 17646)\n"
 
 #: src/com/blogspot/thedsweb/main/Yawls.java:90
 #: src/com/blogspot/thedsweb/main/Yawls.java:95
@@ -36,15 +36,11 @@ msgid "Usage: yawls"
 msgstr "Ús: yawls"
 
 #: src/com/blogspot/thedsweb/main/Yawls.java:113
-#, fuzzy
 msgid ""
 "yawls adjusts the brightness level of your display by using\n"
 "the internal/externel webcam of your notebook as an ambient\n"
 "light sensor."
 msgstr ""
-"yawls ajusta els nivells de brillantor de la seua pantalla \n"
-"mitjançant la webcam interna/externa del seu portàtil com\n"
-"a sensor de llum ambient."
 
 #: src/com/blogspot/thedsweb/main/Yawls.java:116
 msgid ""
@@ -72,37 +68,36 @@ msgstr "--restore\t o -r recupera els fitxers de configuració"
 
 #: src/com/blogspot/thedsweb/main/Yawls.java:131
 msgid "Yawls version"
-msgstr ""
+msgstr "Versió de Yawls"
 
 #: src/com/blogspot/thedsweb/main/Yawls.java:138
 msgid "Error:"
-msgstr ""
+msgstr "Error:"
 
 #: src/com/blogspot/thedsweb/main/Yawls.java:142
 msgid "No backlight device found."
-msgstr ""
+msgstr "No s'ha trobat dispositiu de llum posterior."
 
 #: src/com/blogspot/thedsweb/main/Yawls.java:145
 #: src/com/blogspot/thedsweb/gui/Show.java:152
 msgid "No camera found."
-msgstr ""
+msgstr "No s'ha trobat càmera."
 
 #: src/com/blogspot/thedsweb/main/Yawls.java:170
-#, fuzzy
 msgid "Yawls service started. Press {CTRL+C} to abort..."
-msgstr "El servici yawls s'ha iniciat, pressione {ctrl + c} per avortar..."
+msgstr ""
 
 #: src/com/blogspot/thedsweb/gui/Show.java:101
 msgid "Webcam stats:"
-msgstr ""
+msgstr "Estadístiques de càmera:"
 
 #: src/com/blogspot/thedsweb/gui/Show.java:110
 msgid "Configuration:"
-msgstr ""
+msgstr "Configuració:"
 
 #: src/com/blogspot/thedsweb/gui/Show.java:145
 msgid "No backlight device found"
-msgstr ""
+msgstr "No s'ha trobat dispositiu de llum posterior"
 
 #: src/com/blogspot/thedsweb/gui/Show.java:148
 msgid "and no camera found."
@@ -275,6 +270,14 @@ msgstr ""
 msgid "Backlight detected:"
 msgstr ""
 
-#~ msgid "You should install the GTK version of yawls to use this feature."
+#~ msgid ""
+#~ "yawls adjust the brightness level of your display by using\n"
+#~ "the internal/externel webcam of your notebook as an ambient\n"
+#~ "light sensor."
 #~ msgstr ""
-#~ "Deuria instal·lar la versió GTK de yawls per usar esta característica."
+#~ "yawls ajusta els nivells de brillantor de la seua pantalla \n"
+#~ "mitjançant la webcam interna/externa del seu portàtil com\n"
+#~ "a sensor de llum ambient."
+
+#~ msgid "Yawls service started press {ctrl+c} to abort..."
+#~ msgstr "El servici yawls s'ha iniciat, pressione {ctrl + c} per avortar..."

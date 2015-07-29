@@ -7,16 +7,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: yawls\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
-"POT-Creation-Date: 2015-07-17 14:21+0200\n"
-"PO-Revision-Date: 2015-02-09 17:55+0000\n"
+"POT-Creation-Date: 2015-07-29 09:30+0200\n"
+"PO-Revision-Date: 2015-06-14 11:20+0000\n"
 "Last-Translator: Jean-Marc <Unknown>\n"
 "Language-Team: French <fr@li.org>\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2015-05-27 15:20+0000\n"
-"X-Generator: Launchpad (build 17528)\n"
+"X-Launchpad-Export-Date: 2015-07-29 07:28+0000\n"
+"X-Generator: Launchpad (build 17646)\n"
 
 #. type: TH
 #: man/yawls.1:1
@@ -50,10 +50,8 @@ msgstr "NOM"
 
 #. type: Plain text
 #: man/yawls.1:4
-#, fuzzy
-#| msgid "yawls - Automatic adjust brightness"
 msgid "yawls - Automatic brightness adjustment"
-msgstr "yawls - Réglage de luminosité automatique"
+msgstr ""
 
 #. type: SH
 #: man/yawls.1:4
@@ -74,19 +72,11 @@ msgstr "DESCRIPTION"
 
 #. type: Plain text
 #: man/yawls.1:9
-#, fuzzy
-#| msgid ""
-#| "Yawls (Yet Another Webcam Light Sensor) adjust the brightness level of "
-#| "your display by using the internal/externel webcam of your notebook as an "
-#| "ambient light sensor."
 msgid ""
 "Yawls (Yet Another Webcam Light Sensor) adjusts the brightness level of your "
 "display by using the internal/externel webcam of your notebook as an ambient "
 "light sensor."
 msgstr ""
-"Yawls (Yet Another Webcam Light Sensor) ajuste le niveau de luminosité de "
-"l'écran en utilisant la webcam intégrée ou externe de votre ordinateur "
-"portable en tant que capteur de luminosité ambiante."
 
 #. type: Plain text
 #: man/yawls.1:11
@@ -101,10 +91,8 @@ msgstr "/etc/yawls.properties"
 
 #. type: Plain text
 #: man/yawls.1:15
-#, fuzzy
-#| msgid "/etc/cron.d/yawls-[cli|gtk]"
 msgid "/etc/cron.d/yawls"
-msgstr "/etc/cron.d/yawls-[cli|gtk]"
+msgstr ""
 
 #. type: Plain text
 #: man/yawls.1:17 man/yawls.1:59
@@ -160,14 +148,6 @@ msgstr "B<-c> (B<--cron>)"
 
 #. type: Plain text
 #: man/yawls.1:38
-#, fuzzy
-#| msgid ""
-#| "Use the internal/exteranl webcam as brightness reference one time.The "
-#| "function is per default used by cron to start yawls every 15 minutes "
-#| "(default). It usually takes a while for the program to work properly "
-#| "because it configures itself from run to run. You can reduce this time if "
-#| "you force the run once in a dark and once in a bright room or you use the "
-#| "GUI to run the calibration task (GTK version only)."
 msgid ""
 "Uses the internal/exteranl webcam as brightness reference one time.The "
 "function is per default used by cron to start yawls every 15 minutes "
@@ -176,14 +156,6 @@ msgid ""
 "you force the run once in a dark and once in a bright room or you use the "
 "GUI to run the calibration task."
 msgstr ""
-"Utilisez la webcam intégrée ou externe en tant que référence de luminosité "
-"une fois. La fonction est par défaut utilisée par cron pour démarrer yawls "
-"toutes les 15 minutes (par défaut). Il faut généralement un certain temps "
-"pour que le programme fonctionne correctement car il se configure à chaque "
-"exécution. Vous pouvez réduire ce temps si vous forcez l'exécution une fois "
-"dans un endroit sombre et une fois dans un endroit lumineux ou si vous "
-"utilisez l'interface graphique pour exécuter la tâche d'étalonnage (version "
-"GTK seulement)."
 
 #. type: Plain text
 #: man/yawls.1:40
@@ -192,16 +164,6 @@ msgstr "B<-d> (B<--daemon>)"
 
 #. type: Plain text
 #: man/yawls.1:47
-#, fuzzy
-#| msgid ""
-#| "Use the internal/exteranl webcam as brightness reference but "
-#| "continuously. Only for testing purpose if started directly from command "
-#| "line because it is actually used by the init.d script (/etc/init.d/yawls-"
-#| "[cli|gtk]). It usually takes a while for the program to work properly "
-#| "because it configures itself from run to run. You can reduce this time if "
-#| "you force the run with the cron option once in a dark and once in a "
-#| "bright room or you use the GUI to run the calibration task (GTK version "
-#| "only)."
 msgid ""
 "Uses the internal/exteranl webcam as brightness reference but continuously. "
 "Only for testing purpose if started directly from command line because it is "
@@ -211,15 +173,6 @@ msgid ""
 "option once in a dark and once in a bright room or you use the GUI to run "
 "the calibration task."
 msgstr ""
-"Utilisez la webcam intégrée ou externe en tant que référence de luminosité "
-"mais continuellement. Seulement à des fins de test si démarré directement à "
-"partir de la ligne de commande car il est utilisé par le script init.d (/etc/"
-"init.d/yawls-[cli|gtk]). Il faut généralement un certain temps pour que le "
-"programme fonctionne correctement car il se configure à chaque exécution. "
-"Vous pouvez réduire ce temps si vous forcez l'exécution avec l'option cron "
-"une fois dans un endroit sombre et une fois dans un endroit lumineux ou si "
-"vous utilisez l'interface graphique pour exécuter la tâche d'étalonnage "
-"(version GTK seulement)."
 
 #. type: Plain text
 #: man/yawls.1:49
@@ -228,11 +181,8 @@ msgstr "B<-g> (B<--gui>)"
 
 #. type: Plain text
 #: man/yawls.1:51
-#, fuzzy
-#| msgid "Shows an GUI of the program (GTK version only)."
 msgid "Shows an GUI of the program."
 msgstr ""
-"Affiche une interface graphique du programme (seulement pour la version GTK)"
 
 #. type: Plain text
 #: man/yawls.1:53
@@ -335,3 +285,60 @@ msgstr ""
 
 #~ msgid "December 26, 2014"
 #~ msgstr "26 décembre 2014"
+
+#~ msgid "/etc/cron.d/yawls-[cli|gtk]"
+#~ msgstr "/etc/cron.d/yawls-[cli|gtk]"
+
+#~ msgid "yawls - Automatic adjust brightness"
+#~ msgstr "yawls - Réglage de luminosité automatique"
+
+#~ msgid "Shows an GUI of the program (GTK version only)."
+#~ msgstr ""
+#~ "Affiche une interface graphique du programme (seulement pour la version "
+#~ "GTK)"
+
+#~ msgid ""
+#~ "Yawls (Yet Another Webcam Light Sensor) adjust the brightness level of "
+#~ "your display by using the internal/externel webcam of your notebook as an "
+#~ "ambient light sensor."
+#~ msgstr ""
+#~ "Yawls (Yet Another Webcam Light Sensor) ajuste le niveau de luminosité de "
+#~ "l'écran en utilisant la webcam intégrée ou externe de votre ordinateur "
+#~ "portable en tant que capteur de luminosité ambiante."
+
+#~ msgid ""
+#~ "Use the internal/exteranl webcam as brightness reference one time.The "
+#~ "function is per default used by cron to start yawls every 15 minutes "
+#~ "(default). It usually takes a while for the program to work properly "
+#~ "because it configures itself from run to run. You can reduce this time if "
+#~ "you force the run once in a dark and once in a bright room or you use the "
+#~ "GUI to run the calibration task (GTK version only)."
+#~ msgstr ""
+#~ "Utilisez la webcam intégrée ou externe en tant que référence de "
+#~ "luminosité une fois. La fonction est par défaut utilisée par cron pour "
+#~ "démarrer yawls toutes les 15 minutes (par défaut). Il faut généralement "
+#~ "un certain temps pour que le programme fonctionne correctement car il se "
+#~ "configure à chaque exécution. Vous pouvez réduire ce temps si vous forcez "
+#~ "l'exécution une fois dans un endroit sombre et une fois dans un endroit "
+#~ "lumineux ou si vous utilisez l'interface graphique pour exécuter la tâche "
+#~ "d'étalonnage (version GTK seulement)."
+
+#~ msgid ""
+#~ "Use the internal/exteranl webcam as brightness reference but "
+#~ "continuously. Only for testing purpose if started directly from command "
+#~ "line because it is actually used by the init.d script (/etc/init.d/yawls-"
+#~ "[cli|gtk]). It usually takes a while for the program to work properly "
+#~ "because it configures itself from run to run. You can reduce this time if "
+#~ "you force the run with the cron option once in a dark and once in a "
+#~ "bright room or you use the GUI to run the calibration task (GTK version "
+#~ "only)."
+#~ msgstr ""
+#~ "Utilisez la webcam intégrée ou externe en tant que référence de "
+#~ "luminosité mais continuellement. Seulement à des fins de test si démarré "
+#~ "directement à partir de la ligne de commande car il est utilisé par le "
+#~ "script init.d (/etc/init.d/yawls-[cli|gtk]). Il faut généralement un "
+#~ "certain temps pour que le programme fonctionne correctement car il se "
+#~ "configure à chaque exécution. Vous pouvez réduire ce temps si vous forcez "
+#~ "l'exécution avec l'option cron une fois dans un endroit sombre et une "
+#~ "fois dans un endroit lumineux ou si vous utilisez l'interface graphique "
+#~ "pour exécuter la tâche d'étalonnage (version GTK seulement)."

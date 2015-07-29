@@ -7,16 +7,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: yawls\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
-"POT-Creation-Date: 2015-07-17 14:21+0200\n"
-"PO-Revision-Date: 2015-04-04 17:00+0000\n"
+"POT-Creation-Date: 2015-07-29 09:30+0200\n"
+"PO-Revision-Date: 2015-06-14 11:20+0000\n"
 "Last-Translator: Gherman Ionuț <ghermanionut96@gmail.com>\n"
 "Language-Team: Romanian <ro@li.org>\n"
 "Language: ro\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2015-05-27 15:20+0000\n"
-"X-Generator: Launchpad (build 17528)\n"
+"X-Launchpad-Export-Date: 2015-07-29 07:28+0000\n"
+"X-Generator: Launchpad (build 17646)\n"
 
 #. type: TH
 #: man/yawls.1:1
@@ -50,10 +50,8 @@ msgstr "NUME"
 
 #. type: Plain text
 #: man/yawls.1:4
-#, fuzzy
-#| msgid "yawls - Automatic adjust brightness"
 msgid "yawls - Automatic brightness adjustment"
-msgstr "yawls - Ajustează automat luminozitatea"
+msgstr ""
 
 #. type: SH
 #: man/yawls.1:4
@@ -74,19 +72,11 @@ msgstr "DESCRIERE"
 
 #. type: Plain text
 #: man/yawls.1:9
-#, fuzzy
-#| msgid ""
-#| "Yawls (Yet Another Webcam Light Sensor) adjust the brightness level of "
-#| "your display by using the internal/externel webcam of your notebook as an "
-#| "ambient light sensor."
 msgid ""
 "Yawls (Yet Another Webcam Light Sensor) adjusts the brightness level of your "
 "display by using the internal/externel webcam of your notebook as an ambient "
 "light sensor."
 msgstr ""
-"Yawls (Un alt senzor de lumina) ajustează nivelul luminozităţii ecranului "
-"tău folosind camera web internă/externă a laptop-ului ca şi un senzor de "
-"lumină ambiental."
 
 #. type: Plain text
 #: man/yawls.1:11
@@ -100,10 +90,8 @@ msgstr "/etc/yawls.properties"
 
 #. type: Plain text
 #: man/yawls.1:15
-#, fuzzy
-#| msgid "/etc/cron.d/yawls-[cli|gtk]"
 msgid "/etc/cron.d/yawls"
-msgstr "/etc/cron.d/yawls-[cli|gtk]"
+msgstr ""
 
 #. type: Plain text
 #: man/yawls.1:17 man/yawls.1:59
@@ -192,10 +180,8 @@ msgstr "B<-g> (B<--gui>)"
 
 #. type: Plain text
 #: man/yawls.1:51
-#, fuzzy
-#| msgid "Shows an GUI of the program (GTK version only)."
 msgid "Shows an GUI of the program."
-msgstr "Arată o interfaţă a programului (Doar versiunea GTK)"
+msgstr ""
 
 #. type: Plain text
 #: man/yawls.1:53
@@ -293,3 +279,21 @@ msgstr ""
 
 #~ msgid "December 26, 2014"
 #~ msgstr "26 Decembrie 2014"
+
+#~ msgid ""
+#~ "Yawls (Yet Another Webcam Light Sensor) adjust the brightness level of "
+#~ "your display by using the internal/externel webcam of your notebook as an "
+#~ "ambient light sensor."
+#~ msgstr ""
+#~ "Yawls (Un alt senzor de lumina) ajustează nivelul luminozităţii ecranului "
+#~ "tău folosind camera web internă/externă a laptop-ului ca şi un senzor de "
+#~ "lumină ambiental."
+
+#~ msgid "yawls - Automatic adjust brightness"
+#~ msgstr "yawls - Ajustează automat luminozitatea"
+
+#~ msgid "/etc/cron.d/yawls-[cli|gtk]"
+#~ msgstr "/etc/cron.d/yawls-[cli|gtk]"
+
+#~ msgid "Shows an GUI of the program (GTK version only)."
+#~ msgstr "Arată o interfaţă a programului (Doar versiunea GTK)"

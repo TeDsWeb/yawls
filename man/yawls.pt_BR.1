@@ -1,0 +1,94 @@
+.\"*******************************************************************
+.\"
+.\" This file was generated with po4a. Translate the source file.
+.\"
+.\"*******************************************************************
+.TH YAWLS 1 "17 de Julho de 2015" "Dominik Brämer" "Yawls ajusta automaticamente o brilho da sua tela"
+.SH NOME
+yawls \- Ajuste automático de brilho
+.SH SINOPSE
+\fByawls\fP [\fIOPTIONS\fP]
+.SH DESCRIÇÃO
+Yawls (Yet Another Webcam Light Sensor) ajusta automaticamente o brilho da
+sua tela usando uma webcam interna ou externa do seu notebook como um sensor
+de luz.
+
+Yawls obtém os dados de configuração das seguintes fontes:
+.IP
+/etc/yawls.properties
+.IP
+/etc/cron.d/yawls
+.IP
+/var/lib/yawls/*
+
+.SS "Sumário de opções:"
+.TP 
+\fB\-\-cron\fP		ou \fB\-c\fP	usa a referência do brilho da webcam (uma vez)
+.TP 
+\fB\-\-daemon\fP		ou \fB\-d\fP	usa a referência do brilho da webcam (continuamente)
+.TP 
+\fB\-\-gui\fP		ou \fB\-g\fP	inicia o aplicativo
+.TP 
+\fB\-\-help\fP		ou \fB\-h\fP	mostra a ajuda
+.TP 
+\fB\-\-restore\fP		ou \fB\-r\fP	restaura os arquivos de configuração
+.SS "Detalhes das Opções:"
+.HP
+\fB\-c\fP (\fB\-\-cron\fP)
+.IP
+Usa a webcam interna/externa como referência de brilho uma vez. A função é
+usada à cada 15 minutos (padrão). Ela demora um pouco pra funcionar
+corretamente, porque ela configura\-se à cada vez que for rodada. Você pode
+reduzir o tempo se você forçar para rodar no escuro e novamente em uma sala
+clara ou usar o GUI para rodar a função de calibração.
+.HP
+\fB\-d\fP (\fB\-\-daemon\fP)
+.IP
+Usa a webcam interna/externa como referência de brilho continuamente. Apenas
+como propósito de teste, se for iniciada diretamente pela linha de comando,
+é atualmente usada pelo init.d.script (/etc/init.d/yawls).  Ela demora um
+pouco pra funcionar corretamente, porque ela configura\-se à cada vez que for
+rodada. Você pode reduzir o tempo se você forçar para rodar no escuro e
+novamente em uma sala clara ou usar o GUI para rodar a função de calibração.
+.HP
+\fB\-g\fP (\fB\-\-gui\fP)
+.IP
+Mostra um GUI do programa
+.HP
+\fB\-r\fP (\fB\-\-restore\fP)
+.IP
+Reseta todos os arquivos de configuração:
+
+/etc/yawls.properties
+
+/var/lib/yawls/*
+.HP
+\fB\-h\fP (\fB\-\-help\fP)
+.IP
+Mostra uma ajuda rápida do programa.
+.HP
+.SH EXEMPLOS
+.IP
+yawls \fB\-c\fP
+.PP
+.SH AUTOR
+.PP
+Escrito por Dominik Brämer <thedsweb@googlemail.com>
+.SH "REPORTANDO FALHAS"
+.PP
+Reporte bugs por <https://launchpad.net/yawls/+bugs> ou
+<thedsweb@googlemail.com>
+.SH "DIREITOS AUTORAIS"
+.PP
+Esse programa é um software livre: você pode redistribuir ele e/ou modificar
+ele pelos termos do GNU General Public License que foi publicado pela Free
+Software Foundation, na versão 3 da Licença, ou (na sua opção) em qualquer
+outra versão.
+.PP
+Este programa é distribuído na esperança de que seja útil, mas SEM NENHUMA
+GARANTIA; sem mesmo implicar garantias de COMERCIABILIDADE ou ADAPTAÇÃO A UM
+PROPÓSITO PARTICULAR.  Veja a Licença Pública Geral GNU (GPL) para mais
+detalhes.
+.PP
+Você deve ter recebido uma cópia da GNU General Public License juntamente
+com o programa. Se não, veja em <http://www.gnu.org/licenses/>.

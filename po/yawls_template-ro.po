@@ -7,16 +7,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: yawls\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-07-17 12:47+0200\n"
-"PO-Revision-Date: 2015-04-03 09:38+0000\n"
+"POT-Creation-Date: 2015-07-29 09:30+0200\n"
+"PO-Revision-Date: 2015-06-14 11:20+0000\n"
 "Last-Translator: Gherman Ionuț <ghermanionut96@gmail.com>\n"
 "Language-Team: Romanian <ro@li.org>\n"
 "Language: ro\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2015-05-27 15:20+0000\n"
-"X-Generator: Launchpad (build 17528)\n"
+"X-Launchpad-Export-Date: 2015-07-29 07:28+0000\n"
+"X-Generator: Launchpad (build 17646)\n"
 
 #: src/com/blogspot/thedsweb/main/Yawls.java:90
 #: src/com/blogspot/thedsweb/main/Yawls.java:95
@@ -36,15 +36,11 @@ msgid "Usage: yawls"
 msgstr "Folosire: yawls"
 
 #: src/com/blogspot/thedsweb/main/Yawls.java:113
-#, fuzzy
 msgid ""
 "yawls adjusts the brightness level of your display by using\n"
 "the internal/externel webcam of your notebook as an ambient\n"
 "light sensor."
 msgstr ""
-"yawls ajustează nivelul luminozităţii monitorului folosind\n"
-"camera web internă/externă a laptop-ului ca și un senzor de lumină\n"
-"ambientală."
 
 #: src/com/blogspot/thedsweb/main/Yawls.java:116
 msgid ""
@@ -88,9 +84,8 @@ msgid "No camera found."
 msgstr ""
 
 #: src/com/blogspot/thedsweb/main/Yawls.java:170
-#, fuzzy
 msgid "Yawls service started. Press {CTRL+C} to abort..."
-msgstr "Serviciul Yawls a pornit. Apăsaţi {ctrl+c} pentru a opri procesul..."
+msgstr ""
 
 #: src/com/blogspot/thedsweb/gui/Show.java:101
 msgid "Webcam stats:"
@@ -275,7 +270,15 @@ msgstr ""
 msgid "Backlight detected:"
 msgstr ""
 
-#~ msgid "You should install the GTK version of yawls to use this feature."
+#~ msgid ""
+#~ "yawls adjust the brightness level of your display by using\n"
+#~ "the internal/externel webcam of your notebook as an ambient\n"
+#~ "light sensor."
 #~ msgstr ""
-#~ "Ar trebui să instalaţi versiunea GTK a yawls pentru a folosi aceasta "
-#~ "facilitate."
+#~ "yawls ajustează nivelul luminozităţii monitorului folosind\n"
+#~ "camera web internă/externă a laptop-ului ca și un senzor de lumină\n"
+#~ "ambientală."
+
+#~ msgid "Yawls service started press {ctrl+c} to abort..."
+#~ msgstr ""
+#~ "Serviciul Yawls a pornit. Apăsaţi {ctrl+c} pentru a opri procesul..."

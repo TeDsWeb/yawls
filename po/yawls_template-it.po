@@ -7,16 +7,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: yawls\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-07-17 12:47+0200\n"
-"PO-Revision-Date: 2015-04-07 12:00+0000\n"
-"Last-Translator: Claudio Arseni <claudio.arseni@gmail.com>\n"
+"POT-Creation-Date: 2015-07-29 09:30+0200\n"
+"PO-Revision-Date: 2015-07-24 17:38+0000\n"
+"Last-Translator: raist <raist.87@hotmail.it>\n"
 "Language-Team: Italian <it@li.org>\n"
 "Language: it\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2015-05-27 15:20+0000\n"
-"X-Generator: Launchpad (build 17528)\n"
+"X-Launchpad-Export-Date: 2015-07-29 07:28+0000\n"
+"X-Generator: Launchpad (build 17646)\n"
 
 #: src/com/blogspot/thedsweb/main/Yawls.java:90
 #: src/com/blogspot/thedsweb/main/Yawls.java:95
@@ -36,22 +36,18 @@ msgid "Usage: yawls"
 msgstr "Uso: yawls"
 
 #: src/com/blogspot/thedsweb/main/Yawls.java:113
-#, fuzzy
 msgid ""
 "yawls adjusts the brightness level of your display by using\n"
 "the internal/externel webcam of your notebook as an ambient\n"
 "light sensor."
 msgstr ""
-"Yawls regola il livello di luminosità del display usando\n"
-"la webcam interna/esterna del proprio noetebook come\n"
-"un sensore di luce ambientale."
 
 #: src/com/blogspot/thedsweb/main/Yawls.java:116
 msgid ""
 "If you wish to change the interval of ambient light checks\n"
 "you need to modify the file:"
 msgstr ""
-"Per cambiare l'intervallo di rilevamento della luminosità ambientale\n"
+"Per cambiare l'intervallo di rilevazione della luminosità ambientale\n"
 "è necessario modificare il file:"
 
 #: src/com/blogspot/thedsweb/main/Yawls.java:120
@@ -72,11 +68,11 @@ msgstr "--restore\t o -r ripristina i file di configurazione"
 
 #: src/com/blogspot/thedsweb/main/Yawls.java:131
 msgid "Yawls version"
-msgstr ""
+msgstr "Yawls versione"
 
 #: src/com/blogspot/thedsweb/main/Yawls.java:138
 msgid "Error:"
-msgstr ""
+msgstr "Errore:"
 
 #: src/com/blogspot/thedsweb/main/Yawls.java:142
 msgid "No backlight device found."
@@ -85,20 +81,19 @@ msgstr ""
 #: src/com/blogspot/thedsweb/main/Yawls.java:145
 #: src/com/blogspot/thedsweb/gui/Show.java:152
 msgid "No camera found."
-msgstr ""
+msgstr "Non e' stata individuata nessuna camera"
 
 #: src/com/blogspot/thedsweb/main/Yawls.java:170
-#, fuzzy
 msgid "Yawls service started. Press {CTRL+C} to abort..."
-msgstr "Servizio Yawls avviato. Premere {ctrl+c} per terminarlo..."
+msgstr "Il servizio Yawls e' attivo. Premere {CTRL+C} per interrompere..."
 
 #: src/com/blogspot/thedsweb/gui/Show.java:101
 msgid "Webcam stats:"
-msgstr ""
+msgstr "Statistiche webcam:"
 
 #: src/com/blogspot/thedsweb/gui/Show.java:110
 msgid "Configuration:"
-msgstr ""
+msgstr "Configurazione:"
 
 #: src/com/blogspot/thedsweb/gui/Show.java:145
 msgid "No backlight device found"
@@ -106,7 +101,7 @@ msgstr ""
 
 #: src/com/blogspot/thedsweb/gui/Show.java:148
 msgid "and no camera found."
-msgstr ""
+msgstr "e nessuna camera individuata."
 
 #: src/com/blogspot/thedsweb/gui/Show.java:159
 msgid "Reset"
@@ -119,14 +114,17 @@ msgstr ""
 #: src/com/blogspot/thedsweb/gui/Show.java:183
 msgid "The value of the upper limit must be greater than the lower limit."
 msgstr ""
+"Il valore del limite superiore non puo' essere piu' piccolo del limite "
+"inferiore."
 
 #: src/com/blogspot/thedsweb/gui/Show.java:188
 msgid "The value of the max. increase must be greater than the min. increase."
 msgstr ""
+"Il valore del massimo incremento deve essere maggiore dell'incremento minimo."
 
 #: src/com/blogspot/thedsweb/gui/Show.java:242
 msgid "face detect"
-msgstr ""
+msgstr "Rilevazione volto"
 
 #: src/com/blogspot/thedsweb/gui/Show.java:245
 msgid "Set true to enable or false to disable face detection"
@@ -134,43 +132,47 @@ msgstr ""
 
 #: src/com/blogspot/thedsweb/gui/Show.java:246
 msgid "lower limit"
-msgstr ""
+msgstr "Limito più basso"
 
 #: src/com/blogspot/thedsweb/gui/Show.java:249
 msgid "Minimum time between camera activations in milliseconds"
-msgstr ""
+msgstr "Tempo minimo, in millisecondi, tra le attivazioni della camera"
 
 #: src/com/blogspot/thedsweb/gui/Show.java:250
 msgid "upper limit"
-msgstr ""
+msgstr "Limite più alto"
 
 #: src/com/blogspot/thedsweb/gui/Show.java:253
 msgid "Maximum time between camera activations in milliseconds"
-msgstr ""
+msgstr "Tempo massimo, in millisecondi, tra le attivazioni della camera"
 
 #: src/com/blogspot/thedsweb/gui/Show.java:254
 msgid "min. increase"
-msgstr ""
+msgstr "Aumento min."
 
 #: src/com/blogspot/thedsweb/gui/Show.java:258
 msgid ""
 "Minimum time increase between camera activations in milliseconds if nothing "
 "to do"
 msgstr ""
+"Aumento del tempo minimo, in millisecondi, tra le attivazioni della camera "
+"se non c'è nulla da fare"
 
 #: src/com/blogspot/thedsweb/gui/Show.java:259
 msgid "max. increase"
-msgstr ""
+msgstr "Aumento max."
 
 #: src/com/blogspot/thedsweb/gui/Show.java:263
 msgid ""
 "Maximum time increase between camera activations in milliseconds if nothing "
 "to do"
 msgstr ""
+"Aumento del tempo massimo, in millisecondi, tra le attivazioni della camera "
+"se non c'è nulla da fare"
 
 #: src/com/blogspot/thedsweb/gui/Show.java:264
 msgid "darkening threshold"
-msgstr ""
+msgstr "Soglia di oscuramento"
 
 #: src/com/blogspot/thedsweb/gui/Show.java:267
 msgid ""
@@ -244,10 +246,12 @@ msgid ""
 "Make your environment as bright as possible\n"
 "and press the calibrate button."
 msgstr ""
+"Rendere l'ambiente il più luminoso possibile\n"
+"quindi premere il pulsante di calibrazione."
 
 #: src/com/blogspot/thedsweb/gui/Show.java:466
 msgid "Step 2:"
-msgstr ""
+msgstr "Passo 2:"
 
 #: src/com/blogspot/thedsweb/gui/Show.java:473
 msgid ""
@@ -257,7 +261,7 @@ msgstr ""
 
 #: src/com/blogspot/thedsweb/gui/Show.java:500
 msgid "Finish"
-msgstr ""
+msgstr "Fine"
 
 #: src/com/blogspot/thedsweb/gui/Show.java:504
 msgid "Back"
@@ -269,13 +273,20 @@ msgstr ""
 
 #: src/com/blogspot/thedsweb/gui/Show.java:512
 msgid "Calibrate"
-msgstr ""
+msgstr "Calibra"
 
 #: src/com/blogspot/thedsweb/gui/Show.java:565
 msgid "Backlight detected:"
 msgstr ""
 
-#~ msgid "You should install the GTK version of yawls to use this feature."
+#~ msgid "Yawls service started press {ctrl+c} to abort..."
+#~ msgstr "Servizio Yawls avviato. Premere {ctrl+c} per terminarlo..."
+
+#~ msgid ""
+#~ "yawls adjust the brightness level of your display by using\n"
+#~ "the internal/externel webcam of your notebook as an ambient\n"
+#~ "light sensor."
 #~ msgstr ""
-#~ "È necessario installare la versione GTK di yawls per usare questa "
-#~ "funzionalità."
+#~ "Yawls regola il livello di luminosità del display usando\n"
+#~ "la webcam interna/esterna del proprio noetebook come\n"
+#~ "un sensore di luce ambientale."

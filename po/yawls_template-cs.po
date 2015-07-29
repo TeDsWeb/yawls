@@ -7,16 +7,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: yawls\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-07-17 12:47+0200\n"
-"PO-Revision-Date: 2015-02-08 19:20+0000\n"
+"POT-Creation-Date: 2015-07-29 09:30+0200\n"
+"PO-Revision-Date: 2015-06-14 11:20+0000\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: Czech <cs@li.org>\n"
 "Language: cs\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2015-05-27 15:20+0000\n"
-"X-Generator: Launchpad (build 17528)\n"
+"X-Launchpad-Export-Date: 2015-07-29 07:28+0000\n"
+"X-Generator: Launchpad (build 17646)\n"
 
 #: src/com/blogspot/thedsweb/main/Yawls.java:90
 #: src/com/blogspot/thedsweb/main/Yawls.java:95
@@ -36,14 +36,11 @@ msgid "Usage: yawls"
 msgstr "Použití: yawls"
 
 #: src/com/blogspot/thedsweb/main/Yawls.java:113
-#, fuzzy
 msgid ""
 "yawls adjusts the brightness level of your display by using\n"
 "the internal/externel webcam of your notebook as an ambient\n"
 "light sensor."
 msgstr ""
-"Yawls nastavuje jas vašeho displeje za pomoci interní/externí\n"
-"webkamery jako snímače intenzity okolního osvětlení."
 
 #: src/com/blogspot/thedsweb/main/Yawls.java:116
 msgid ""
@@ -87,9 +84,8 @@ msgid "No camera found."
 msgstr ""
 
 #: src/com/blogspot/thedsweb/main/Yawls.java:170
-#, fuzzy
 msgid "Yawls service started. Press {CTRL+C} to abort..."
-msgstr "Služba yawls byla spuštěna, stiskněte {ctrl+c} pro přerušení..."
+msgstr ""
 
 #: src/com/blogspot/thedsweb/gui/Show.java:101
 msgid "Webcam stats:"
@@ -273,3 +269,14 @@ msgstr ""
 #: src/com/blogspot/thedsweb/gui/Show.java:565
 msgid "Backlight detected:"
 msgstr ""
+
+#~ msgid ""
+#~ "yawls adjust the brightness level of your display by using\n"
+#~ "the internal/externel webcam of your notebook as an ambient\n"
+#~ "light sensor."
+#~ msgstr ""
+#~ "Yawls nastavuje jas vašeho displeje za pomoci interní/externí\n"
+#~ "webkamery jako snímače intenzity okolního osvětlení."
+
+#~ msgid "Yawls service started press {ctrl+c} to abort..."
+#~ msgstr "Služba yawls byla spuštěna, stiskněte {ctrl+c} pro přerušení..."

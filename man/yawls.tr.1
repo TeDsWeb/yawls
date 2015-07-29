@@ -1,0 +1,95 @@
+.\"*******************************************************************
+.\"
+.\" This file was generated with po4a. Translate the source file.
+.\"
+.\"*******************************************************************
+.TH YAWLS 1 "17 Temmuz 2015" "Dominik Brämer" "Yawls otomatik ekran parlaklığı"
+.SH AD
+yawls \- Otomatik parlaklık ayarlama
+.SH ÖZET
+\fByawls\fP [\fISEÇENEKLER\fP]
+.SH AÇIKLAMA
+Yawls, web kameranızı kullanarak ekranınızın parlaklığını ortam ışığına göre
+ayarlar.
+
+Yawls aşağıdaki kaynaklardan yapılandırma verilerini toplar:
+.IP
+/etc/yawls.properties
+.IP
+/etc/cron.d/yawls
+.IP
+/var/lib/yawls/*
+
+.SS "Seçenek Özeti:"
+.TP 
+\fB\-\-cron\fP		veya \fB\-c\fP	parlaklık uyarlaması için kamerayı kullan (tek seferliğine)
+.TP 
+\fB\-\-daemon\fP		veya \fB\-d\fP	parlaklık uyarlaması için kamerayı kullan (sürekli)
+.TP 
+\fB\-\-gui\fP		veya \fB\-g\fP	görsel arabirimi başlatır
+.TP 
+\fB\-\-help\fP		veya \fB\-h\fP	yardımı görüntüler
+.TP 
+\fB\-\-restore\fP		veya \fB\-r\fP	yapılandırma dosyalarını onar
+.SS "Seçenek Detayları:"
+.HP
+\fB\-c\fP (\fB\-\-cron\fP)
+.IP
+Kamerayı parlaklık uyarlaması için tek seferliğine kullanır. Bu işlev cron
+tarafından yawls'ı her 15 dakikada bir çalıştırmak için öntanımlı olarak
+kullanılır. Her seferde kendini tekrar ayarladığı için, programın etkili
+çalışması bu şekilde biraz zaman alabilir. Aydınlık ve karanlık odalar
+arasında sürekli geçiş yapıyorsanız bu süreyi azaltabilirsiniz veya
+kalibrasyon için görsel arayüzü kullanabilirsiniz.
+.HP
+\fB\-d\fP (\fB\-\-daemon\fP)
+.IP
+Kamerayı parlaklık uyarlaması için sürekli olarak kullanır. Aslında init.d
+betiği (/etc/init.d/yawls) tarafından kullanılması hasebiyle, doğrudan komut
+satırından çalıştırıldığında sadece test amacıyla kullanılması önerilir. Her
+seferde kendini tekrar ayarladığı için, programın etkili çalışması bu
+şekilde biraz zaman alabilir. Aydınlık ve karanlık odalar arasında sürekli
+geçiş yapıyorsanız, (cron seçeneği ile birlikte kullanarak) bu süreyi
+azaltabilirsiniz veya kalibrasyon için görsel arayüzü kullanabilirsiniz.
+.HP
+\fB\-g\fP (\fB\-\-gui\fP)
+.IP
+Programın görsel arayüzünü gösterir.
+.HP
+\fB\-r\fP (\fB\-\-restore\fP)
+.IP
+Tüm yapılandırma dosyalarını sıfırlar:
+
+/etc/yawls.properties
+
+/var/lib/yawls/*
+.HP
+\fB\-h\fP (\fB\-\-help\fP)
+.IP
+Program ile ilgli hızlı bir yardım gösterir.
+.HP
+.SH ÖRNEKLER
+.IP
+yawls \fB\-c\fP
+.PP
+.SH YAZAR
+.PP
+Yazar: Dominik Brämer <thedsweb@googlemail.com>
+.SH "HATA BİLDİRİMİ"
+.PP
+Hata bildirimi için: <https://launchpad.net/yawls/+bugs> or
+<thedsweb@googlemail.com>
+.SH "TELİF HAKKI"
+.PP
+Bu program bir özgür yazılımdır: bu yazılımı Özgür Yazılım Vakfı(Free
+Software Foundation)'nın yayınladığı GNU Genel Kamu Lisansı 3.sürümü yada
+ileri zamanda çıkacak daha yeni bir sürümü koşulları altında tekrar
+dağıtabilir veya değiştirebilirsiniz.
+.PP
+Bu program faydalı olacağı umut edilerek dağıtılmaktadır, fakat HİÇBİR
+GARANTİSİ YOKTUR; hatta ÜRÜN DEĞERİ ya da BİR AMACA UYGUNLUK gibi garantiler
+de vermez.  Lütfen daha fazla ayrıntı için GNU Genel Kamu Lisansı'nı
+inceleyin.
+.PP
+Bu program ile birlikte GNU Genel Kamu Lisansı'nın bir kopyasını almış
+olmalısınız.  Almadıysanız; bknz: <http://www.gnu.org/licenses/>.
