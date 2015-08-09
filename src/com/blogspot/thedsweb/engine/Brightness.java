@@ -28,7 +28,6 @@ public class Brightness extends Files {
     private int current;
     private final int MAXLEVEL;
     private double[] referenceValue;
-    private final String PATH;
     private boolean face;
     private final Threshold THRESHOLD;
     private final Face PROBABILITY;
@@ -37,6 +36,7 @@ public class Brightness extends Files {
     private boolean runDaemon;
     private boolean firstRun;
     private boolean backlit;
+    private final BacklightDevice blDev;
     private final Semaphore semaphoreFade = new Semaphore(0, false);
     private final Semaphore semaphoreSet = new Semaphore(1, false);
 
@@ -62,12 +62,18 @@ public class Brightness extends Files {
 	// Initialize Files if they dosen't exist
 	Initialization.Files();
 	final int[] arr = new int[4];
-	PATH = readStatus(arr);
+	readStatus(arr);
 	min = arr[0];
 	max = arr[1];
 	last = arr[2];
-	MAXLEVEL = arr[3];
-	setReference();
+	if (arr[3] > 0) {
+	    MAXLEVEL = arr[3];
+	} else {
+	    MAXLEVEL = 15;
+	}
+	blDev = new BacklightDevice();
+	blDev.setRef(min, max);
+	referenceValue = blDev.getRef();
 	firstRun = true;
 	backlit = false;
 	current = captureAndCalculate();
@@ -114,23 +120,6 @@ public class Brightness extends Files {
     // it is too high
     public boolean control() {
 	return current > last << 1 || current << 1 < last;
-    }
-
-    private void setReference() {
-	// Reference mean values
-	final double referenceStep = (double) (max ^ min) / (MAXLEVEL + 1);
-	final double[] referenceValue = new double[MAXLEVEL + 1];
-	referenceValue[MAXLEVEL] = max - referenceStep;
-
-	for (int i = MAXLEVEL; i > 1; i--) {
-	    if (referenceValue[i] - referenceStep < 0) {
-		referenceValue[i - 1] = 0;
-	    } else {
-		referenceValue[i - 1] = referenceValue[i] - referenceStep;
-	    }
-	}
-
-	this.referenceValue = referenceValue;
     }
 
     // Return the ideal brightness value
@@ -233,6 +222,7 @@ public class Brightness extends Files {
     }
 
     private int maxVal(int[] values) {
+	// Simple max of array calculation
 	int max = 0;
 	for (final int value : values) {
 	    if (max < value) {
@@ -243,6 +233,7 @@ public class Brightness extends Files {
     }
 
     private int minVal(int[] values) {
+	// Simple min of array calculation
 	int min = 260;
 	for (final int value : values) {
 	    if (min > value) {
@@ -253,6 +244,8 @@ public class Brightness extends Files {
     }
 
     private boolean checkChroma(int[] values, int mean) {
+	// Check how similar the chroma values of all frame tiles are. By
+	// calculate the maximum number of similar tiles.
 	int max = 0;
 	for (final int value : values) {
 	    int count = 0;
@@ -265,11 +258,15 @@ public class Brightness extends Files {
 		max = count;
 	    }
 	}
+	// Return true if more than the half of the tiles have a similar chroma
+	// value.
 	return max > 4;
     }
 
     private boolean backlitDetection(Mat yCrCb, Scalar mainMean,
 	    int mainMeanLumaValue) {
+	// Save the mean brightness and chroma value of the whole frame. Plus
+	// the width and height of the frame.
 	final int mainMeanChromaValue = (int) mainMean.val[2];
 	final int w = yCrCb.width();
 	final int h = yCrCb.height();
@@ -277,6 +274,7 @@ public class Brightness extends Files {
 	final int wStep = w >> 2;
 	final int hStep = h >> 1;
 
+	// Separate the image into 8 equal parts.
 	final Mat[] tiles = new Mat[8];
 	tiles[0] = yCrCb.submat(0, hStep, 0, wStep);
 	tiles[1] = yCrCb.submat(0, hStep, wStep, wStep * 2);
@@ -287,11 +285,13 @@ public class Brightness extends Files {
 	tiles[6] = yCrCb.submat(hStep, h, wStep * 2, wStep * 3);
 	tiles[7] = yCrCb.submat(hStep, h, wStep * 2, w);
 
+	// Calculate the mean value of all parts.
 	final Scalar[] tileMean = new Scalar[8];
 	for (int i = 0; i < tileMean.length; i++) {
 	    tileMean[i] = Core.mean(tiles[i]);
 	}
 
+	// Save the mean brightness and chroma of all parts.
 	final int[] tileMeanLuma = new int[8];
 	final int[] tileMeanChroma = new int[8];
 	for (int j = 0; j < tileMean.length; j++) {
@@ -299,9 +299,12 @@ public class Brightness extends Files {
 	    tileMeanChroma[j] = (int) tileMean[j].val[2];
 	}
 
+	// Get the highest and lowest brightness value of all frame tiles.
 	final int min = minVal(tileMeanLuma);
 	final int max = maxVal(tileMeanLuma) >> 1;
 
+	// Check if their is a consistent chroma distribution and a brightness
+	// spike to detect backlit conditions.
 	if (checkChroma(tileMeanChroma, mainMeanChromaValue) && min < max) {
 	    return true;
 	}
@@ -321,11 +324,13 @@ public class Brightness extends Files {
 	    // minimum or maximum value
 	    if (current < min) {
 		min = current;
-		setReference();
+		blDev.setRef(min, max);
+		referenceValue = blDev.getRef();
 	    }
 	    if (current > max) {
 		max = current;
-		setReference();
+		blDev.setRef(min, max);
+		referenceValue = blDev.getRef();
 	    }
 
 	    // Save last current value
@@ -346,7 +351,7 @@ public class Brightness extends Files {
 
     public void resetBrightnessAfterReboot() {
 	// Set Brightness
-	writeInt(brightnessValue(referenceValue, last), PATH);
+	blDev.set(brightnessValue(referenceValue, last));
     }
 
     public int calibrateBrightness() {
@@ -396,15 +401,15 @@ public class Brightness extends Files {
 		    return;
 		}
 		int count = 0;
-		while (readInt(PATH) != TRANSITION.getValue()
-			&& count < MAXLEVEL) {
-		    int i = readInt(PATH);
+		// Set dynamically the brightness level
+		while (blDev.get() != TRANSITION.getValue() && count < MAXLEVEL) {
+		    int i = blDev.get();
 		    if (i > TRANSITION.getValue()) {
 			i--;
 		    } else {
 			i++;
 		    }
-		    writeInt(i, PATH);
+		    blDev.set(i);
 		    count++;
 		    try {
 			Thread.sleep(step);

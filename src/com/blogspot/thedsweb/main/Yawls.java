@@ -24,6 +24,7 @@ import com.blogspot.thedsweb.util.Translate;
 public class Yawls {
     public static void main(String[] args) {
 	// Simple command line argument parsing
+	Show.gui(args);
 	for (final String options : args) {
 	    switch (options) {
 	    case "-h":

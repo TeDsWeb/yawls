@@ -1,3 +1,16 @@
+yawls (1.2.2) stable; urgency=low
+
+  * New upstream release
+  * Update GUI
+    - Split GUI windows into separate classes
+    - Update configuration entries after reset
+  * Update yawls_cli.sh
+    - Add better SIGTERM/SIGINT support (LP: #1475841)
+  * Add backlight device interface
+    - Makes it possible to add other backlight control methods.
+  
+ -- Dominik Brämer <thedsweb@googlemail.com>  Fri, 17 Jul 2015 13:05:54 +0100
+
 yawls (1.2.1) stable; urgency=low
 
   * New upstream release
