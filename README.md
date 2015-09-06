@@ -5,7 +5,7 @@ Adjust the brightness level of your display by using the internal/external camer
 
 If you install Yawls it runs as a system daemon in background in an interval of 30 seconds per default.
 Therefore other programs are also able  to use the camera. The interval is divided into four configurable
-variables which will be explained later. You are also still able to correct the screen brightness with your function keys because Yawls won't update the brightness if your brightness condtions are stable. 
+variables which will be explained later. You are also still able to correct the screen brightness with your function keys and other applets because Yawls won't update the brightness if your brightness condtions are stable. 
 
 If you have Yawls fresh installed [please enable the universe packages in Ubuntu to avoid an dependency errors] is it handy to calibrate it because otherwise it may not function properly but Yawls is also able to calibrate itself over time.
 There are two ways to calibrate Yawls:
