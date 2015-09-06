@@ -3,15 +3,15 @@
 .\" This file was generated with po4a. Translate the source file.
 .\"
 .\"*******************************************************************
-.TH YAWLS 1 "July 17, 2015" "Dominik Brämer" "Luminosità automatica del dislpay Yawls"
+.TH YAWLS 1 "17 luglio 2015" "Dominik Brämer" "Luminosità automatica del dislpay Yawls"
 .SH NOME
-yawls \- Automatic brightness adjustment
+Luminosità automatica del dislpay Yawls
 .SH SINTASSI
 \fByawls\fP [\fIOPZIONI\fP]
 .SH DESCRIZIONE
-Yawls (Yet Another Webcam Light Sensor) adjusts the brightness level of your
-display by using the internal/externel webcam of your notebook as an ambient
-light sensor.
+Yawls (Yet Another Webcam Light Sensor) regola la luminosità dello schermo
+usando la webcam interna/esterna del computer come un sensore di luminosità
+ambientale.
 
 Yawls ottiene i dati di configurazione dalle seguenti sorgenti:
 .IP
@@ -36,26 +36,28 @@ Yawls ottiene i dati di configurazione dalle seguenti sorgenti:
 .HP
 \fB\-c\fP (\fB\-\-cron\fP)
 .IP
-Uses the internal/exteranl webcam as brightness reference one time.The
-function is per default used by cron to start yawls every 15 minutes
-(default). It usually takes a while for the program to work properly,
-because it configures itself from run to run. You can reduce this time if
-you force the run once in a dark and once in a bright room or you use the
-GUI to run the calibration task.
+Usa una volta la webcam interna/esterna come riferimento per la
+luminosità. La funzione è, per impostazione predefinita, usata da "cron" per
+avviare yawls ogni 15 minuti. Solitamente il programma impiega diverso tempo
+per funzionare correttamente in quanto si configura in modo automatico ad
+ogni esecuzione. Questo tempo può essere ridotto forzando l'esecuzione una
+volta in un ambiente scuro e una volta in uno luminoso o usando
+l'interfaccia grafica per eseguire le attività di calibrazione.
 .HP
 \fB\-d\fP (\fB\-\-daemon\fP)
 .IP
-Uses the internal/exteranl webcam as brightness reference but
-continuously. Only for testing purpose if started directly from command line
-because it is actually used by the init.d script (/etc/init.d/yawls). It
-usually takes a while for the program to work properly, because it
-configures itself from run to run. You can reduce this time if you force the
-run with the cron option once in a dark and once in a bright room or you use
-the GUI to run the calibration task.
+Usa la webcam interna/esterna come riferimento per la luminosità in modo
+continuo. Solo per scopi di test se avviato direttamente dalla riga di
+comando è attualmente usato dallo script init.d
+(/etc/init.d/yawls). Solitamente il programma impiega diverso tempo per
+funzionare correttamente in quanto si configura in modo automatico ad ogni
+esecuzione. Questo tempo può essere ridotto forzando l'esecuzione una volta
+in un ambiente scuro e una volta in uno luminoso o usando l'interfaccia
+grafica per eseguire le attività di calibrazione.
 .HP
 \fB\-g\fP (\fB\-\-gui\fP)
 .IP
-Shows an GUI of the program.
+Mostra una interfaccia grafica del programma.
 .HP
 \fB\-r\fP (\fB\-\-restore\fP)
 .IP

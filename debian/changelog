@@ -6,10 +6,14 @@ yawls (1.2.2) stable; urgency=low
     - Update configuration entries after reset
   * Update yawls_cli.sh
     - Add better SIGTERM/SIGINT support (LP: #1475841)
+  * Update engine/Brightness.java
+    - Improved performance
+  * Update translations
   * Add backlight device interface
-    - Makes it possible to add other backlight control methods.
+    - Make it possible to add other backlight control methods.
+  * Add engine/MinMaxContainer.java
   
- -- Dominik Brämer <thedsweb@googlemail.com>  Fri, 17 Jul 2015 13:05:54 +0100
+ -- Dominik Brämer <thedsweb@googlemail.com>  Sun, 06 Sep 2015 14:32:16 +0100
 
 yawls (1.2.1) stable; urgency=low
 

@@ -1,5 +1,5 @@
 /*******************************************************************************
- * Copyright (c) 2013-2015 Dominik Brämer.
+ * Copyright (c) 2015 Dominik Brämer.
  * All rights reserved. This program and the accompanying materials
  * are made available under the terms of the GNU Public License v3.0
  * which accompanies this distribution, and is available at
@@ -10,13 +10,13 @@ package com.blogspot.thedsweb.util;
 import java.util.concurrent.Semaphore;
 
 public class ReadParallel implements Runnable {
-    private final String PATH;
+    private final String path;
     private final Semaphore sem;
     private final int[] arr;
     private final int id;
 
     public ReadParallel(String path, int[] arr, int id, Semaphore sem) {
-	this.PATH = path;
+	this.path = path;
 	this.arr = arr;
 	this.id = id;
 	this.sem = sem;
@@ -24,7 +24,7 @@ public class ReadParallel implements Runnable {
 
     @Override
     public void run() {
-	final int val = Files.readInt(PATH);
+	final int val = Files.readInt(path);
 
 	try {
 	    sem.acquire();

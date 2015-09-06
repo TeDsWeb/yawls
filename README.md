@@ -76,7 +76,7 @@ Default: 1
 * [German project blog](http://thedsweb.blogspot.de/p/yawls.html)
 
 ### Download of the current stable release and PPA
-[yawls_1.2.1.deb](https://launchpad.net/yawls/1.2.x/1.2.1/+download/yawls_1.2.1_all.deb)
+[yawls_1.2.2.deb](https://launchpad.net/yawls/1.2.x/1.2.2/+download/yawls_1.2.2_all.deb)
 
 https://launchpad.net/~thedsweb/+archive/ubuntu/yawls-daily
 

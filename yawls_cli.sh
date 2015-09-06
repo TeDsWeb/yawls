@@ -29,9 +29,9 @@ JAVA="/usr/lib/jvm/java-7-openjdk-*/bin/java"
 
 #Set Java optimal options
 if [[ $(arch) == "x86_64" ]]; then
-	OPTIONS="-d64 -server -XX:+AggressiveOpts -Xmn12M  -Xms38M -Xmx38M"
+	OPTIONS="-d64 -server -XX:+AggressiveOpts -Xmn10M  -Xms25M -Xmx25M"
 else
-	OPTIONS="-d32 -server -XX:+AggressiveOpts -Xmn12M  -Xms38M -Xmx38M"
+	OPTIONS="-d32 -server -XX:+AggressiveOpts -Xmn10M  -Xms25M -Xmx25M"
 fi
 
 #Start program

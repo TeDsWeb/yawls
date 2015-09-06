@@ -1,5 +1,5 @@
 /*******************************************************************************
- * Copyright (c) 2013-2015 Dominik Brämer.
+ * Copyright (c) 2015 Dominik Brämer.
  * All rights reserved. This program and the accompanying materials
  * are made available under the terms of the GNU Public License v3.0
  * which accompanies this distribution, and is available at
@@ -11,7 +11,6 @@ import java.net.MalformedURLException;
 import java.util.logging.Level;
 
 import com.blogspot.thedsweb.daemon.BrightnessDaemon;
-import com.blogspot.thedsweb.daemon.Tools;
 import com.blogspot.thedsweb.engine.Brightness;
 import com.blogspot.thedsweb.gui.Show;
 import com.blogspot.thedsweb.util.Check;
@@ -24,7 +23,6 @@ import com.blogspot.thedsweb.util.Translate;
 public class Yawls {
     public static void main(String[] args) {
 	// Simple command line argument parsing
-	Show.gui(args);
 	for (final String options : args) {
 	    switch (options) {
 	    case "-h":
@@ -156,10 +154,6 @@ public class Yawls {
 
 	// Get current brightness and save it
 	final Brightness brightness = new Brightness(config);
-
-	// If the current value change in a extreme way
-	// try to set it again
-	Tools.setNewIfChangeTooExtreme(brightness);
 
 	// Set new brightness level
 	brightness.setBrightness();

@@ -1,5 +1,5 @@
 /*******************************************************************************
- * Copyright (c) 2013-2015 Dominik Brämer.
+ * Copyright (c) 2015 Dominik Brämer.
  * All rights reserved. This program and the accompanying materials
  * are made available under the terms of the GNU Public License v3.0
  * which accompanies this distribution, and is available at
@@ -132,10 +132,6 @@ public class BrightnessDaemon {
 	    } else {
 		calibration = true;
 	    }
-
-	    // If the current value change in a extreme way
-	    // try to set it again
-	    Tools.setNewIfChangeTooExtreme(brightness);
 
 	    // Get last brightness value BEFORE processing
 	    before = brightness.getLast();

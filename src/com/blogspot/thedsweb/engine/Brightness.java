@@ -1,5 +1,5 @@
 /*******************************************************************************
- * Copyright (c) 2013-2015 Dominik Brämer.
+ * Copyright (c) 2015 Dominik Brämer.
  * All rights reserved. This program and the accompanying materials
  * are made available under the terms of the GNU Public License v3.0
  * which accompanies this distribution, and is available at
@@ -26,13 +26,13 @@ public class Brightness extends Files {
     private int max;
     private int last;
     private int current;
-    private final int MAXLEVEL;
+    private final int maxLevel;
     private double[] referenceValue;
     private boolean face;
-    private final Threshold THRESHOLD;
-    private final Face PROBABILITY;
+    private final Threshold threshold;
+    private final Face probability;
     private final Thread fade;
-    private final Fade TRANSITION;
+    private final Fade transition;
     private boolean runDaemon;
     private boolean firstRun;
     private boolean backlit;
@@ -47,13 +47,13 @@ public class Brightness extends Files {
 
     public Brightness(Config config) {
 	// Create threshold object to calculate threshold
-	THRESHOLD = new Threshold(config);
+	threshold = new Threshold(config);
 
 	// Create face object to track faces
-	PROBABILITY = new Face(config);
+	probability = new Face(config);
 
 	// Create fade object for brightness changes
-	TRANSITION = new Fade();
+	transition = new Fade();
 
 	// Daemon to fade between screen brightness values
 	fade = new Thread(new FadeDaemon(), "fadeDaemon");
@@ -67,9 +67,9 @@ public class Brightness extends Files {
 	max = arr[1];
 	last = arr[2];
 	if (arr[3] > 0) {
-	    MAXLEVEL = arr[3];
+	    maxLevel = arr[3];
 	} else {
-	    MAXLEVEL = 15;
+	    maxLevel = 15;
 	}
 	blDev = new BacklightDevice();
 	blDev.setRef(min, max);
@@ -118,7 +118,7 @@ public class Brightness extends Files {
     // Control the difference between last and
     // current Brightness value return true when
     // it is too high
-    public boolean control() {
+    private boolean control(int current) {
 	return current > last << 1 || current << 1 < last;
     }
 
@@ -152,6 +152,16 @@ public class Brightness extends Files {
 	return LENGTH;
     }
 
+    private Mat capture10thFrame(VideoCapture cap, Mat frame) {
+	// Grab and decode the 10th frame of the camera
+	for (int i = 0; i <= 10; i++) {
+	    cap.grab();
+	}
+	cap.retrieve(frame);
+
+	return frame;
+    }
+
     private int captureAndCalculate() {
 	final Mat frame = new Mat();
 
@@ -168,17 +178,22 @@ public class Brightness extends Files {
 	    return meanValue;
 	}
 
-	// Grab and decode the 10th frame of the camera
-	for (int i = 0; i <= 10; i++) {
-	    cap.grab();
-	}
-	cap.retrieve(frame);
+	capture10thFrame(cap, frame);
 
 	// Calculate mean value of frame
 	meanValue = meanCalculation(frame);
 
+	// If the current value change in a extreme way
+	// set it again
+	if (control(meanValue)) {
+	    capture10thFrame(cap, frame);
+
+	    // Re-Calculate mean value of frame
+	    meanValue = meanCalculation(frame);
+	}
+
 	// Set true if someone's Face is detected
-	face = PROBABILITY.detectFace(frame, meanValue);
+	face = probability.detectFace(frame, meanValue);
 
 	// Release the camera for other programs
 	cap.release();
@@ -221,28 +236,6 @@ public class Brightness extends Files {
 	return meanLumaValue;
     }
 
-    private int maxVal(int[] values) {
-	// Simple max of array calculation
-	int max = 0;
-	for (final int value : values) {
-	    if (max < value) {
-		max = value;
-	    }
-	}
-	return max;
-    }
-
-    private int minVal(int[] values) {
-	// Simple min of array calculation
-	int min = 260;
-	for (final int value : values) {
-	    if (min > value) {
-		min = value;
-	    }
-	}
-	return min;
-    }
-
     private boolean checkChroma(int[] values, int mean) {
 	// Check how similar the chroma values of all frame tiles are. By
 	// calculate the maximum number of similar tiles.
@@ -268,6 +261,7 @@ public class Brightness extends Files {
 	// Save the mean brightness and chroma value of the whole frame. Plus
 	// the width and height of the frame.
 	final int mainMeanChromaValue = (int) mainMean.val[2];
+	final int PARTS = 8;
 	final int w = yCrCb.width();
 	final int h = yCrCb.height();
 
@@ -275,7 +269,7 @@ public class Brightness extends Files {
 	final int hStep = h >> 1;
 
 	// Separate the image into 8 equal parts.
-	final Mat[] tiles = new Mat[8];
+	final Mat[] tiles = new Mat[PARTS];
 	tiles[0] = yCrCb.submat(0, hStep, 0, wStep);
 	tiles[1] = yCrCb.submat(0, hStep, wStep, wStep * 2);
 	tiles[2] = yCrCb.submat(hStep, h, 0, wStep);
@@ -286,22 +280,31 @@ public class Brightness extends Files {
 	tiles[7] = yCrCb.submat(hStep, h, wStep * 2, w);
 
 	// Calculate the mean value of all parts.
-	final Scalar[] tileMean = new Scalar[8];
+	final Scalar[] tileMean = new Scalar[PARTS];
 	for (int i = 0; i < tileMean.length; i++) {
 	    tileMean[i] = Core.mean(tiles[i]);
 	}
 
 	// Save the mean brightness and chroma of all parts.
-	final int[] tileMeanLuma = new int[8];
-	final int[] tileMeanChroma = new int[8];
+	final int[] tileMeanLuma = new int[PARTS];
+	final int[] tileMeanChroma = new int[PARTS];
+
+	// Save min and max value in container
+	MinMaxContainer con = null;
+
 	for (int j = 0; j < tileMean.length; j++) {
 	    tileMeanLuma[j] = (int) tileMean[j].val[0];
+	    if (j == 0) {
+		con = new MinMaxContainer(tileMeanLuma[j]);
+	    } else {
+		con.add(tileMeanLuma[j]);
+	    }
 	    tileMeanChroma[j] = (int) tileMean[j].val[2];
 	}
 
 	// Get the highest and lowest brightness value of all frame tiles.
-	final int min = minVal(tileMeanLuma);
-	final int max = maxVal(tileMeanLuma) >> 1;
+	final int min = con.getMin();
+	final int max = con.getMax() >> 1;
 
 	// Check if their is a consistent chroma distribution and a brightness
 	// spike to detect backlit conditions.
@@ -314,8 +317,8 @@ public class Brightness extends Files {
 
     public void setBrightness() {
 	// Threshold values to prevent flickering
-	final int darkeningThreshold = THRESHOLD.getDarkeningThreshold(last);
-	final int brighteningThreshold = THRESHOLD
+	final int darkeningThreshold = threshold.getDarkeningThreshold(last);
+	final int brighteningThreshold = threshold
 		.getBrighteningThreshold(last);
 
 	// Set the display brightness value relative to reference
@@ -341,7 +344,7 @@ public class Brightness extends Files {
 		semaphoreSet.acquire();
 	    } catch (final InterruptedException e) {
 	    }
-	    TRANSITION.setValue(brightnessValue(referenceValue, current));
+	    transition.setValue(brightnessValue(referenceValue, current));
 	    semaphoreFade.release();
 
 	    // Save all values
@@ -386,14 +389,20 @@ public class Brightness extends Files {
 	    semaphoreSet.acquire();
 	} catch (final InterruptedException e) {
 	}
-	TRANSITION.setValue(0);
+	transition.setValue(0);
 	semaphoreFade.release();
     }
 
     class FadeDaemon implements Runnable {
 	@Override
 	public void run() {
-	    final int step = 500 / MAXLEVEL;
+	    int step = 500 / maxLevel;
+
+	    // Ensure that there is a min. laziness of 1 millisecond
+	    if (step == 0) {
+		step = 1;
+	    }
+
 	    while (runDaemon) {
 		try {
 		    semaphoreFade.acquire();
@@ -402,9 +411,9 @@ public class Brightness extends Files {
 		}
 		int count = 0;
 		// Set dynamically the brightness level
-		while (blDev.get() != TRANSITION.getValue() && count < MAXLEVEL) {
+		while (blDev.get() != transition.getValue() && count < maxLevel) {
 		    int i = blDev.get();
-		    if (i > TRANSITION.getValue()) {
+		    if (i > transition.getValue()) {
 			i--;
 		    } else {
 			i++;

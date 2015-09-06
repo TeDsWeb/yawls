@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: yawls\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-07-29 09:30+0200\n"
+"POT-Creation-Date: 2015-09-06 14:35+0200\n"
 "PO-Revision-Date: 2015-07-27 23:46+0000\n"
 "Last-Translator: Özgür Sarıer <ozgursarier1011601115@gmail.com>\n"
 "Language-Team: Turkish <tr@li.org>\n"
@@ -15,27 +15,27 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2015-07-29 07:28+0000\n"
-"X-Generator: Launchpad (build 17646)\n"
+"X-Launchpad-Export-Date: 2015-09-06 12:32+0000\n"
+"X-Generator: Launchpad (build 17706)\n"
 
-#: src/com/blogspot/thedsweb/main/Yawls.java:90
-#: src/com/blogspot/thedsweb/main/Yawls.java:95
+#: src/com/blogspot/thedsweb/main/Yawls.java:89
+#: src/com/blogspot/thedsweb/main/Yawls.java:94
 msgid "Usage: yawls [OPTIONS]"
 msgstr "Kullanım: yawls [SEÇENEKLER]"
 
-#: src/com/blogspot/thedsweb/main/Yawls.java:101
+#: src/com/blogspot/thedsweb/main/Yawls.java:100
 msgid "Another instance of yawls is already running!"
 msgstr "Başka bir yawls işlemi halihazırda çalışıyor!"
 
-#: src/com/blogspot/thedsweb/main/Yawls.java:105
+#: src/com/blogspot/thedsweb/main/Yawls.java:104
 msgid "This command must be run as root"
 msgstr "Bu komut kök kullanıcı yetkilendirmesi ile çalıştırılmalıdır"
 
-#: src/com/blogspot/thedsweb/main/Yawls.java:110
+#: src/com/blogspot/thedsweb/main/Yawls.java:109
 msgid "Usage: yawls"
 msgstr "Kullanım: yawls"
 
-#: src/com/blogspot/thedsweb/main/Yawls.java:113
+#: src/com/blogspot/thedsweb/main/Yawls.java:112
 msgid ""
 "yawls adjusts the brightness level of your display by using\n"
 "the internal/externel webcam of your notebook as an ambient\n"
@@ -44,7 +44,7 @@ msgstr ""
 "yawls ekran parlaklığını web kameranızı bir ışık algılayıcı\n"
 "olarak kullanarak ortamın aydınlığına göre ayarlar."
 
-#: src/com/blogspot/thedsweb/main/Yawls.java:116
+#: src/com/blogspot/thedsweb/main/Yawls.java:115
 msgid ""
 "If you wish to change the interval of ambient light checks\n"
 "you need to modify the file:"
@@ -52,238 +52,195 @@ msgstr ""
 "Eğer ortam ışığı denetleme aralığının süresini değiştirmek\n"
 "istiyorsanız, bu dosyayı ayarlamalısınız:"
 
-#: src/com/blogspot/thedsweb/main/Yawls.java:120
+#: src/com/blogspot/thedsweb/main/Yawls.java:119
 msgid "Options:"
 msgstr "Seçenekler:"
 
-#: src/com/blogspot/thedsweb/main/Yawls.java:124
+#: src/com/blogspot/thedsweb/main/Yawls.java:123
 msgid "--cron\t or -c use webcam as brightness reference"
 msgstr "--cron\t veya -c parlaklık uyarlaması için kamerayı kullan"
 
-#: src/com/blogspot/thedsweb/main/Yawls.java:126
+#: src/com/blogspot/thedsweb/main/Yawls.java:125
 msgid "--help\t or -h show this help"
 msgstr "--help\t veya -h bu yardımı görüntüler"
 
-#: src/com/blogspot/thedsweb/main/Yawls.java:128
+#: src/com/blogspot/thedsweb/main/Yawls.java:127
 msgid "--restore\t or -r restore config files"
 msgstr "--restore\t veya -r yapılandırma dosyalarını onarır"
 
-#: src/com/blogspot/thedsweb/main/Yawls.java:131
+#: src/com/blogspot/thedsweb/main/Yawls.java:130
 msgid "Yawls version"
 msgstr "Yawls sürümü"
 
-#: src/com/blogspot/thedsweb/main/Yawls.java:138
+#: src/com/blogspot/thedsweb/main/Yawls.java:137
 msgid "Error:"
 msgstr "Hata:"
 
-#: src/com/blogspot/thedsweb/main/Yawls.java:142
+#: src/com/blogspot/thedsweb/main/Yawls.java:141
 msgid "No backlight device found."
 msgstr "Hiçbir arka ışık aygıtı bulunamadı."
 
-#: src/com/blogspot/thedsweb/main/Yawls.java:145
-#: src/com/blogspot/thedsweb/gui/Show.java:152
+#: src/com/blogspot/thedsweb/main/Yawls.java:144
 msgid "No camera found."
 msgstr "Hiçbir kamera bulunamadı."
 
-#: src/com/blogspot/thedsweb/main/Yawls.java:170
+#: src/com/blogspot/thedsweb/main/Yawls.java:165
 msgid "Yawls service started. Press {CTRL+C} to abort..."
 msgstr "Yawls servisi başlatıldı. Çıkmak inin {CTRL+C} 'ye basınız..."
 
-#: src/com/blogspot/thedsweb/gui/Show.java:101
-msgid "Webcam stats:"
-msgstr "Kamera istatistikleri:"
+#~ msgid "Webcam stats:"
+#~ msgstr "Kamera istatistikleri:"
 
-#: src/com/blogspot/thedsweb/gui/Show.java:110
-msgid "Configuration:"
-msgstr "Yapılandırma:"
+#~ msgid "Configuration:"
+#~ msgstr "Yapılandırma:"
 
-#: src/com/blogspot/thedsweb/gui/Show.java:145
-msgid "No backlight device found"
-msgstr "Hiçbir arka ışık aygıtı"
+#~ msgid "No backlight device found"
+#~ msgstr "Hiçbir arka ışık aygıtı"
 
-#: src/com/blogspot/thedsweb/gui/Show.java:148
-msgid "and no camera found."
-msgstr "ve kamera bulunamadı."
+#~ msgid "and no camera found."
+#~ msgstr "ve kamera bulunamadı."
 
-#: src/com/blogspot/thedsweb/gui/Show.java:159
-msgid "Reset"
-msgstr "Sıfırla"
+#~ msgid "Reset"
+#~ msgstr "Sıfırla"
 
-#: src/com/blogspot/thedsweb/gui/Show.java:168
-msgid "Apply"
-msgstr "Uygula"
+#~ msgid "Apply"
+#~ msgstr "Uygula"
 
-#: src/com/blogspot/thedsweb/gui/Show.java:183
-msgid "The value of the upper limit must be greater than the lower limit."
-msgstr "Üst sınır değeri alt sınır değerinden büyük olmalı."
+#~ msgid "The value of the upper limit must be greater than the lower limit."
+#~ msgstr "Üst sınır değeri alt sınır değerinden büyük olmalı."
 
-#: src/com/blogspot/thedsweb/gui/Show.java:188
-msgid "The value of the max. increase must be greater than the min. increase."
-msgstr "Azami artış değeri asgari artıştan büyük olmalı."
+#~ msgid ""
+#~ "The value of the max. increase must be greater than the min. increase."
+#~ msgstr "Azami artış değeri asgari artıştan büyük olmalı."
 
-#: src/com/blogspot/thedsweb/gui/Show.java:242
-msgid "face detect"
-msgstr "yüz algılama"
+#~ msgid "face detect"
+#~ msgstr "yüz algılama"
 
-#: src/com/blogspot/thedsweb/gui/Show.java:245
-msgid "Set true to enable or false to disable face detection"
-msgstr ""
-"Yüz algılamayı etkinleştirmek için \"Açık\", devre dışı bırakmak için "
-"\"Kapalı\" ayarlayın"
+#~ msgid "Set true to enable or false to disable face detection"
+#~ msgstr ""
+#~ "Yüz algılamayı etkinleştirmek için \"Açık\", devre dışı bırakmak için "
+#~ "\"Kapalı\" ayarlayın"
 
-#: src/com/blogspot/thedsweb/gui/Show.java:246
-msgid "lower limit"
-msgstr "alt sınır"
+#~ msgid "lower limit"
+#~ msgstr "alt sınır"
 
-#: src/com/blogspot/thedsweb/gui/Show.java:249
-msgid "Minimum time between camera activations in milliseconds"
-msgstr "Kamera etkinleşmeleri arasındaki asgari zaman, milisaniye cinsinden"
+#~ msgid "Minimum time between camera activations in milliseconds"
+#~ msgstr "Kamera etkinleşmeleri arasındaki asgari zaman, milisaniye cinsinden"
 
-#: src/com/blogspot/thedsweb/gui/Show.java:250
-msgid "upper limit"
-msgstr "üst sınır"
+#~ msgid "upper limit"
+#~ msgstr "üst sınır"
 
-#: src/com/blogspot/thedsweb/gui/Show.java:253
-msgid "Maximum time between camera activations in milliseconds"
-msgstr "Kamera etkinleşmeleri arasındaki azami zaman, milisaniye cinsinden"
+#~ msgid "Maximum time between camera activations in milliseconds"
+#~ msgstr "Kamera etkinleşmeleri arasındaki azami zaman, milisaniye cinsinden"
 
-#: src/com/blogspot/thedsweb/gui/Show.java:254
-msgid "min. increase"
-msgstr "asgari artış"
+#~ msgid "min. increase"
+#~ msgstr "asgari artış"
 
-#: src/com/blogspot/thedsweb/gui/Show.java:258
-msgid ""
-"Minimum time increase between camera activations in milliseconds if nothing "
-"to do"
-msgstr ""
-"Yapacak bir şey olmayınca kamera etkinleşmeleri arasındaki asgari artış, "
-"milisaniye cinsinden"
+#~ msgid ""
+#~ "Minimum time increase between camera activations in milliseconds if "
+#~ "nothing to do"
+#~ msgstr ""
+#~ "Yapacak bir şey olmayınca kamera etkinleşmeleri arasındaki asgari artış, "
+#~ "milisaniye cinsinden"
 
-#: src/com/blogspot/thedsweb/gui/Show.java:259
-msgid "max. increase"
-msgstr "azami artış"
+#~ msgid "max. increase"
+#~ msgstr "azami artış"
 
-#: src/com/blogspot/thedsweb/gui/Show.java:263
-msgid ""
-"Maximum time increase between camera activations in milliseconds if nothing "
-"to do"
-msgstr ""
-"Yapacak bir şey olmayınca kamera etkinleşmeleri arasındaki azami artış, "
-"milisaniye cinsinden"
+#~ msgid ""
+#~ "Maximum time increase between camera activations in milliseconds if "
+#~ "nothing to do"
+#~ msgstr ""
+#~ "Yapacak bir şey olmayınca kamera etkinleşmeleri arasındaki azami artış, "
+#~ "milisaniye cinsinden"
 
-#: src/com/blogspot/thedsweb/gui/Show.java:264
-msgid "darkening threshold"
-msgstr "koyulaşma eşiği"
+#~ msgid "darkening threshold"
+#~ msgstr "koyulaşma eşiği"
 
-#: src/com/blogspot/thedsweb/gui/Show.java:267
-msgid ""
-"Value for darkening threshold in percent (0-100)\n"
-"For example a value of 25 means that the current brightness\n"
-"has to be less than 75 percent of the last measured brightness."
-msgstr ""
-"Koyulaşma eşiği değeri, yüzdelik cinsinden (0-100)\n"
-"Örneğin bu eşik için 25 değeri, mevcut parlaklığın bir önce\n"
-"ölçülenin yüzde 75'inden daha küçük olması gerektiğini ifade eder."
+#~ msgid ""
+#~ "Value for darkening threshold in percent (0-100)\n"
+#~ "For example a value of 25 means that the current brightness\n"
+#~ "has to be less than 75 percent of the last measured brightness."
+#~ msgstr ""
+#~ "Koyulaşma eşiği değeri, yüzdelik cinsinden (0-100)\n"
+#~ "Örneğin bu eşik için 25 değeri, mevcut parlaklığın bir önce\n"
+#~ "ölçülenin yüzde 75'inden daha küçük olması gerektiğini ifade eder."
 
-#: src/com/blogspot/thedsweb/gui/Show.java:268
-msgid "brightening threshold"
-msgstr "parlaklık eşiği"
+#~ msgid "brightening threshold"
+#~ msgstr "parlaklık eşiği"
 
-#: src/com/blogspot/thedsweb/gui/Show.java:271
-msgid ""
-"Value for brightening threshold in percent (0-100)\n"
-"For example a value of 10 means that the current brightness\n"
-"has to be greater than 110 percent of the last measured brightness."
-msgstr ""
-"Parlaklık eşiği değeri, yüzdelik cinsinden (0-100)\n"
-"Örneğin bu eşik için 10 değeri, mevcut parlaklığın bir önce\n"
-"ölçülenin yüzde 110'undan daha büyük olması gerektiğini ifade eder."
+#~ msgid ""
+#~ "Value for brightening threshold in percent (0-100)\n"
+#~ "For example a value of 10 means that the current brightness\n"
+#~ "has to be greater than 110 percent of the last measured brightness."
+#~ msgstr ""
+#~ "Parlaklık eşiği değeri, yüzdelik cinsinden (0-100)\n"
+#~ "Örneğin bu eşik için 10 değeri, mevcut parlaklığın bir önce\n"
+#~ "ölçülenin yüzde 110'undan daha büyük olması gerektiğini ifade eder."
 
-#: src/com/blogspot/thedsweb/gui/Show.java:272
-msgid "log level"
-msgstr "günlük kaydı düzeyi"
+#~ msgid "log level"
+#~ msgstr "günlük kaydı düzeyi"
 
-#: src/com/blogspot/thedsweb/gui/Show.java:275
-msgid "Log level 0 (error) < 1 (warning) < 2 (info) < 3 (debug)"
-msgstr "Günlük kaydı düzeyi 0 (hata) < 1 (uyarı) < 2 (bilgi) < 3 (onarım)"
+#~ msgid "Log level 0 (error) < 1 (warning) < 2 (info) < 3 (debug)"
+#~ msgstr "Günlük kaydı düzeyi 0 (hata) < 1 (uyarı) < 2 (bilgi) < 3 (onarım)"
 
-#: src/com/blogspot/thedsweb/gui/Show.java:347
-msgid "Max. value:"
-msgstr "Azami değer:"
+#~ msgid "Max. value:"
+#~ msgstr "Azami değer:"
 
-#: src/com/blogspot/thedsweb/gui/Show.java:348
-msgid "Min. value:"
-msgstr "Asgari değer:"
+#~ msgid "Min. value:"
+#~ msgstr "Asgari değer:"
 
-#: src/com/blogspot/thedsweb/gui/Show.java:349
-#: src/com/blogspot/thedsweb/gui/Show.java:490
-msgid "Last value:"
-msgstr "Son değer:"
+#~ msgid "Last value:"
+#~ msgstr "Son değer:"
 
-#: src/com/blogspot/thedsweb/gui/Show.java:376
-msgid "_Help"
-msgstr "_Yardım"
+#~ msgid "_Help"
+#~ msgstr "_Yardım"
 
-#: src/com/blogspot/thedsweb/gui/Show.java:377
-msgid "_Preferences"
-msgstr "_Tercihler"
+#~ msgid "_Preferences"
+#~ msgstr "_Tercihler"
 
-#: src/com/blogspot/thedsweb/gui/Show.java:382
-msgid "_About"
-msgstr "_Hakkında"
+#~ msgid "_About"
+#~ msgstr "_Hakkında"
 
-#: src/com/blogspot/thedsweb/gui/Show.java:384
-msgid "FAQ"
-msgstr "S.S.S"
+#~ msgid "FAQ"
+#~ msgstr "S.S.S"
 
-#: src/com/blogspot/thedsweb/gui/Show.java:410
-msgid "_Calibrate"
-msgstr "_Kalibre Et"
+#~ msgid "_Calibrate"
+#~ msgstr "_Kalibre Et"
 
-#: src/com/blogspot/thedsweb/gui/Show.java:448
-msgid "Calibration wizard"
-msgstr "Kalibrasyon sihirbazı"
+#~ msgid "Calibration wizard"
+#~ msgstr "Kalibrasyon sihirbazı"
 
-#: src/com/blogspot/thedsweb/gui/Show.java:457
-msgid "Step 1:"
-msgstr "Adım 1:"
+#~ msgid "Step 1:"
+#~ msgstr "Adım 1:"
 
-#: src/com/blogspot/thedsweb/gui/Show.java:464
-msgid ""
-"Make your environment as bright as possible\n"
-"and press the calibrate button."
-msgstr ""
-"Bulunduğunuz ortamı mümkün olduğunca parlak\n"
-"hale getirin ve \"Kalibre Et\" tuşuna basın."
+#~ msgid ""
+#~ "Make your environment as bright as possible\n"
+#~ "and press the calibrate button."
+#~ msgstr ""
+#~ "Bulunduğunuz ortamı mümkün olduğunca parlak\n"
+#~ "hale getirin ve \"Kalibre Et\" tuşuna basın."
 
-#: src/com/blogspot/thedsweb/gui/Show.java:466
-msgid "Step 2:"
-msgstr "Adım 2:"
+#~ msgid "Step 2:"
+#~ msgstr "Adım 2:"
 
-#: src/com/blogspot/thedsweb/gui/Show.java:473
-msgid ""
-"Make your environment as dark as possible\n"
-"and press the calibrate button again."
-msgstr ""
-"Bulunduğunuz ortamı mümkün olduğunca karanlık\n"
-"hale getirin ve tekrar \"Kalibre Et\" tuşuna basın."
+#~ msgid ""
+#~ "Make your environment as dark as possible\n"
+#~ "and press the calibrate button again."
+#~ msgstr ""
+#~ "Bulunduğunuz ortamı mümkün olduğunca karanlık\n"
+#~ "hale getirin ve tekrar \"Kalibre Et\" tuşuna basın."
 
-#: src/com/blogspot/thedsweb/gui/Show.java:500
-msgid "Finish"
-msgstr "Bitir"
+#~ msgid "Finish"
+#~ msgstr "Bitir"
 
-#: src/com/blogspot/thedsweb/gui/Show.java:504
-msgid "Back"
-msgstr "Geri"
+#~ msgid "Back"
+#~ msgstr "Geri"
 
-#: src/com/blogspot/thedsweb/gui/Show.java:508
-msgid "Next"
-msgstr "İleri"
+#~ msgid "Next"
+#~ msgstr "İleri"
 
-#: src/com/blogspot/thedsweb/gui/Show.java:512
-msgid "Calibrate"
-msgstr "Kalibre Et"
+#~ msgid "Calibrate"
+#~ msgstr "Kalibre Et"
 
-#: src/com/blogspot/thedsweb/gui/Show.java:565
-msgid "Backlight detected:"
-msgstr "Arka ışık algılandı:"
+#~ msgid "Backlight detected:"
+#~ msgstr "Arka ışık algılandı:"

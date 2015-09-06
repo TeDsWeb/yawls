@@ -7,16 +7,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: yawls\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
-"POT-Creation-Date: 2015-07-29 09:30+0200\n"
-"PO-Revision-Date: 2015-07-07 10:06+0000\n"
-"Last-Translator: Oleg Koptev <koptev.oleg@gmail.com>\n"
+"POT-Creation-Date: 2015-09-06 14:35+0200\n"
+"PO-Revision-Date: 2015-08-18 05:42+0000\n"
+"Last-Translator: ☠Jay ZDLin☠ <Unknown>\n"
 "Language-Team: Russian <ru@li.org>\n"
 "Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2015-07-29 07:28+0000\n"
-"X-Generator: Launchpad (build 17646)\n"
+"X-Launchpad-Export-Date: 2015-09-06 12:32+0000\n"
+"X-Generator: Launchpad (build 17706)\n"
 
 #. type: TH
 #: man/yawls.1:1
@@ -28,7 +28,7 @@ msgstr "YAWLS"
 #: man/yawls.1:1
 #, no-wrap
 msgid "July 17, 2015"
-msgstr ""
+msgstr "17 июля 2015 г."
 
 #. type: TH
 #: man/yawls.1:1
@@ -51,7 +51,7 @@ msgstr "НАЗВАНИЕ"
 #. type: Plain text
 #: man/yawls.1:4
 msgid "yawls - Automatic brightness adjustment"
-msgstr ""
+msgstr "yawls - Автоматическая регулировка яркости"
 
 #. type: SH
 #: man/yawls.1:4
@@ -77,6 +77,9 @@ msgid ""
 "display by using the internal/externel webcam of your notebook as an ambient "
 "light sensor."
 msgstr ""
+"Yawls (датчик освещённости на базе веб-камеры) регулирует уровень яркости "
+"вашего экрана, используя встроенную или внешнюю веб-камеру ноутбука в "
+"качестве датчика освещённости."
 
 #. type: Plain text
 #: man/yawls.1:11

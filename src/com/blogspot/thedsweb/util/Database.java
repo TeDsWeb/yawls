@@ -1,5 +1,5 @@
 /*******************************************************************************
- * Copyright (c) 2013-2015 Dominik Brämer.
+ * Copyright (c) 2015 Dominik Brämer.
  * All rights reserved. This program and the accompanying materials
  * are made available under the terms of the GNU Public License v3.0
  * which accompanies this distribution, and is available at
@@ -26,8 +26,8 @@ public class Database {
 
     // Path for GUI files
     public final static String PATH_ICON = "/usr/share/yawls/yawls_icon_64x64.png";
-    public final static String VERSION = "1.2.1";
-    public final static String CREDITS = "Carsten Gerlach\nfossfreedom\nJean-Marc\nClaudio Arseni\nGherman Ionuț\n☠Jay ZDLin☠";
+    public final static String VERSION = "1.2.2";
+    public final static String CREDITS = "Xuacu Saturio\nVPablo\nDominik Brämer\nAndi Chandler\nlann\nClaudio Arseni\nJulio Alexander Sieg\nOleg Koptev\nÖzgür Sarıer\nМикола Ткач\nJean-Marc\nGherman Ionuț\n☠Jay ZDLin☠";
 
     // Path for lock files
     public final static String PATH_PID = "/run/yawls.pid";

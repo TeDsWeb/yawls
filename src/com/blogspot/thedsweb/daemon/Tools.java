@@ -1,5 +1,5 @@
 /*******************************************************************************
- * Copyright (c) 2013-2015 Dominik Brämer.
+ * Copyright (c) 2015 Dominik Brämer.
  * All rights reserved. This program and the accompanying materials
  * are made available under the terms of the GNU Public License v3.0
  * which accompanies this distribution, and is available at
@@ -9,7 +9,6 @@ package com.blogspot.thedsweb.daemon;
 
 import java.util.logging.Level;
 
-import com.blogspot.thedsweb.engine.Brightness;
 import com.blogspot.thedsweb.main.Debug;
 
 public class Tools {
@@ -36,13 +35,5 @@ public class Tools {
 	limit[1] = upperLimitConst;
 	limit[2] = lowerLimit;
 	limit[3] = upperLimit;
-    }
-
-    public static void setNewIfChangeTooExtreme(Brightness brightness) {
-	// Set new current if the change between the last and
-	// current values is very high
-	if (brightness.control()) {
-	    brightness.setCurrent();
-	}
     }
 }

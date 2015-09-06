@@ -8,16 +8,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: yawls\n"
 "Report-Msgid-Bugs-To: <thedsweb@googlemail.com>\n"
-"POT-Creation-Date: 2015-07-29 09:30+0200\n"
-"PO-Revision-Date: 2015-06-30 09:09+0000\n"
-"Last-Translator: Daniel Winzen <d@winzen4.de>\n"
+"POT-Creation-Date: 2015-09-06 14:35+0200\n"
+"PO-Revision-Date: 2015-07-31 15:11+0000\n"
+"Last-Translator: Dominik Brämer <thedsweb@googlemail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2015-07-29 07:28+0000\n"
-"X-Generator: Launchpad (build 17646)\n"
+"X-Launchpad-Export-Date: 2015-09-06 12:32+0000\n"
+"X-Generator: Launchpad (build 17706)\n"
 
 #. type: TH
 #: man/yawls.1:1
@@ -29,7 +29,7 @@ msgstr "YAWLS"
 #: man/yawls.1:1
 #, no-wrap
 msgid "July 17, 2015"
-msgstr ""
+msgstr "Juli 17, 2015"
 
 #. type: TH
 #: man/yawls.1:1
@@ -52,7 +52,7 @@ msgstr "NAME"
 #. type: Plain text
 #: man/yawls.1:4
 msgid "yawls - Automatic brightness adjustment"
-msgstr ""
+msgstr "yawls - Automatische Helligkeits-Steuerung"
 
 #. type: SH
 #: man/yawls.1:4
@@ -78,6 +78,9 @@ msgid ""
 "display by using the internal/externel webcam of your notebook as an ambient "
 "light sensor."
 msgstr ""
+"Yawls (Yet Another Webcam Light Sensor) reguliert die Bildschirmhelligkeit "
+"indem es die interne/externe Webcam ihres Notebooks als Umgebungslicht-"
+"Sensor nutzt."
 
 #. type: Plain text
 #: man/yawls.1:11
@@ -156,6 +159,13 @@ msgid ""
 "you force the run once in a dark and once in a bright room or you use the "
 "GUI to run the calibration task."
 msgstr ""
+"Nutzt einmalig die primäre Webcam als Referenz für die Umgebungshelligkeit. "
+"Diese Funktion wird standardmäßig vom yawls Cron-Dienst genutzt welcher "
+"ebenfalls standardmäßig alle 15 Minuten gestartet wird. Das Programm braucht "
+"eine Weile bis es ordnungsgemäß funktioniert da es sich von Start zu Start "
+"selbst auf die Kamera einstellt. Sie können diese Zeit verkürzen indem Sie "
+"diesen Befehl einmal in einem hellen und einmal in einem dunklen Raum "
+"manuell starten oder die Sie nutzen die GUI um die Kalibrierung vorzunehmen."
 
 #. type: Plain text
 #: man/yawls.1:40
@@ -173,6 +183,14 @@ msgid ""
 "option once in a dark and once in a bright room or you use the GUI to run "
 "the calibration task."
 msgstr ""
+"Nutzt kontinuierlich die primäre Webcam als Referenz für die "
+"Umgebungshelligkeit. Nur für Testzwecke direkt von der Kommandozeile starten "
+"da dieser Befehl eigentlich vom init.d Skript (/etc/init.d/yawls) genutzt "
+"wird. Das Programm braucht eine Weile bis es ordnungsgemäß funktioniert da "
+"es sich von Start zu Start selbst auf die Kamera einstellt. Sie können diese "
+"Zeit verkürzen indem den cron Befehl einmal in einem hellen und einmal in "
+"einem dunklen Raum manuell ausführen oder die Sie nutzen die GUI um die "
+"Kalibrierung vorzunehmen."
 
 #. type: Plain text
 #: man/yawls.1:49

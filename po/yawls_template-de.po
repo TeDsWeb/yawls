@@ -7,42 +7,45 @@ msgid ""
 msgstr ""
 "Project-Id-Version: yawls\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-07-29 09:30+0200\n"
-"PO-Revision-Date: 2015-07-01 10:53+0000\n"
-"Last-Translator: Daniel Winzen <d@winzen4.de>\n"
+"POT-Creation-Date: 2015-09-06 14:35+0200\n"
+"PO-Revision-Date: 2015-07-31 15:06+0000\n"
+"Last-Translator: Dominik Brämer <thedsweb@googlemail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2015-07-29 07:28+0000\n"
-"X-Generator: Launchpad (build 17646)\n"
+"X-Launchpad-Export-Date: 2015-09-06 12:32+0000\n"
+"X-Generator: Launchpad (build 17706)\n"
 
-#: src/com/blogspot/thedsweb/main/Yawls.java:90
-#: src/com/blogspot/thedsweb/main/Yawls.java:95
+#: src/com/blogspot/thedsweb/main/Yawls.java:89
+#: src/com/blogspot/thedsweb/main/Yawls.java:94
 msgid "Usage: yawls [OPTIONS]"
 msgstr "Verwendung: yawls [OPTIONEN]"
 
-#: src/com/blogspot/thedsweb/main/Yawls.java:101
+#: src/com/blogspot/thedsweb/main/Yawls.java:100
 msgid "Another instance of yawls is already running!"
 msgstr "Eine andere Instanz von yawls läuft bereits!"
 
-#: src/com/blogspot/thedsweb/main/Yawls.java:105
+#: src/com/blogspot/thedsweb/main/Yawls.java:104
 msgid "This command must be run as root"
 msgstr "Dieser Befehl muss als root ausgeführt werden"
 
-#: src/com/blogspot/thedsweb/main/Yawls.java:110
+#: src/com/blogspot/thedsweb/main/Yawls.java:109
 msgid "Usage: yawls"
 msgstr "Verwendung: yawls"
 
-#: src/com/blogspot/thedsweb/main/Yawls.java:113
+#: src/com/blogspot/thedsweb/main/Yawls.java:112
 msgid ""
 "yawls adjusts the brightness level of your display by using\n"
 "the internal/externel webcam of your notebook as an ambient\n"
 "light sensor."
 msgstr ""
+"yawls reguliert die Bildschirmhelligkeit indem es die\n"
+"interne/externe Webcam ihres Notebooks als Umgebungslicht-Sensor\n"
+"nutzt."
 
-#: src/com/blogspot/thedsweb/main/Yawls.java:116
+#: src/com/blogspot/thedsweb/main/Yawls.java:115
 msgid ""
 "If you wish to change the interval of ambient light checks\n"
 "you need to modify the file:"
@@ -50,233 +53,200 @@ msgstr ""
 "Wenn Sie den Intervall zwischen den Helligkeitsüberprüfungen\\nändern "
 "möchten müssen sie die folgende Datei entsprechend\\nanpassen:"
 
-#: src/com/blogspot/thedsweb/main/Yawls.java:120
+#: src/com/blogspot/thedsweb/main/Yawls.java:119
 msgid "Options:"
 msgstr "Optionen:"
 
-#: src/com/blogspot/thedsweb/main/Yawls.java:124
+#: src/com/blogspot/thedsweb/main/Yawls.java:123
 msgid "--cron\t or -c use webcam as brightness reference"
 msgstr "--cron\t oder -c nutze Webcam als Referenz für die Umgebungshelligkeit"
 
-#: src/com/blogspot/thedsweb/main/Yawls.java:126
+#: src/com/blogspot/thedsweb/main/Yawls.java:125
 msgid "--help\t or -h show this help"
 msgstr "--help\t oder -h zeigt diese Hilfe"
 
-#: src/com/blogspot/thedsweb/main/Yawls.java:128
+#: src/com/blogspot/thedsweb/main/Yawls.java:127
 msgid "--restore\t or -r restore config files"
 msgstr "--restore\t oder -r setzt die Konfigurationsdateien zurück"
 
-#: src/com/blogspot/thedsweb/main/Yawls.java:131
+#: src/com/blogspot/thedsweb/main/Yawls.java:130
 msgid "Yawls version"
 msgstr "Yawls Version"
 
-#: src/com/blogspot/thedsweb/main/Yawls.java:138
+#: src/com/blogspot/thedsweb/main/Yawls.java:137
 msgid "Error:"
 msgstr "Fehler:"
 
-#: src/com/blogspot/thedsweb/main/Yawls.java:142
+#: src/com/blogspot/thedsweb/main/Yawls.java:141
 msgid "No backlight device found."
 msgstr "Kein Hintergrundbeleuchtungsgerät gefunden."
 
-#: src/com/blogspot/thedsweb/main/Yawls.java:145
-#: src/com/blogspot/thedsweb/gui/Show.java:152
+#: src/com/blogspot/thedsweb/main/Yawls.java:144
 msgid "No camera found."
 msgstr "Keine  Kamera gefunden."
 
-#: src/com/blogspot/thedsweb/main/Yawls.java:170
+#: src/com/blogspot/thedsweb/main/Yawls.java:165
 msgid "Yawls service started. Press {CTRL+C} to abort..."
-msgstr ""
+msgstr "Yawls-Dienst gestartet. Drücken Sie {Strg+C} zum Beenden…"
 
-#: src/com/blogspot/thedsweb/gui/Show.java:101
-msgid "Webcam stats:"
-msgstr ""
+#~ msgid "Webcam stats:"
+#~ msgstr "Webcam Stat.:"
 
-#: src/com/blogspot/thedsweb/gui/Show.java:110
-msgid "Configuration:"
-msgstr "Einstellungen:"
+#~ msgid "Configuration:"
+#~ msgstr "Einstellungen:"
 
-#: src/com/blogspot/thedsweb/gui/Show.java:145
-msgid "No backlight device found"
-msgstr "Kein Hintergrundbeleuchtungsgerät gefunden"
+#~ msgid "No backlight device found"
+#~ msgstr "Kein Hintergrundbeleuchtungsgerät gefunden"
 
-#: src/com/blogspot/thedsweb/gui/Show.java:148
-msgid "and no camera found."
-msgstr "und keine Kamera gefunden."
+#~ msgid "and no camera found."
+#~ msgstr "und keine Kamera gefunden."
 
-#: src/com/blogspot/thedsweb/gui/Show.java:159
-msgid "Reset"
-msgstr "Zurücksetzen"
+#~ msgid "Reset"
+#~ msgstr "Zurücksetzen"
 
-#: src/com/blogspot/thedsweb/gui/Show.java:168
-msgid "Apply"
-msgstr "Übernehmen"
+#~ msgid "Apply"
+#~ msgstr "Übernehmen"
 
-#: src/com/blogspot/thedsweb/gui/Show.java:183
-msgid "The value of the upper limit must be greater than the lower limit."
-msgstr ""
+#~ msgid "The value of the upper limit must be greater than the lower limit."
+#~ msgstr ""
+#~ "Der Wert der Obergrenze muss größer sein als der Wert der Untergrenze."
 
-#: src/com/blogspot/thedsweb/gui/Show.java:188
-msgid "The value of the max. increase must be greater than the min. increase."
-msgstr ""
+#~ msgid ""
+#~ "The value of the max. increase must be greater than the min. increase."
+#~ msgstr ""
+#~ "Der Wert der max. Erhöhung muss größer sein als der der min. Erhöhung."
 
-#: src/com/blogspot/thedsweb/gui/Show.java:242
-msgid "face detect"
-msgstr "Gesichtserkennung"
+#~ msgid "face detect"
+#~ msgstr "Gesichtserkennung"
 
-#: src/com/blogspot/thedsweb/gui/Show.java:245
-msgid "Set true to enable or false to disable face detection"
-msgstr ""
+#~ msgid "Set true to enable or false to disable face detection"
+#~ msgstr ""
+#~ "Setze auf wahr zum aktivieren oder auf falsch zum deaktivieren der "
+#~ "Gesichtserkennung"
 
-#: src/com/blogspot/thedsweb/gui/Show.java:246
-msgid "lower limit"
-msgstr "Untergrenze"
+#~ msgid "lower limit"
+#~ msgstr "Untergrenze"
 
-#: src/com/blogspot/thedsweb/gui/Show.java:249
-msgid "Minimum time between camera activations in milliseconds"
-msgstr "Minimale Zeit zwischen den Kameraaktivierungen in Millisekunden"
+#~ msgid "Minimum time between camera activations in milliseconds"
+#~ msgstr "Minimale Zeit zwischen den Kameraaktivierungen in Millisekunden"
 
-#: src/com/blogspot/thedsweb/gui/Show.java:250
-msgid "upper limit"
-msgstr "Obergrenze"
+#~ msgid "upper limit"
+#~ msgstr "Obergrenze"
 
-#: src/com/blogspot/thedsweb/gui/Show.java:253
-msgid "Maximum time between camera activations in milliseconds"
-msgstr "Maximale Zeit zwischen den Kameraaktivierungen in Millisekunden"
+#~ msgid "Maximum time between camera activations in milliseconds"
+#~ msgstr "Maximale Zeit zwischen den Kameraaktivierungen in Millisekunden"
 
-#: src/com/blogspot/thedsweb/gui/Show.java:254
-msgid "min. increase"
-msgstr "min. Erhöhung"
+#~ msgid "min. increase"
+#~ msgstr "min. Erhöhung"
 
-#: src/com/blogspot/thedsweb/gui/Show.java:258
-msgid ""
-"Minimum time increase between camera activations in milliseconds if nothing "
-"to do"
-msgstr ""
-"Minimale Zeiterhöhung zwischen den Kameraaktivierungen in Millisekunden wenn "
-"nichts zu tun ist"
+#~ msgid ""
+#~ "Minimum time increase between camera activations in milliseconds if "
+#~ "nothing to do"
+#~ msgstr ""
+#~ "Minimale Zeiterhöhung zwischen den Kameraaktivierungen in Millisekunden "
+#~ "wenn nichts zu tun ist"
 
-#: src/com/blogspot/thedsweb/gui/Show.java:259
-msgid "max. increase"
-msgstr "max. Erhöhung"
+#~ msgid "max. increase"
+#~ msgstr "max. Erhöhung"
 
-#: src/com/blogspot/thedsweb/gui/Show.java:263
-msgid ""
-"Maximum time increase between camera activations in milliseconds if nothing "
-"to do"
-msgstr ""
-"Minimale Zeiterhöhung zwischen den Kameraaktivierungen in Millisekunden wenn "
-"nichts zu tun ist"
+#~ msgid ""
+#~ "Maximum time increase between camera activations in milliseconds if "
+#~ "nothing to do"
+#~ msgstr ""
+#~ "Minimale Zeiterhöhung zwischen den Kameraaktivierungen in Millisekunden "
+#~ "wenn nichts zu tun ist"
 
-#: src/com/blogspot/thedsweb/gui/Show.java:264
-msgid "darkening threshold"
-msgstr "Abdunkelungsschwelle"
+#~ msgid "darkening threshold"
+#~ msgstr "Abdunkelungsschwelle"
 
-#: src/com/blogspot/thedsweb/gui/Show.java:267
-msgid ""
-"Value for darkening threshold in percent (0-100)\n"
-"For example a value of 25 means that the current brightness\n"
-"has to be less than 75 percent of the last measured brightness."
-msgstr ""
+#~ msgid ""
+#~ "Value for darkening threshold in percent (0-100)\n"
+#~ "For example a value of 25 means that the current brightness\n"
+#~ "has to be less than 75 percent of the last measured brightness."
+#~ msgstr ""
+#~ "Wert für die Abdunkelungsschwelle in Prozent (0-100)\n"
+#~ "Zum Beispiel bedeutet ein Wert von 25, dass die aktuelle Helligkeit\n"
+#~ "geringer als 75 Prozent der zuletzt gemessenen Helligkeit sein muss."
 
-#: src/com/blogspot/thedsweb/gui/Show.java:268
-msgid "brightening threshold"
-msgstr "Aufhellungsschwelle"
+#~ msgid "brightening threshold"
+#~ msgstr "Aufhellungsschwelle"
 
-#: src/com/blogspot/thedsweb/gui/Show.java:271
-msgid ""
-"Value for brightening threshold in percent (0-100)\n"
-"For example a value of 10 means that the current brightness\n"
-"has to be greater than 110 percent of the last measured brightness."
-msgstr ""
+#~ msgid ""
+#~ "Value for brightening threshold in percent (0-100)\n"
+#~ "For example a value of 10 means that the current brightness\n"
+#~ "has to be greater than 110 percent of the last measured brightness."
+#~ msgstr ""
+#~ "Wert für die Aufhellungsschwelle in Prozent (0-100)\n"
+#~ "Zum Beispiel bedeutet ein Wert von 10, dass die aktuelle Helligkeit\n"
+#~ "größer als 110 Prozent der zuletzt gemessenen Helligkeit sein muss."
 
-#: src/com/blogspot/thedsweb/gui/Show.java:272
-msgid "log level"
-msgstr ""
+#~ msgid "log level"
+#~ msgstr "Protokoll-Ebene"
 
-#: src/com/blogspot/thedsweb/gui/Show.java:275
-msgid "Log level 0 (error) < 1 (warning) < 2 (info) < 3 (debug)"
-msgstr ""
+#~ msgid "Log level 0 (error) < 1 (warning) < 2 (info) < 3 (debug)"
+#~ msgstr "Protokoll-Ebene 0 (Fehler) < 1 (Warnung) < 2 (Info) < 3 (debuggen)"
 
-#: src/com/blogspot/thedsweb/gui/Show.java:347
-msgid "Max. value:"
-msgstr "Max. Wert:"
+#~ msgid "Max. value:"
+#~ msgstr "Max. Wert:"
 
-#: src/com/blogspot/thedsweb/gui/Show.java:348
-msgid "Min. value:"
-msgstr "Min. Wert:"
+#~ msgid "Min. value:"
+#~ msgstr "Min. Wert:"
 
-#: src/com/blogspot/thedsweb/gui/Show.java:349
-#: src/com/blogspot/thedsweb/gui/Show.java:490
-msgid "Last value:"
-msgstr "Letzter Wert:"
+#~ msgid "Last value:"
+#~ msgstr "Letzter Wert:"
 
-#: src/com/blogspot/thedsweb/gui/Show.java:376
-msgid "_Help"
-msgstr "_Hilfe"
+#~ msgid "_Help"
+#~ msgstr "_Hilfe"
 
-#: src/com/blogspot/thedsweb/gui/Show.java:377
-msgid "_Preferences"
-msgstr "_Einstellungen"
+#~ msgid "_Preferences"
+#~ msgstr "_Einstellungen"
 
-#: src/com/blogspot/thedsweb/gui/Show.java:382
-msgid "_About"
-msgstr "_Über"
+#~ msgid "_About"
+#~ msgstr "_Über"
 
-#: src/com/blogspot/thedsweb/gui/Show.java:384
-msgid "FAQ"
-msgstr "FAQ"
+#~ msgid "FAQ"
+#~ msgstr "FAQ"
 
-#: src/com/blogspot/thedsweb/gui/Show.java:410
-msgid "_Calibrate"
-msgstr "_Kalibrieren"
+#~ msgid "_Calibrate"
+#~ msgstr "_Kalibrieren"
 
-#: src/com/blogspot/thedsweb/gui/Show.java:448
-msgid "Calibration wizard"
-msgstr "Kalibrierungsassistent"
+#~ msgid "Calibration wizard"
+#~ msgstr "Kalibrierungsassistent"
 
-#: src/com/blogspot/thedsweb/gui/Show.java:457
-msgid "Step 1:"
-msgstr "Schritt 1:"
+#~ msgid "Step 1:"
+#~ msgstr "Schritt 1:"
 
-#: src/com/blogspot/thedsweb/gui/Show.java:464
-msgid ""
-"Make your environment as bright as possible\n"
-"and press the calibrate button."
-msgstr ""
-"Machen Sie Ihre Umgebung so hell wie möglich\n"
-"und klicken Sie auf kalibrieren."
+#~ msgid ""
+#~ "Make your environment as bright as possible\n"
+#~ "and press the calibrate button."
+#~ msgstr ""
+#~ "Machen Sie Ihre Umgebung so hell wie möglich\n"
+#~ "und klicken Sie auf kalibrieren."
 
-#: src/com/blogspot/thedsweb/gui/Show.java:466
-msgid "Step 2:"
-msgstr "Schritt 2:"
+#~ msgid "Step 2:"
+#~ msgstr "Schritt 2:"
 
-#: src/com/blogspot/thedsweb/gui/Show.java:473
-msgid ""
-"Make your environment as dark as possible\n"
-"and press the calibrate button again."
-msgstr ""
-"Machen Sie Ihre Umgebung so dunkel wie möglich\n"
-"und klicken Sie auf kalibrieren."
+#~ msgid ""
+#~ "Make your environment as dark as possible\n"
+#~ "and press the calibrate button again."
+#~ msgstr ""
+#~ "Machen Sie Ihre Umgebung so dunkel wie möglich\n"
+#~ "und klicken Sie auf kalibrieren."
 
-#: src/com/blogspot/thedsweb/gui/Show.java:500
-msgid "Finish"
-msgstr "Fertigstellen"
+#~ msgid "Finish"
+#~ msgstr "Fertigstellen"
 
-#: src/com/blogspot/thedsweb/gui/Show.java:504
-msgid "Back"
-msgstr "Zurück"
+#~ msgid "Back"
+#~ msgstr "Zurück"
 
-#: src/com/blogspot/thedsweb/gui/Show.java:508
-msgid "Next"
-msgstr "Weiter"
+#~ msgid "Next"
+#~ msgstr "Weiter"
 
-#: src/com/blogspot/thedsweb/gui/Show.java:512
-msgid "Calibrate"
-msgstr "Kalibrieren"
+#~ msgid "Calibrate"
+#~ msgstr "Kalibrieren"
 
-#: src/com/blogspot/thedsweb/gui/Show.java:565
-msgid "Backlight detected:"
-msgstr "Hintergrundbeleuchtung erkannt:"
+#~ msgid "Backlight detected:"
+#~ msgstr "Hintergrundbeleuchtung erkannt:"
 
 #~ msgid ""
 #~ "yawls adjust the brightness level of your display by using\n"
