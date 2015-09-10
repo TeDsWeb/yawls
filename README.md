@@ -7,11 +7,12 @@ If you install Yawls it runs as a system daemon in background in an interval of 
 Therefore other programs are also able  to use the camera. The interval is divided into four configurable
 variables which will be explained later. You are also still able to correct the screen brightness with your function keys and other applets because Yawls won't update the brightness if your brightness condtions are stable. 
 
-If you have Yawls fresh installed [please enable the universe packages in Ubuntu to avoid an dependency errors] is it handy to calibrate it because otherwise it may not function properly but Yawls is also able to calibrate itself over time.
-There are two ways to calibrate Yawls:
+If you have Yawls fresh installed [please enable the universe packages in Ubuntu to avoid dependency errors] it is handy to calibrate it because otherwise it may not function properly.
+There are three ways to calibrate Yawls:
 
 * via CLI: run once in a dark and once in a bright room [yawls -c] 
-* via GUI: there is a calibration wizard under preferences
+* via GUI: there is a calibration wizard under preferences **(recommended)**
+* Yawls is also able to calibrate itself over time.
 
 Since version 1.2.0 Yawls is also able to detect backlit conditions to avoid a low screen brightness in such situations.
 A good example for such a situation is if you sit with your back to a great window or the other way around.
