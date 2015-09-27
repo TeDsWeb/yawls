@@ -76,10 +76,18 @@ Default: 1
 * [Twitter](https://twitter.com/TheDsWeb)
 * [German project blog](http://thedsweb.blogspot.de/p/yawls.html)
 
-### Download of the current stable release and PPA
-[yawls_1.2.2.deb](https://launchpad.net/yawls/1.2.x/1.2.2/+download/yawls_1.2.2_all.deb)
+### Downloads
 
-https://launchpad.net/~thedsweb/+archive/ubuntu/yawls-daily
+##### Ubuntu/Debian and derivatives
+* Installer:
+ * [yawls_1.2.2.deb](https://launchpad.net/yawls/1.2.x/1.2.2/+download/yawls_1.2.2_all.deb)
+* Repository/PPA:
+ * https://launchpad.net/~thedsweb/+archive/ubuntu/yawls-daily
+
+##### Arch Linux
+* AUR (Arch Linux User Repository):
+ * [yawls](https://aur4.archlinux.org/packages/yawls/)
+ * [yawls-bzr](https://aur4.archlinux.org/packages/yawls-bzr/)
 
 ### Build dependencies
 * javahelper
