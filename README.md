@@ -73,12 +73,11 @@ Default: 1
 [Translations on Launchpad.net](https://translations.launchpad.net/yawls)
 
 ### Get in touch
-* [Twitter](https://twitter.com/TheDsWeb)
 * [German project blog](http://thedsweb.blogspot.de/p/yawls.html)
 
 ### Downloads
 
-##### Ubuntu/Debian and derivatives
+##### Ubuntu 14.04/Debian and derivatives
 * Installer:
  * [yawls_1.2.2.deb](https://launchpad.net/yawls/1.2.x/1.2.2/+download/yawls_1.2.2_all.deb)
 * Repository/PPA:
